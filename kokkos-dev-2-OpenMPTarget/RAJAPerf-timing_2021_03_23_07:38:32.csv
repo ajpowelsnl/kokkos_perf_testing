@@ -1,0 +1,12 @@
+Mean Runtime Report (sec.)  ,  ,  ,  ,  , 
+Kernel                    , Base_Seq , Base_OMPTarget , RAJA_OMPTarget , Kokkos_Lambda , Kokkos_Functor
+Basic_ATOMIC_PI           , 0.000000 ,      29.819427 ,       0.128883 ,     47.349418 ,        Not run
+Basic_DAXPY               , 0.000000 ,       1.581085 ,       0.000010 ,      1.559830 ,        Not run
+Basic_IF_QUAD             , 0.000000 ,       0.802606 ,       0.000004 ,      0.845087 ,        Not run
+Basic_INIT3               , 0.000000 ,       2.088786 ,       0.000010 ,      1.933197 ,        Not run
+Basic_INIT_VIEW1D         , 0.000000 ,       6.285230 ,       0.000009 ,      6.704930 ,        Not run
+Basic_INIT_VIEW1D_OFFSET  , 0.000000 ,       6.426016 ,       0.000009 ,      6.719847 ,        Not run
+Basic_MULADDSUB           , 0.000000 ,       1.462351 ,       0.000007 ,      1.461976 ,        Not run
+Basic_NESTED_INIT         , 0.000000 ,       2.742106 ,       0.000000 ,      4.743307 ,        Not run
+Basic_REDUCE3_INT         , 0.000000 ,       0.549583 ,       0.000000 ,      0.000000 ,        Not run
+Basic_TRAP_INT            , 0.000000 ,       1.262470 ,       0.000004 ,      0.892310 ,        Not run
