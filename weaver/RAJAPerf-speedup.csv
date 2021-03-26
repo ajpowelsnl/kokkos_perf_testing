@@ -1,12 +1,12 @@
 Speedup Report (T_ref/T_var): ref var = Base_Seq  ,  ,  ,  ,  ,  ,  , 
 Kernel                    , Base_Seq , Lambda_Seq , RAJA_Seq , Base_CUDA , RAJA_CUDA , Kokkos_Lambda , Kokkos_Functor
-Basic_ATOMIC_PI           ,    1.000 ,      1.000 ,    0.397 ,     0.189 ,     0.189 ,         0.037 ,        Not run
-Basic_DAXPY               ,    1.000 ,      0.999 ,    0.999 ,    10.609 ,    10.862 ,         7.426 ,        Not run
-Basic_IF_QUAD             ,    1.000 ,      0.982 ,    0.979 ,   158.157 ,   148.734 ,       110.831 ,        Not run
-Basic_INIT3               ,    1.000 ,      1.002 ,    1.002 ,    15.394 ,    15.380 ,         8.624 ,        Not run
-Basic_INIT_VIEW1D         ,    1.000 ,      1.000 ,    1.000 ,    61.802 ,    61.728 ,        24.943 ,        Not run
-Basic_INIT_VIEW1D_OFFSET  ,    1.000 ,      1.000 ,    0.874 ,    54.627 ,    58.622 ,        23.863 ,        Not run
-Basic_MULADDSUB           ,    1.000 ,      1.000 ,    1.000 ,    22.853 ,    22.372 ,        11.968 ,        Not run
-Basic_NESTED_INIT         ,    1.000 ,      0.997 ,    1.000 ,   103.197 ,   102.964 ,        33.182 ,        Not run
-Basic_REDUCE3_INT         ,    1.000 ,      1.000 ,    1.000 ,     3.779 ,     3.255 ,        11.127 ,        Not run
-Basic_TRAP_INT            ,    1.000 ,      1.000 ,    1.000 ,    18.900 ,    30.061 ,        23.001 ,        Not run
+Basic_ATOMIC_PI           ,    1.000 ,      1.000 ,    0.397 ,     0.195 ,     0.196 ,         0.039 ,        Not run
+Basic_DAXPY               ,    1.000 ,      0.999 ,    0.999 ,    10.986 ,    11.191 ,         7.552 ,        Not run
+Basic_IF_QUAD             ,    1.000 ,      0.982 ,    0.981 ,   159.796 ,   147.806 ,       112.418 ,        Not run
+Basic_INIT3               ,    1.000 ,      1.000 ,    0.997 ,    15.535 ,    15.509 ,         8.742 ,        Not run
+Basic_INIT_VIEW1D         ,    1.000 ,      1.000 ,    0.999 ,    57.553 ,    57.463 ,        25.021 ,        Not run
+Basic_INIT_VIEW1D_OFFSET  ,    1.000 ,      1.000 ,    0.873 ,    54.396 ,    56.563 ,        23.510 ,        Not run
+Basic_MULADDSUB           ,    1.000 ,      1.000 ,    1.000 ,    23.462 ,    22.475 ,        12.268 ,        Not run
+Basic_NESTED_INIT         ,    1.000 ,      1.000 ,    1.000 ,   103.229 ,   103.115 ,        33.184 ,        Not run
+Basic_REDUCE3_INT         ,    1.000 ,      1.000 ,    1.000 ,     4.150 ,     3.339 ,        11.776 ,        Not run
+Basic_TRAP_INT            ,    1.000 ,      1.000 ,    1.000 ,    19.944 ,    32.466 ,        24.328 ,        Not run
