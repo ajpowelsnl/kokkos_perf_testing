@@ -1,0 +1,12 @@
+Mean Runtime Report (sec.)  ,  ,  ,  ,  ,  ,  , 
+Kernel                    , Base_Seq , Lambda_Seq , RAJA_Seq , Base_CUDA , RAJA_CUDA , Kokkos_Lambda , Kokkos_Functor
+Basic_ATOMIC_PI           , 0.035265 ,   0.035410 , 0.074176 ,  0.216420 ,  0.214200 ,      0.748453 ,        Not run
+Basic_DAXPY               , 0.275795 ,   0.275423 , 0.280863 ,  0.014538 ,  0.015185 ,      0.023071 ,        Not run
+Basic_IF_QUAD             , 1.240501 ,   1.229096 , 1.259997 ,  0.009743 ,  0.010723 ,      0.010193 ,        Not run
+Basic_INIT3               , 0.754335 ,   0.755359 , 0.755568 ,  0.020731 ,  0.020632 ,      0.025566 ,        Not run
+Basic_INIT_VIEW1D         , 1.438017 ,   1.475313 , 1.441082 ,  0.027740 ,  0.027748 ,      0.075561 ,        Not run
+Basic_INIT_VIEW1D_OFFSET  , 1.464644 ,   1.392079 , 5.457848 ,  0.027329 ,  0.025521 ,      0.070970 ,        Not run
+Basic_MULADDSUB           , 0.535009 ,   0.527973 , 0.528046 ,  0.013083 ,  0.014439 ,      0.016764 ,        Not run
+Basic_NESTED_INIT         , 0.978162 ,   0.984722 , 0.991120 ,  0.011382 ,  0.011413 ,      0.039338 ,        Not run
+Basic_REDUCE3_INT         , 0.031053 ,   0.029078 , 0.029042 ,  0.006478 ,  0.020202 ,      0.002421 ,        Not run
+Basic_TRAP_INT            , 1.143766 ,   1.142738 , 1.142793 ,  0.042895 ,  0.022149 ,      0.029366 ,        Not run
