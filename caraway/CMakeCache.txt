@@ -90,8 +90,7 @@ CMAKE_ADDR2LINE:FILEPATH=/home/projects/x86-64/binutils/2.30.0/bin/addr2line
 //Path to a program.
 CMAKE_AR:FILEPATH=/home/projects/x86-64/binutils/2.30.0/bin/ar
 
-//Choose the type of build, options are: None Debug Release RelWithDebInfo
-// MinSizeRel ...
+//Choose the type of build,    options are: Debug Release RelWithDebInfo
 CMAKE_BUILD_TYPE:STRING=Release
 
 //Enable/Disable color output during build.
@@ -107,7 +106,7 @@ CMAKE_CXX_COMPILER_AR:FILEPATH=CMAKE_CXX_COMPILER_AR-NOTFOUND
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=CMAKE_CXX_COMPILER_RANLIB-NOTFOUND
 
 //Flags used by the CXX compiler during all build types.
-CMAKE_CXX_FLAGS:STRING=--gcc-toolchain=/home/projects/x86-64/gcc/8.2.0/
+CMAKE_CXX_FLAGS:STRING=--amdgpu-target=gfx900 --gcc-toolchain=/home/projects/x86-64/gcc/8.2.0/
 
 //Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
@@ -120,9 +119,6 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
-
-//No help, variable specified on the command line.
-CMAKE_CXX_STANDARD:UNINITIALIZED=17
 
 //C compiler
 CMAKE_C_COMPILER:FILEPATH=/home/projects/x86-64/gcc/8.2.0/bin/gcc
@@ -566,7 +562,7 @@ HIP_CLANG_FLAGS_RELEASE:STRING=
 HIP_CLANG_FLAGS_RELWITHDEBINFO:STRING=
 
 //HIP compiler as computed by hipconfig
-HIP_COMPILER:STRING=hcc
+HIP_COMPILER:STRING=clang
 
 //Semicolon delimited flags for HCC
 HIP_HCC_FLAGS:STRING=
@@ -584,10 +580,10 @@ HIP_HCC_FLAGS_RELEASE:STRING=
 HIP_HCC_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-HIP_HIPCC_CMAKE_LINKER_HELPER:FILEPATH=/opt/rocm/hip/bin/hipcc_cmake_linker_helper
+HIP_HIPCC_CMAKE_LINKER_HELPER:FILEPATH=/opt/rocm-4.0.0/hip/bin/hipcc_cmake_linker_helper
 
 //Path to a program.
-HIP_HIPCC_EXECUTABLE:FILEPATH=/opt/rocm/hip/bin/hipcc
+HIP_HIPCC_EXECUTABLE:FILEPATH=/opt/rocm-4.0.0/hip/bin/hipcc
 
 //Semicolon delimited flags for HIPCC
 HIP_HIPCC_FLAGS:STRING=--gcc-toolchain=/home/projects/x86-64/gcc/8.2.0/ -std=c++17
@@ -605,7 +601,7 @@ HIP_HIPCC_FLAGS_RELEASE:STRING=
 HIP_HIPCC_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-HIP_HIPCONFIG_EXECUTABLE:FILEPATH=/opt/rocm/hip/bin/hipconfig
+HIP_HIPCONFIG_EXECUTABLE:FILEPATH=/opt/rocm-4.0.0/hip/bin/hipconfig
 
 //Host code compilation mode
 HIP_HOST_COMPILATION_CPP:BOOL=ON
@@ -628,50 +624,13 @@ HIP_NVCC_FLAGS_RELWITHDEBINFO:STRING=
 //HIP platform as computed by hipconfig
 HIP_PLATFORM:STRING=hcc
 
-//HIP installed location
-HIP_ROOT_DIR:PATH=/opt/rocm/hip
+//No help, variable specified on the command line.
+HIP_ROOT_DIR:UNINITIALIZED=/opt/rocm-4.0.0/hip
 
 //HIP runtime as computed by hipconfig
-HIP_RUNTIME:STRING=HIP version  : 2.8.19361-cbe6b65e
-# WARNING: Value of HIP_RUNTIME contained a newline and was truncated.
-#  Original value:
-# HIP version  : 2.8.19361-cbe6b65e
-# \n
-# \n== hipconfig
-# \nHIP_PATH     : /opt/rocm/hip
-# \nHIP_PLATFORM : hcc
-# \nCPP_CONFIG   :  -D__HIP_PLATFORM_HCC__=   -I/opt/rocm/hip/include -I/opt/rocm/hcc/include -I/opt/rocm/hsa/include
-# \n
-# \n== hcc
-# \nHSA_PATH     : /opt/rocm/hsa
-# \nHCC_HOME     : /opt/rocm/hcc
-# \nHCC clang version 10.0.0 (/data/jenkins_workspace/centos_pipeline_job_2.9/rocm-rel-2.9/rocm-2.9-6-20191001/centos/external/hcc-tot/clang fa40706d8ba0b8b958d42f579120eb9b89babc00) (/data/jenkins_workspace/centos_pipeline_job_2.9/rocm-rel-2.9/rocm-2.9-6-20191001/centos/external/hcc-tot/compiler b7f876231af7fdaf52e419088b8ba9e0c3a61845) (based on HCC 2.9.19392-75835c32-fa40706d8b-b7f876231af )
-# \nTarget: x86_64-unknown-linux-gnu
-# \nThread model: posix
-# \nInstalledDir: /opt/rocm/hcc/bin
-# \nLLVM (http://llvm.org/):
-# \n  LLVM version 10.0.0svn
-# \n  Optimized build.
-# \n  Default target: x86_64-unknown-linux-gnu
-# \n  Host CPU: znver1
-# \n
-# \n  Registered Targets:
-# \n    amdgcn - AMD GCN GPUs
-# \n    r600   - AMD GPUs HD2XXX-HD6XXX
-# \n    x86    - 32-bit X86: Pentium-Pro and above
-# \n    x86-64 - 64-bit X86: EM64T and AMD64
-# \nHCC-cxxflags :  -hc -std=c++amp -I/opt/rocm/hcc/include -I/opt/rocm/includeHCC-ldflags  :  -hc -std=c++amp -L/opt/rocm/hcc/lib -Wl,--rpath=/opt/rocm/hcc/lib -ldl -lm -lpthread -lhc_am -Wl,--whole-archive -lmcwamp -Wl,--no-whole-archive
-# \n
-# \n=== Environment Variables
-# \nPATH=/home/projects/x86-64/python/3.7.3/bin:/home/projects/x86-64/git/2.9.4/bin:/home/projects/x86-64/cmake/3.19.3/bin:/opt/rocm-4.0.0//bin:/home/projects/x86-64-rocm/openmpi/4.0.5/gcc/8.2.0/bin:/home/projects/x86-64/gcc/8.2.0/libexec/gcc/x86_64-pc-linux-gnu/8.2.0/:/home/projects/x86-64/gcc/8.2.0/libexec/gcc/x86_64-unknown-linux-gnu/8.2.0/:/home/projects/x86-64/gcc/8.2.0/bin:/home/projects/x86-64/binutils/2.30.0/bin:/projects/ccsm/git-2.1.1/bin/:/usr/local/bin:/usr/bin:/opt/ibutils/bin:/usr/local/sbin:/usr/sbin:/ascldap/users/jenkins/bin
-# \nLD_LIBRARY_PATH=/home/projects/x86-64/python/3.7.3/lib:/home/projects/x86-64/readline/8.0.0/lib:/opt/rocm-4.0.0//lib:/home/projects/x86-64-rocm/openmpi/4.0.5/gcc/8.2.0/lib:/home/projects/x86-64/gcc/8.2.0/lib64:/home/projects/x86-64/gcc/8.2.0/lib:/home/projects/x86-64/binutils/2.30.0/lib:/usr/lib/gcc/x86_64-redhat-linux/4.8.5:/usr/lib/gcc/x86_64-redhat-linux/4.8.3:/usr/lib/gcc/x86_64-redhat-linux/4.4.7
-# \nHIP_VERSION=4.0.0
-# \n
-# \n== Linux Kernel
-# \nHostname     : caraway
-# \nLinux caraway 3.10.0-957.el7.x86_64 #1 SMP Thu Oct 4 20:48:51 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+HIP_RUNTIME:STRING=ROCclr
 
-HIP_RUNTIME_INCLUDE_DIRS:STRING=/opt/rocm/hip/include
+HIP_RUNTIME_INCLUDE_DIRS:STRING=/opt/rocm-4.0.0/hip/include
 
 //Print out the commands run while compiling the HIP source file.
 //  With the Makefile generator this defaults to VERBOSE variable
@@ -680,7 +639,7 @@ HIP_RUNTIME_INCLUDE_DIRS:STRING=/opt/rocm/hip/include
 HIP_VERBOSE_BUILD:BOOL=OFF
 
 //Version of HIP as computed from hipcc
-HIP_VERSION:STRING=2.8.19361-cbe6b65e
+HIP_VERSION:STRING=4.0.20496-4f163c68
 
 //INTERNAL
 KOKKOS_CXX_COMPILER_ID:STRING=HIPCC
@@ -1342,7 +1301,7 @@ ENABLE_WRAP_ALL_TESTS_WITH_MPIEXEC-ADVANCED:INTERNAL=1
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/home/projects/x86-64/git/2.9.4/bin/git][v2.9.4()]
 //Details about finding HIP
-FIND_PACKAGE_MESSAGE_DETAILS_HIP:INTERNAL=[/opt/rocm/hip][/opt/rocm/hip/bin/hipcc][/opt/rocm/hip/bin/hipconfig][hcc][hcc][HIP version  : 2.8.19361-cbe6b65e== hipconfigHIP_PATH     : /opt/rocm/hipHIP_PLATFORM : hccCPP_CONFIG   :  -D__HIP_PLATFORM_HCC__=   -I/opt/rocm/hip/include -I/opt/rocm/hcc/include -I/opt/rocm/hsa/include== hccHSA_PATH     : /opt/rocm/hsaHCC_HOME     : /opt/rocm/hccHCC clang version 10.0.0 (/data/jenkins_workspace/centos_pipeline_job_2.9/rocm-rel-2.9/rocm-2.9-6-20191001/centos/external/hcc-tot/clang fa40706d8ba0b8b958d42f579120eb9b89babc00) (/data/jenkins_workspace/centos_pipeline_job_2.9/rocm-rel-2.9/rocm-2.9-6-20191001/centos/external/hcc-tot/compiler b7f876231af7fdaf52e419088b8ba9e0c3a61845) (based on HCC 2.9.19392-75835c32-fa40706d8b-b7f876231af )Target: x86_64-unknown-linux-gnuThread model: posixInstalledDir: /opt/rocm/hcc/binLLVM (http://llvm.org/):  LLVM version 10.0.0svn  Optimized build.  Default target: x86_64-unknown-linux-gnu  Host CPU: znver1  Registered Targets:    amdgcn - AMD GCN GPUs    r600   - AMD GPUs HD2XXX-HD6XXX    x86    - 32-bit X86: Pentium-Pro and above    x86-64 - 64-bit X86: EM64T and AMD64HCC-cxxflags :  -hc -std=c++amp -I/opt/rocm/hcc/include -I/opt/rocm/includeHCC-ldflags  :  -hc -std=c++amp -L/opt/rocm/hcc/lib -Wl,--rpath=/opt/rocm/hcc/lib -ldl -lm -lpthread -lhc_am -Wl,--whole-archive -lmcwamp -Wl,--no-whole-archive=== Environment VariablesPATH=/home/projects/x86-64/python/3.7.3/bin:/home/projects/x86-64/git/2.9.4/bin:/home/projects/x86-64/cmake/3.19.3/bin:/opt/rocm-4.0.0//bin:/home/projects/x86-64-rocm/openmpi/4.0.5/gcc/8.2.0/bin:/home/projects/x86-64/gcc/8.2.0/libexec/gcc/x86_64-pc-linux-gnu/8.2.0/:/home/projects/x86-64/gcc/8.2.0/libexec/gcc/x86_64-unknown-linux-gnu/8.2.0/:/home/projects/x86-64/gcc/8.2.0/bin:/home/projects/x86-64/binutils/2.30.0/bin:/projects/ccsm/git-2.1.1/bin/:/usr/local/bin:/usr/bin:/opt/ibutils/bin:/usr/local/sbin:/usr/sbin:/ascldap/users/jenkins/binLD_LIBRARY_PATH=/home/projects/x86-64/python/3.7.3/lib:/home/projects/x86-64/readline/8.0.0/lib:/opt/rocm-4.0.0//lib:/home/projects/x86-64-rocm/openmpi/4.0.5/gcc/8.2.0/lib:/home/projects/x86-64/gcc/8.2.0/lib64:/home/projects/x86-64/gcc/8.2.0/lib:/home/projects/x86-64/binutils/2.30.0/lib:/usr/lib/gcc/x86_64-redhat-linux/4.8.5:/usr/lib/gcc/x86_64-redhat-linux/4.8.3:/usr/lib/gcc/x86_64-redhat-linux/4.4.7HIP_VERSION=4.0.0== Linux KernelHostname     : carawayLinux caraway 3.10.0-957.el7.x86_64 #1 SMP Thu Oct 4 20:48:51 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux][v2.8.19361-cbe6b65e()]
+FIND_PACKAGE_MESSAGE_DETAILS_HIP:INTERNAL=[/opt/rocm-4.0.0/hip][/opt/rocm-4.0.0/hip/bin/hipcc][/opt/rocm-4.0.0/hip/bin/hipconfig][hcc][clang][ROCclr][v4.0.20496-4f163c68()]
 //Details about finding TPLLIBDL
 FIND_PACKAGE_MESSAGE_DETAILS_TPLLIBDL:INTERNAL=[/usr/lib64/libdl.so][/usr/include][v()]
 //ADVANCED property for variable: GITCOMMAND
@@ -1361,6 +1320,8 @@ HIP_CLANG_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 HIP_CLANG_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: HIP_CLANG_FLAGS_RELWITHDEBINFO
 HIP_CLANG_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//Test HIP_CLANG_SUPPORTS_PARALLEL_JOBS
+HIP_CLANG_SUPPORTS_PARALLEL_JOBS:INTERNAL=1
 //ADVANCED property for variable: HIP_COMPILER
 HIP_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: HIP_HCC_FLAGS
