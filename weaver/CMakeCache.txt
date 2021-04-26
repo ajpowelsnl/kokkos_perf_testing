@@ -1003,6 +1003,9 @@ Kokkos_ENABLE_DEBUG_DUALVIEW_MODIFY_CHECK:BOOL=OFF
 //Whether to build the examples
 Kokkos_ENABLE_EXAMPLES:BOOL=OFF
 
+//Enable header self-containment unit tests
+Kokkos_ENABLE_HEADER_SELF_CONTAINMENT_TESTS:BOOL=OFF
+
 //Whether to build HIP backend
 Kokkos_ENABLE_HIP:BOOL=OFF
 
@@ -1049,6 +1052,9 @@ Kokkos_ENABLE_PROFILING_LOAD_PRINT:BOOL=OFF
 //Whether to build Pthread backend
 Kokkos_ENABLE_PTHREAD:BOOL=OFF
 
+//Whether to enable the ROCM library
+Kokkos_ENABLE_ROCM:BOOL=OFF
+
 //Whether to build serial backend
 Kokkos_ENABLE_SERIAL:BOOL=ON
 
@@ -1083,8 +1089,14 @@ Kokkos_LIBRT_DIR:PATH=
 //Location of MEMKIND library
 Kokkos_MEMKIND_DIR:PATH=
 
+//Path to a program.
+Kokkos_NVCC_WRAPPER:FILEPATH=/home/jenkins/weaver/workspace/Kokkos_develop_weaver_cuda_raja_perfsuite/RAJAPerf/tpl/kokkos/bin/nvcc_wrapper
+
 //Location of PTHREAD library
 Kokkos_PTHREAD_DIR:PATH=
+
+//Location of ROCM library
+Kokkos_ROCM_DIR:PATH=
 
 //Value Computed by CMake
 Kokkos_SOURCE_DIR:STATIC=/home/jenkins/weaver/workspace/Kokkos_develop_weaver_cuda_raja_perfsuite/RAJAPerf/tpl/kokkos
