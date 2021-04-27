@@ -22,6 +22,9 @@ BLT_BUILD_DIR:PATH=/home/jenkins/slave/workspace/Kokkos_develop_kokkos_dev_2_ope
 //Compute architecture to use when generating CUDA code with Clang
 BLT_CLANG_CUDA_ARCH:STRING=sm_30
 
+//List of known file extensions used for CMake sources
+BLT_CMAKE_FILE_EXTS:STRING=.cmake
+
 //Name of the master code check target
 BLT_CODE_CHECK_TARGET_NAME:STRING=check
 
@@ -41,8 +44,17 @@ BLT_DOCS_TARGET_NAME:STRING=docs
 // /MD to /MT
 BLT_ENABLE_MSVC_STATIC_MD_TO_MT:BOOL=ON
 
+//Configure the third-party targets created by BLT to be exportable
+BLT_EXPORT_THIRDPARTY:BOOL=OFF
+
 //List of known file extensions used for Fortran sources
 BLT_Fortran_FILE_EXTS:STRING=.F;.f;.f90;.F90
+
+//List of known file extensions used for Python sources
+BLT_Python_FILE_EXTS:STRING=.py
+
+//Required version of clang-format
+BLT_REQUIRED_CLANGFORMAT_VERSION:STRING=
 
 //gfx architecture to use when generating ROCm code
 BLT_ROCM_ARCH:STRING=gfx900
@@ -52,7 +64,7 @@ BLT_ROOT_DIR:PATH=/home/jenkins/slave/workspace/Kokkos_develop_kokkos_dev_2_open
 //Name of the target to run benchmark tests
 BLT_RUN_BENCHMARKS_TARGET_NAME:STRING=run_benchmarks
 
-BLT_VERSION:STRING=0.3.0
+BLT_VERSION:STRING=0.3.6
 
 //Build shared libraries
 BUILD_SHARED_LIBS:BOOL=OFF
@@ -63,8 +75,17 @@ BUILD_TESTING:BOOL=ON
 //Path to a program.
 BZRCOMMAND:FILEPATH=BZRCOMMAND-NOTFOUND
 
+//Path to ClangFormat executable
+CLANGFORMAT_EXECUTABLE:FILEPATH=/home/projects/x86-64/clang/12-pre-887c7660b/bin/clang-format
+
 //Path to ClangQuery executable
 CLANGQUERY_EXECUTABLE:FILEPATH=/home/projects/x86-64/clang/12-pre-887c7660b/bin/clang-query
+
+//Path to ClangTidy executable
+CLANGTIDY_EXECUTABLE:FILEPATH=/home/projects/x86-64/clang/12-pre-887c7660b/bin/clang-tidy
+
+//Path to CMakeFormat executable
+CMAKEFORMAT_EXECUTABLE:FILEPATH=CMAKEFORMAT_EXECUTABLE-NOTFOUND
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -252,13 +273,13 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=RAJAPerfSuite
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=0.11.0
+CMAKE_PROJECT_VERSION:STATIC=0.13.0
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MINOR:STATIC=11
+CMAKE_PROJECT_VERSION_MINOR:STATIC=13
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_PATCH:STATIC=0
@@ -371,14 +392,20 @@ ENABLE_ASTYLE:BOOL=ON
 //Build benchmarks
 ENABLE_BENCHMARKS:BOOL=OFF
 
-//Build CHAI support
-ENABLE_CHAI:BOOL=OFF
+//Enables ClangFormat support
+ENABLE_CLANGFORMAT:BOOL=ON
 
 //Enables Clang-query support
 ENABLE_CLANGQUERY:BOOL=ON
 
+//Enables clang-tidy support
+ENABLE_CLANGTIDY:BOOL=ON
+
 //use clang cuda support rather than nvcc
 ENABLE_CLANG_CUDA:BOOL=OFF
+
+//Enables CMakeFormat support
+ENABLE_CMAKEFORMAT:BOOL=ON
 
 ENABLE_COPY_HEADERS:BOOL=Off
 
@@ -428,6 +455,10 @@ ENABLE_FORTRAN:BOOL=OFF
 //Enable Fruit testing support (if ENABLE_TESTS=ON and ENABLE_FORTRAN=ON)
 ENABLE_FRUIT:BOOL=ON
 
+//Enable Fruit MPI testing support (if ENABLE_TESTS=ON and ENABLE_FORTRAN=ON
+// and ENABLE_FRUIT=ON and ENABLE_MPI=ON
+ENABLE_FRUIT_MPI:BOOL=OFF
+
 //Enable fault-tolerance features
 ENABLE_FT:BOOL=OFF
 
@@ -450,8 +481,11 @@ ENABLE_GTEST_DEATH_TESTS:BOOL=OFF
 //Enable HCC support
 ENABLE_HCC:BOOL=OFF
 
-//Enable HIP support
+//whether to build with hip
 ENABLE_HIP:BOOL=OFF
+
+//Enable Overflow checking during Iterator operations
+ENABLE_ITERATOR_OVERFLOW_DEBUG:BOOL=OFF
 
 //Include Kokkos implementations of the kernels in the RAJA Perfsuite
 ENABLE_KOKKOS:BOOL=ON
@@ -475,13 +509,13 @@ ENABLE_REPRODUCERS:BOOL=OFF
 //Enables Sphinx support
 ENABLE_SPHINX:BOOL=ON
 
-//Build OpenMP on target device support
+//whether to build with OpenMP offload
 ENABLE_TARGET_OPENMP:BOOL=ON
 
 //Build TBB support
 ENABLE_TBB:BOOL=Off
 
-//Build tests
+//whether to configure and build tests
 ENABLE_TESTS:BOOL=Off
 
 //Enables Uncrustify support
@@ -499,6 +533,9 @@ ENABLE_WARNINGS_AS_ERRORS:BOOL=OFF
 //Option to ensure that all tests are invoked through mpiexec.
 // Required on some platforms, like IBM's BG/Q.
 ENABLE_WRAP_ALL_TESTS_WITH_MPIEXEC:BOOL=OFF
+
+//Enables Yapf support
+ENABLE_YAPF:BOOL=ON
 
 //Directory where example executables will go in the build tree
 EXAMPLE_OUTPUT_DIRECTORY:PATH=/home/jenkins/slave/workspace/Kokkos_develop_kokkos_dev_2_openMPTarget_raja_perfsuite/RAJAPerf/build/examples
@@ -835,8 +872,17 @@ RAJA_DEPRECATED_TESTS:BOOL=OFF
 //Enable bounds checking in RAJA::Views/Layouts
 RAJA_ENABLE_BOUNDS_CHECK:BOOL=OFF
 
+//Enable use of device function pointers in hip backend
+RAJA_ENABLE_HIP_INDIRECT_FUNCTION_CALL:BOOL=OFF
+
+//Enable support for loading plugins at runtime
+RAJA_ENABLE_RUNTIME_PLUGINS:BOOL=OFF
+
 //Docstring
 RAJA_ENABLE_TARGET_OPENMP:BOOL=ON
+
+//Dependencies for the target
+RAJA_LIB_DEPENDS:STATIC=general;dl;
 
 RAJA_RANGE_ALIGN:STRING=4
 
@@ -847,6 +893,9 @@ RAJA_REPORT_FT:BOOL=OFF
 
 //Value Computed by CMake
 RAJA_SOURCE_DIR:STATIC=/home/jenkins/slave/workspace/Kokkos_develop_kokkos_dev_2_openMPTarget_raja_perfsuite/RAJAPerf/tpl/RAJA
+
+//Build RAJA exhaustive tests
+RAJA_TEST_EXHAUSTIVE:BOOL=OFF
 
 //Select a timer backend
 RAJA_TIMER:STRING=chrono
@@ -894,6 +943,12 @@ UNCRUSTIFY_EXECUTABLE:FILEPATH=UNCRUSTIFY_EXECUTABLE-NOTFOUND
 
 //Path to Valgrind executable
 VALGRIND_EXECUTABLE:FILEPATH=/usr/bin/valgrind
+
+//Path to Yapf executable
+YAPF_EXECUTABLE:FILEPATH=YAPF_EXECUTABLE-NOTFOUND
+
+//Limits BLT issuing more than one warning for style version
+_BLT_STYLE_VERSION_WARNING_ISSUED:BOOL=FALSE
 
 //Dependencies for the target
 basic-kokkos_LIB_DEPENDS:STATIC=general;common;general;RAJA;
@@ -1145,8 +1200,12 @@ ENABLE_FIND_MPI-ADVANCED:INTERNAL=1
 ENABLE_GTEST_DEATH_TESTS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ENABLE_WRAP_ALL_TESTS_WITH_MPIEXEC
 ENABLE_WRAP_ALL_TESTS_WITH_MPIEXEC-ADVANCED:INTERNAL=1
+//Details about finding ClangFormat
+FIND_PACKAGE_MESSAGE_DETAILS_ClangFormat:INTERNAL=[/home/projects/x86-64/clang/12-pre-887c7660b/bin/clang-format][v()]
 //Details about finding ClangQuery
 FIND_PACKAGE_MESSAGE_DETAILS_ClangQuery:INTERNAL=[/home/projects/x86-64/clang/12-pre-887c7660b/bin/clang-query][v()]
+//Details about finding ClangTidy
+FIND_PACKAGE_MESSAGE_DETAILS_ClangTidy:INTERNAL=[/home/projects/x86-64/clang/12-pre-887c7660b/bin/clang-tidy][v()]
 //Details about finding Doxygen
 FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/bin/doxygen][cfound components: doxygen dot ][v1.8.5()]
 //Details about finding Git
