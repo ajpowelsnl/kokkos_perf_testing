@@ -664,6 +664,9 @@ Kokkos_ARCH_ZEN:BOOL=OFF
 //Optimize for AMD Zen2 architecture (HOST)
 Kokkos_ARCH_ZEN2:BOOL=OFF
 
+//Optimize for AMD Zen3 architecture (HOST)
+Kokkos_ARCH_ZEN3:BOOL=OFF
+
 //Value Computed by CMake
 Kokkos_BINARY_DIR:STATIC=/home/jenkins/slave/workspace/Kokkos_develop_kokkos_dev_2_openMPTarget_raja_perfsuite/RAJAPerf/build/tpl/kokkos
 
@@ -723,6 +726,10 @@ Kokkos_ENABLE_DEBUG_BOUNDS_CHECK:BOOL=OFF
 
 //Debug check on dual views
 Kokkos_ENABLE_DEBUG_DUALVIEW_MODIFY_CHECK:BOOL=ON
+
+//Whether code deprecated in major release 3 should be allowed
+// without warnings
+Kokkos_ENABLE_DEPRECATED_CODE_3:BOOL=ON
 
 //Whether to build the examples
 Kokkos_ENABLE_EXAMPLES:BOOL=OFF
