@@ -1,0 +1,17 @@
+Speedup Report (T_ref/T_var): ref var = Base_Seq  ,  ,  ,  ,  ,  ,  ,  ,  , 
+Kernel                    , Base_Seq , Lambda_Seq , RAJA_Seq , Base_CUDA , Lambda_CUDA , RAJA_CUDA , RAJA_WORKGROUP_CUDA , Kokkos_Lambda , Kokkos_Functor
+Basic_ATOMIC_PI           ,    1.000 ,      1.000 ,    0.397 ,     0.212 ,       0.208 ,     0.203 ,             Not run ,         0.039 ,        Not run
+Basic_DAXPY               ,    1.000 ,      1.000 ,    1.000 ,    12.798 ,      12.910 ,    12.594 ,             Not run ,         7.496 ,        Not run
+Basic_IF_QUAD             ,    1.000 ,      0.981 ,    0.982 ,   191.612 ,     177.860 ,   177.678 ,             Not run ,       111.993 ,        Not run
+Basic_INIT3               ,    1.000 ,      1.002 ,    1.003 ,    18.681 ,      18.683 ,    18.586 ,             Not run ,         8.746 ,        Not run
+Basic_INIT_VIEW1D         ,    1.000 ,      1.000 ,    1.000 ,    78.938 ,      78.888 ,    78.776 ,             Not run ,        31.678 ,        Not run
+Basic_INIT_VIEW1D_OFFSET  ,    1.000 ,      1.000 ,    0.477 ,    73.409 ,      71.308 ,    70.786 ,             Not run ,        29.442 ,        Not run
+Basic_MULADDSUB           ,    1.000 ,      1.000 ,    0.997 ,    27.305 ,      27.373 ,    27.121 ,             Not run ,        11.949 ,        Not run
+Basic_NESTED_INIT         ,    1.000 ,      1.000 ,    0.996 ,   124.189 ,     124.186 ,   123.907 ,             Not run ,        39.968 ,        Not run
+Basic_REDUCE3_INT         ,    1.000 ,      1.000 ,    0.105 ,     4.391 ,     Not run ,     3.915 ,             Not run ,        12.878 ,        Not run
+Basic_TRAP_INT            ,    1.000 ,      0.999 ,    1.000 ,    21.106 ,     Not run ,    35.531 ,             Not run ,        26.258 ,        Not run
+Stream_ADD                ,    1.000 ,      1.001 ,    1.002 ,    24.475 ,      24.496 ,    24.426 ,             Not run ,        24.130 ,        Not run
+Stream_COPY               ,    1.000 ,      1.000 ,    1.456 ,    34.318 ,      34.296 ,    34.291 ,             Not run ,        30.953 ,        Not run
+Stream_DOT                ,    1.000 ,      1.000 ,    0.997 ,    36.985 ,     Not run ,    47.136 ,             Not run ,        38.232 ,        Not run
+Stream_MUL                ,    1.000 ,      0.991 ,    0.991 ,    26.832 ,      26.772 ,    26.774 ,             Not run ,        24.083 ,        Not run
+Stream_TRIAD              ,    1.000 ,      1.000 ,    0.999 ,    22.456 ,      22.609 ,    22.462 ,             Not run ,        22.460 ,        Not run
