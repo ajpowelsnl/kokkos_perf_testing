@@ -1,0 +1,17 @@
+Mean Runtime Report (sec.)  ,  ,  ,  ,  ,  ,  ,  ,  , 
+Kernel                    , Base_Seq , Lambda_Seq , RAJA_Seq , Base_CUDA , Lambda_CUDA , RAJA_CUDA , RAJA_WORKGROUP_CUDA , Kokkos_Lambda , Kokkos_Functor
+Basic_ATOMIC_PI           , 0.035264 ,   0.035451 , 0.074083 ,  0.223677 ,    0.224437 ,  0.229357 ,             Not run ,      0.757431 ,        Not run
+Basic_DAXPY               , 0.264721 ,   0.264891 , 0.272864 ,  0.014822 ,    0.015151 ,  0.015040 ,             Not run ,      0.023176 ,        Not run
+Basic_IF_QUAD             , 1.334160 ,   1.319484 , 1.430432 ,  0.009878 ,    0.010871 ,  0.010889 ,             Not run ,      0.010120 ,        Not run
+Basic_INIT3               , 0.748649 ,   0.749054 , 0.748183 ,  0.020787 ,    0.020851 ,  0.020973 ,             Not run ,      0.025634 ,        Not run
+Basic_INIT_VIEW1D         , 1.629121 ,   1.454278 , 1.475034 ,  0.025075 ,    0.025109 ,  0.025167 ,             Not run ,      0.070925 ,        Not run
+Basic_INIT_VIEW1D_OFFSET  , 1.415349 ,   1.392484 , 2.217759 ,  0.025010 ,    0.025290 ,  0.025481 ,             Not run ,      0.070864 ,        Not run
+Basic_MULADDSUB           , 0.526378 ,   0.523717 , 0.523960 ,  0.013185 ,    0.014525 ,  0.014679 ,             Not run ,      0.016685 ,        Not run
+Basic_NESTED_INIT         , 1.195091 ,   1.189157 , 0.977109 ,  0.011401 ,    0.011400 ,  0.011389 ,             Not run ,      0.039338 ,        Not run
+Basic_REDUCE3_INT         , 0.030777 ,   0.028930 , 0.089777 ,  0.006595 ,     Not run ,  0.019627 ,             Not run ,      0.002403 ,        Not run
+Basic_TRAP_INT            , 1.142456 ,   1.141740 , 1.141727 ,  0.043451 ,     Not run ,  0.022639 ,             Not run ,      0.029517 ,        Not run
+Stream_ADD                , 0.954929 ,   0.951288 , 0.950867 ,  0.031381 ,    0.031427 ,  0.031466 ,             Not run ,      0.032104 ,        Not run
+Stream_COPY               , 1.091053 ,   1.089501 , 1.092525 ,  0.040406 ,    0.040377 ,  0.040452 ,             Not run ,      0.049233 ,        Not run
+Stream_DOT                , 2.187945 ,   2.190395 , 4.920042 ,  0.069010 ,     Not run ,  0.067947 ,             Not run ,      0.079681 ,        Not run
+Stream_MUL                , 1.094090 ,   1.091342 , 1.092707 ,  0.040371 ,    0.040470 ,  0.040454 ,             Not run ,      0.049277 ,        Not run
+Stream_TRIAD              , 0.951984 ,   0.951307 , 0.956711 ,  0.031730 ,    0.031730 ,  0.031748 ,             Not run ,      0.032268 ,        Not run

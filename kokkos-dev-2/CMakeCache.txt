@@ -1003,9 +1003,11 @@ Kokkos_ENABLE_DEBUG_BOUNDS_CHECK:BOOL=OFF
 //Debug check on dual views
 Kokkos_ENABLE_DEBUG_DUALVIEW_MODIFY_CHECK:BOOL=OFF
 
-//Whether code deprecated in major release 3 should be allowed
-// without warnings
+//Whether code deprecated in major release 3 is available
 Kokkos_ENABLE_DEPRECATED_CODE_3:BOOL=ON
+
+//Whether to emit deprecation warnings
+Kokkos_ENABLE_DEPRECATION_WARNINGS:BOOL=ON
 
 //Whether to build the examples
 Kokkos_ENABLE_EXAMPLES:BOOL=OFF
@@ -1039,6 +1041,9 @@ Kokkos_ENABLE_LIBDL:BOOL=On
 
 //Whether to enable the LIBNUMA library
 Kokkos_ENABLE_LIBNUMA:BOOL=Off
+
+//Whether to enable the LIBQUADMATH library
+Kokkos_ENABLE_LIBQUADMATH:BOOL=OFF
 
 //Whether to enable the LIBRT library
 Kokkos_ENABLE_LIBRT:BOOL=Off
@@ -1089,6 +1094,9 @@ Kokkos_LIBDL_DIR:PATH=
 
 //Location of LIBNUMA library
 Kokkos_LIBNUMA_DIR:PATH=
+
+//Location of LIBQUADMATH library
+Kokkos_LIBQUADMATH_DIR:PATH=
 
 //Location of LIBRT library
 Kokkos_LIBRT_DIR:PATH=
