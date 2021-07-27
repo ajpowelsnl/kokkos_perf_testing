@@ -1,0 +1,736 @@
+__rec=node,id=12,attr=10,data=64,parent=3
+__rec=node,id=13,attr=8,data=attribute.alias,parent=12
+__rec=node,id=14,attr=8,data=attribute.unit,parent=12
+__rec=node,id=652,attr=14,data=sec,parent=5
+__rec=node,id=653,attr=13,data=Min time/rank,parent=652
+__rec=node,id=654,attr=10,data=65,parent=653
+__rec=node,id=655,attr=8,data=min#inclusive#sum#time.duration,parent=654
+__rec=node,id=656,attr=13,data=Max time/rank,parent=652
+__rec=node,id=657,attr=10,data=65,parent=656
+__rec=node,id=658,attr=8,data=max#inclusive#sum#time.duration,parent=657
+__rec=node,id=659,attr=13,data=Avg time/rank,parent=652
+__rec=node,id=660,attr=10,data=65,parent=659
+__rec=node,id=661,attr=8,data=avg#inclusive#sum#time.duration,parent=660
+__rec=node,id=664,attr=10,data=193,parent=5
+__rec=node,id=665,attr=8,data=avg.sum#inclusive#sum#time.duration,parent=664
+__rec=node,id=662,attr=10,data=193,parent=2
+__rec=node,id=663,attr=8,data=avg.count#inclusive#sum#time.duration,parent=662
+__rec=node,id=666,attr=13,data=Total time,parent=652
+__rec=node,id=667,attr=10,data=65,parent=666
+__rec=node,id=668,attr=8,data=sum#inclusive#sum#time.duration,parent=667
+__rec=node,id=15,attr=8,data=spot.channel,parent=12
+__rec=node,id=669,attr=15,data=regionprofile
+__rec=ctx,ref=669,attr=655=658=661=665=663=668,data=3.713159=3.713159=3.713159=3.713159=1=3.713159
+__rec=node,id=31,attr=10,data=276,parent=3
+__rec=node,id=32,attr=8,data=function,parent=31
+__rec=node,id=38,attr=32,data=Basic_DAXPY:Base_Seq
+__rec=ctx,ref=38=669,attr=655=658=661=665=663=668,data=0.522195=0.522195=0.522195=0.522195=1=0.522195
+__rec=node,id=40,attr=32,data=Basic_DAXPY:Lambda_Seq
+__rec=ctx,ref=40=669,attr=655=658=661=665=663=668,data=0.522039=0.522039=0.522039=0.522039=1=0.522039
+__rec=node,id=42,attr=32,data=Basic_DAXPY:RAJA_Seq
+__rec=ctx,ref=42=669,attr=655=658=661=665=663=668,data=0.520552=0.520552=0.520552=0.520552=1=0.520552
+__rec=node,id=44,attr=32,data=Basic_DAXPY:Base_CUDA
+__rec=ctx,ref=44=669,attr=655=658=661=665=663=668,data=0.048662=0.048662=0.048662=0.048662=1=0.048662
+__rec=node,id=46,attr=32,data=Basic_DAXPY:Lambda_CUDA
+__rec=ctx,ref=46=669,attr=655=658=661=665=663=668,data=0.047978=0.047978=0.047978=0.047978=1=0.047978
+__rec=node,id=48,attr=32,data=Basic_DAXPY:RAJA_CUDA
+__rec=ctx,ref=48=669,attr=655=658=661=665=663=668,data=0.048673=0.048673=0.048673=0.048673=1=0.048673
+__rec=node,id=50,attr=32,data=Basic_DAXPY:Kokkos_Lambda
+__rec=ctx,ref=50=669,attr=655=658=661=665=663=668,data=0.525752=0.525752=0.525752=0.525752=1=0.525752
+__rec=node,id=53,attr=32,data=Kokkos::View::initialization [StringName],parent=50
+__rec=ctx,ref=53=669,attr=655=658=661=665=663=668,data=0.000218=0.000218=0.000218=0.000218=1=0.000218
+__rec=node,id=55,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=50
+__rec=ctx,ref=55=669,attr=655=658=661=665=663=668,data=0.000352=0.000352=0.000352=0.000352=1=0.000352
+__rec=node,id=57,attr=32,data=DAXPY-Kokkos Kokkos_Lambda,parent=50
+__rec=ctx,ref=57=669,attr=655=658=661=665=663=668,data=0.296688=0.296688=0.296688=0.296688=1=0.296688
+__rec=node,id=59,attr=32,data=Apps_DEL_DOT_VEC_2D:Base_Seq
+__rec=ctx,ref=59=669,attr=655=658=661=665=663=668,data=1.272053=1.272053=1.272053=1.272053=1=1.272053
+__rec=node,id=61,attr=32,data=Apps_DEL_DOT_VEC_2D:Lambda_Seq
+__rec=ctx,ref=61=669,attr=655=658=661=665=663=668,data=1.272059=1.272059=1.272059=1.272059=1=1.272059
+__rec=node,id=63,attr=32,data=Apps_DEL_DOT_VEC_2D:RAJA_Seq
+__rec=ctx,ref=63=669,attr=655=658=661=665=663=668,data=1.270086=1.270086=1.270086=1.270086=1=1.270086
+__rec=node,id=65,attr=32,data=Apps_DEL_DOT_VEC_2D:Base_CUDA
+__rec=ctx,ref=65=669,attr=655=658=661=665=663=668,data=0.010854=0.010854=0.010854=0.010854=1=0.010854
+__rec=node,id=67,attr=32,data=Apps_DEL_DOT_VEC_2D:Lambda_CUDA
+__rec=ctx,ref=67=669,attr=655=658=661=665=663=668,data=0.010167=0.010167=0.010167=0.010167=1=0.010167
+__rec=node,id=69,attr=32,data=Apps_DEL_DOT_VEC_2D:RAJA_CUDA
+__rec=ctx,ref=69=669,attr=655=658=661=665=663=668,data=0.011285=0.011285=0.011285=0.011285=1=0.011285
+__rec=node,id=71,attr=32,data=Apps_ENERGY:Base_Seq
+__rec=ctx,ref=71=669,attr=655=658=661=665=663=668,data=1.350668=1.350668=1.350668=1.350668=1=1.350668
+__rec=node,id=73,attr=32,data=Apps_ENERGY:Lambda_Seq
+__rec=ctx,ref=73=669,attr=655=658=661=665=663=668,data=1.348835=1.348835=1.348835=1.348835=1=1.348835
+__rec=node,id=75,attr=32,data=Apps_ENERGY:RAJA_Seq
+__rec=ctx,ref=75=669,attr=655=658=661=665=663=668,data=1.264377=1.264377=1.264377=1.264377=1=1.264377
+__rec=node,id=77,attr=32,data=Apps_ENERGY:Base_CUDA
+__rec=ctx,ref=77=669,attr=655=658=661=665=663=668,data=0.046545=0.046545=0.046545=0.046545=1=0.046545
+__rec=node,id=79,attr=32,data=Apps_ENERGY:RAJA_CUDA
+__rec=ctx,ref=79=669,attr=655=658=661=665=663=668,data=0.045938=0.045938=0.045938=0.045938=1=0.045938
+__rec=node,id=81,attr=32,data=Apps_FIR:Base_Seq
+__rec=ctx,ref=81=669,attr=655=658=661=665=663=668,data=1.539899=1.539899=1.539899=1.539899=1=1.539899
+__rec=node,id=83,attr=32,data=Basic_TRAP_INT:Kokkos_Lambda
+__rec=ctx,ref=83=669,attr=655=658=661=665=663=668,data=0.126106=0.126106=0.126106=0.126106=1=0.126106
+__rec=node,id=87,attr=32,data=Stream_ADD:Kokkos_Lambda
+__rec=ctx,ref=87=669,attr=655=658=661=665=663=668,data=0.091290=0.091290=0.091290=0.091290=1=0.091290
+__rec=node,id=88,attr=32,data=ADD_Kokkos Kokkos_Lambda,parent=87
+__rec=ctx,ref=88=669,attr=655=658=661=665=663=668,data=0.057133=0.057133=0.057133=0.057133=1=0.057133
+__rec=node,id=90,attr=32,data=Apps_FIR:Lambda_Seq
+__rec=ctx,ref=90=669,attr=655=658=661=665=663=668,data=1.538356=1.538356=1.538356=1.538356=1=1.538356
+__rec=node,id=93,attr=32,data=Stream_COPY:Base_Seq
+__rec=ctx,ref=93=669,attr=655=658=661=665=663=668,data=1.202945=1.202945=1.202945=1.202945=1=1.202945
+__rec=node,id=95,attr=32,data=Apps_FIR:RAJA_Seq
+__rec=ctx,ref=95=669,attr=655=658=661=665=663=668,data=1.412789=1.412789=1.412789=1.412789=1=1.412789
+__rec=node,id=97,attr=32,data=TRAP_INT_Kokkos Kokkos_Lambda,parent=83
+__rec=ctx,ref=97=669,attr=655=658=661=665=663=668,data=0.076065=0.076065=0.076065=0.076065=1=0.076065
+__rec=node,id=99,attr=32,data=Stream_COPY:Lambda_Seq
+__rec=ctx,ref=99=669,attr=655=658=661=665=663=668,data=1.200943=1.200943=1.200943=1.200943=1=1.200943
+__rec=node,id=101,attr=32,data=Apps_FIR:Base_CUDA
+__rec=ctx,ref=101=669,attr=655=658=661=665=663=668,data=0.008499=0.008499=0.008499=0.008499=1=0.008499
+__rec=node,id=103,attr=32,data=Lcals_DIFF_PREDICT:Base_Seq
+__rec=ctx,ref=103=669,attr=655=658=661=665=663=668,data=0.780601=0.780601=0.780601=0.780601=1=0.780601
+__rec=node,id=105,attr=32,data=Stream_COPY:RAJA_Seq
+__rec=ctx,ref=105=669,attr=655=658=661=665=663=668,data=0.826095=0.826095=0.826095=0.826095=1=0.826095
+__rec=node,id=107,attr=32,data=Apps_FIR:RAJA_CUDA
+__rec=ctx,ref=107=669,attr=655=658=661=665=663=668,data=0.009201=0.009201=0.009201=0.009201=1=0.009201
+__rec=node,id=109,attr=32,data=Lcals_DIFF_PREDICT:Lambda_Seq
+__rec=ctx,ref=109=669,attr=655=658=661=665=663=668,data=0.781080=0.781080=0.781080=0.781080=1=0.781080
+__rec=node,id=111,attr=32,data=Stream_COPY:Base_CUDA
+__rec=ctx,ref=111=669,attr=655=658=661=665=663=668,data=0.044548=0.044548=0.044548=0.044548=1=0.044548
+__rec=node,id=113,attr=32,data=Apps_HALOEXCHANGE:Base_Seq
+__rec=ctx,ref=113=669,attr=655=658=661=665=663=668,data=0.024178=0.024178=0.024178=0.024178=1=0.024178
+__rec=node,id=115,attr=32,data=Lcals_DIFF_PREDICT:RAJA_Seq
+__rec=ctx,ref=115=669,attr=655=658=661=665=663=668,data=0.669584=0.669584=0.669584=0.669584=1=0.669584
+__rec=node,id=117,attr=32,data=Stream_COPY:Lambda_CUDA
+__rec=ctx,ref=117=669,attr=655=658=661=665=663=668,data=0.044221=0.044221=0.044221=0.044221=1=0.044221
+__rec=node,id=119,attr=32,data=Apps_HALOEXCHANGE:Lambda_Seq
+__rec=ctx,ref=119=669,attr=655=658=661=665=663=668,data=0.025712=0.025712=0.025712=0.025712=1=0.025712
+__rec=node,id=121,attr=32,data=Lcals_DIFF_PREDICT:Base_CUDA
+__rec=ctx,ref=121=669,attr=655=658=661=665=663=668,data=0.065412=0.065412=0.065412=0.065412=1=0.065412
+__rec=node,id=123,attr=32,data=Stream_COPY:RAJA_CUDA
+__rec=ctx,ref=123=669,attr=655=658=661=665=663=668,data=0.044235=0.044235=0.044235=0.044235=1=0.044235
+__rec=node,id=125,attr=32,data=Apps_HALOEXCHANGE:RAJA_Seq
+__rec=ctx,ref=125=669,attr=655=658=661=665=663=668,data=0.026482=0.026482=0.026482=0.026482=1=0.026482
+__rec=node,id=127,attr=32,data=Lcals_DIFF_PREDICT:RAJA_CUDA
+__rec=ctx,ref=127=669,attr=655=658=661=665=663=668,data=0.064942=0.064942=0.064942=0.064942=1=0.064942
+__rec=node,id=384,attr=32,data=Basic_INIT3:Lambda_Seq
+__rec=ctx,ref=384=669,attr=655=658=661=665=663=668,data=0.399870=0.399870=0.399870=0.399870=1=0.399870
+__rec=node,id=512,attr=32,data=Lcals_INT_PREDICT:Lambda_Seq
+__rec=ctx,ref=512=669,attr=655=658=661=665=663=668,data=1.083250=1.083250=1.083250=1.083250=1=1.083250
+__rec=node,id=129,attr=32,data=Stream_COPY:Kokkos_Lambda
+__rec=ctx,ref=129=669,attr=655=658=661=665=663=668,data=0.137904=0.137904=0.137904=0.137904=1=0.137904
+__rec=node,id=257,attr=32,data=Apps_VOL3D:RAJA_Seq
+__rec=ctx,ref=257=669,attr=655=658=661=665=663=668,data=1.288781=1.288781=1.288781=1.288781=1=1.288781
+__rec=node,id=641,attr=32,data=Stream_ADD:RAJA_CUDA
+__rec=ctx,ref=641=669,attr=655=658=661=665=663=668,data=0.036571=0.036571=0.036571=0.036571=1=0.036571
+__rec=node,id=386,attr=32,data=Lcals_GEN_LIN_RECUR:RAJA_Seq
+__rec=ctx,ref=386=669,attr=655=658=661=665=663=668,data=1.199371=1.199371=1.199371=1.199371=1=1.199371
+__rec=node,id=514,attr=32,data=Basic_MULADDSUB:RAJA_Seq
+__rec=ctx,ref=514=669,attr=655=658=661=665=663=668,data=0.390015=0.390015=0.390015=0.390015=1=0.390015
+__rec=node,id=131,attr=32,data=Apps_HALOEXCHANGE:Base_CUDA
+__rec=ctx,ref=131=669,attr=655=658=661=665=663=668,data=0.044183=0.044183=0.044183=0.044183=1=0.044183
+__rec=node,id=248,attr=32,data=Lcals_FIRST_DIFF:Kokkos_Lambda
+__rec=node,id=259,attr=32,data=Kokkos::View::initialization [StringName],parent=248
+__rec=ctx,ref=259=669,attr=655=658=661=665=663=668,data=0.000087=0.000087=0.000087=0.000087=1=0.000087
+__rec=node,id=643,attr=32,data=Basic_TRAP_INT:RAJA_Seq
+__rec=ctx,ref=643=669,attr=655=658=661=665=663=668,data=1.086842=1.086842=1.086842=1.086842=1=1.086842
+__rec=node,id=388,attr=32,data=Basic_INIT3:RAJA_Seq
+__rec=ctx,ref=388=669,attr=655=658=661=665=663=668,data=0.399858=0.399858=0.399858=0.399858=1=0.399858
+__rec=node,id=516,attr=32,data=Lcals_INT_PREDICT:RAJA_Seq
+__rec=ctx,ref=516=669,attr=655=658=661=665=663=668,data=1.083786=1.083786=1.083786=1.083786=1=1.083786
+__rec=node,id=133,attr=32,data=Lcals_DIFF_PREDICT:Kokkos_Lambda
+__rec=ctx,ref=133=669,attr=655=658=661=665=663=668,data=0.188375=0.188375=0.188375=0.188375=1=0.188375
+__rec=node,id=645,attr=32,data=Basic_TRAP_INT:Base_CUDA
+__rec=ctx,ref=645=669,attr=655=658=661=665=663=668,data=0.057883=0.057883=0.057883=0.057883=1=0.057883
+__rec=node,id=262,attr=32,data=Apps_VOL3D:Base_CUDA
+__rec=ctx,ref=262=669,attr=655=658=661=665=663=668,data=0.009452=0.009452=0.009452=0.009452=1=0.009452
+__rec=node,id=390,attr=32,data=Lcals_GEN_LIN_RECUR:Base_CUDA
+__rec=ctx,ref=390=669,attr=655=658=661=665=663=668,data=0.045824=0.045824=0.045824=0.045824=1=0.045824
+__rec=node,id=518,attr=32,data=Basic_MULADDSUB:Base_CUDA
+__rec=ctx,ref=518=669,attr=655=658=661=665=663=668,data=0.017731=0.017731=0.017731=0.017731=1=0.017731
+__rec=node,id=647,attr=32,data=Basic_TRAP_INT:RAJA_CUDA
+__rec=ctx,ref=647=669,attr=655=658=661=665=663=668,data=0.035306=0.035306=0.035306=0.035306=1=0.035306
+__rec=node,id=136,attr=32,data=Apps_HALOEXCHANGE:RAJA_CUDA
+__rec=ctx,ref=136=669,attr=655=658=661=665=663=668,data=0.043286=0.043286=0.043286=0.043286=1=0.043286
+__rec=node,id=264,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=248
+__rec=ctx,ref=264=669,attr=655=658=661=665=663=668,data=0.000165=0.000165=0.000165=0.000165=1=0.000165
+__rec=node,id=392,attr=32,data=Basic_INIT3:Base_CUDA
+__rec=ctx,ref=392=669,attr=655=658=661=665=663=668,data=0.024597=0.024597=0.024597=0.024597=1=0.024597
+__rec=node,id=520,attr=32,data=Lcals_INT_PREDICT:Base_CUDA
+__rec=ctx,ref=520=669,attr=655=658=661=665=663=668,data=0.061452=0.061452=0.061452=0.061452=1=0.061452
+__rec=node,id=649,attr=32,data=Kokkos::View::initialization [StringName],parent=87
+__rec=ctx,ref=649=669,attr=655=658=661=665=663=668,data=0.000216=0.000216=0.000216=0.000216=1=0.000216
+__rec=node,id=255,attr=32,data=Stream_MUL:Kokkos_Lambda
+__rec=node,id=266,attr=32,data=Kokkos::View::initialization [StringName],parent=255
+__rec=ctx,ref=266=669,attr=655=658=661=665=663=668,data=0.000151=0.000151=0.000151=0.000151=1=0.000151
+__rec=node,id=394,attr=32,data=Lcals_GEN_LIN_RECUR:RAJA_CUDA
+__rec=ctx,ref=394=669,attr=655=658=661=665=663=668,data=0.046333=0.046333=0.046333=0.046333=1=0.046333
+__rec=node,id=522,attr=32,data=Basic_MULADDSUB:Lambda_CUDA
+__rec=ctx,ref=522=669,attr=655=658=661=665=663=668,data=0.018681=0.018681=0.018681=0.018681=1=0.018681
+__rec=node,id=139,attr=32,data=Kokkos::View::initialization [StringName],parent=129
+__rec=ctx,ref=139=669,attr=655=658=661=665=663=668,data=0.000145=0.000145=0.000145=0.000145=1=0.000145
+__rec=node,id=651,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=87
+__rec=ctx,ref=651=669,attr=655=658=661=665=663=668,data=0.001725=0.001725=0.001725=0.001725=1=0.001725
+__rec=node,id=268,attr=32,data=Apps_VOL3D:RAJA_CUDA
+__rec=ctx,ref=268=669,attr=655=658=661=665=663=668,data=0.008388=0.008388=0.008388=0.008388=1=0.008388
+__rec=node,id=396,attr=32,data=Basic_INIT3:Lambda_CUDA
+__rec=ctx,ref=396=669,attr=655=658=661=665=663=668,data=0.024551=0.024551=0.024551=0.024551=1=0.024551
+__rec=node,id=524,attr=32,data=Lcals_INT_PREDICT:RAJA_CUDA
+__rec=ctx,ref=524=669,attr=655=658=661=665=663=668,data=0.062181=0.062181=0.062181=0.062181=1=0.062181
+__rec=node,id=141,attr=32,data=Apps_HALOEXCHANGE:RAJA_WORKGROUP_CUDA
+__rec=ctx,ref=141=669,attr=655=658=661=665=663=668,data=0.018250=0.018250=0.018250=0.018250=1=0.018250
+__rec=node,id=270,attr=32,data=FIRST_DIFF_Kokkos Kokkos_Lambda,parent=248
+__rec=ctx,ref=270=669,attr=655=658=661=665=663=668,data=0.472690=0.472690=0.472690=0.472690=1=0.472690
+__rec=node,id=398,attr=32,data=Lcals_GEN_LIN_RECUR:Kokkos_Lambda
+__rec=ctx,ref=398=669,attr=655=658=661=665=663=668,data=0.542465=0.542465=0.542465=0.542465=1=0.542465
+__rec=node,id=526,attr=32,data=Basic_MULADDSUB:RAJA_CUDA
+__rec=ctx,ref=526=669,attr=655=658=661=665=663=668,data=0.018594=0.018594=0.018594=0.018594=1=0.018594
+__rec=node,id=143,attr=32,data=Kokkos::View::initialization [StringName],parent=133
+__rec=ctx,ref=143=669,attr=655=658=661=665=663=668,data=0.000167=0.000167=0.000167=0.000167=1=0.000167
+__rec=node,id=272,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=255
+__rec=ctx,ref=272=669,attr=655=658=661=665=663=668,data=0.001381=0.001381=0.001381=0.001381=1=0.001381
+__rec=node,id=400,attr=32,data=Basic_INIT3:RAJA_CUDA
+__rec=ctx,ref=400=669,attr=655=658=661=665=663=668,data=0.024132=0.024132=0.024132=0.024132=1=0.024132
+__rec=node,id=528,attr=32,data=Lcals_INT_PREDICT:Kokkos_Lambda
+__rec=ctx,ref=528=669,attr=655=658=661=665=663=668,data=0.254283=0.254283=0.254283=0.254283=1=0.254283
+__rec=node,id=145,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=129
+__rec=ctx,ref=145=669,attr=655=658=661=665=663=668,data=0.001088=0.001088=0.001088=0.001088=1=0.001088
+__rec=node,id=274,attr=32,data=Basic_ATOMIC_PI:Base_Seq
+__rec=ctx,ref=274=669,attr=655=658=661=665=663=668,data=0.071794=0.071794=0.071794=0.071794=1=0.071794
+__rec=node,id=530,attr=32,data=Basic_MULADDSUB:Kokkos_Lambda
+__rec=ctx,ref=530=669,attr=655=658=661=665=663=668,data=0.195178=0.195178=0.195178=0.195178=1=0.195178
+__rec=node,id=147,attr=32,data=Apps_LTIMES:Base_Seq
+__rec=ctx,ref=147=669,attr=655=658=661=665=663=668,data=1.751350=1.751350=1.751350=1.751350=1=1.751350
+__rec=node,id=403,attr=32,data=Basic_INIT3:Kokkos_Lambda
+__rec=ctx,ref=403=669,attr=655=658=661=665=663=668,data=0.276817=0.276817=0.276817=0.276817=1=0.276817
+__rec=node,id=276,attr=32,data=Lcals_FIRST_MIN:Base_Seq
+__rec=ctx,ref=276=669,attr=655=658=661=665=663=668,data=0.076518=0.076518=0.076518=0.076518=1=0.076518
+__rec=node,id=149,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=133
+__rec=ctx,ref=149=669,attr=655=658=661=665=663=668,data=0.002258=0.002258=0.002258=0.002258=1=0.002258
+__rec=node,id=405,attr=32,data=Kokkos::View::initialization [StringName],parent=398
+__rec=ctx,ref=405=669,attr=655=658=661=665=663=668,data=0.000174=0.000174=0.000174=0.000174=1=0.000174
+__rec=node,id=278,attr=32,data=MUL_Kokkos Kokkos_Lambda,parent=255
+__rec=ctx,ref=278=669,attr=655=658=661=665=663=668,data=0.090148=0.090148=0.090148=0.090148=1=0.090148
+__rec=node,id=534,attr=32,data=Kokkos::View::initialization [StringName],parent=528
+__rec=ctx,ref=534=669,attr=655=658=661=665=663=668,data=0.000082=0.000082=0.000082=0.000082=1=0.000082
+__rec=node,id=151,attr=32,data=COPY_Kokkos Kokkos_Lambda,parent=129
+__rec=ctx,ref=151=669,attr=655=658=661=665=663=668,data=0.089923=0.089923=0.089923=0.089923=1=0.089923
+__rec=node,id=280,attr=32,data=Basic_ATOMIC_PI:Lambda_Seq
+__rec=ctx,ref=280=669,attr=655=658=661=665=663=668,data=0.071717=0.071717=0.071717=0.071717=1=0.071717
+__rec=node,id=408,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=398
+__rec=ctx,ref=408=669,attr=655=658=661=665=663=668,data=0.000284=0.000284=0.000284=0.000284=1=0.000284
+__rec=node,id=536,attr=32,data=Kokkos::View::initialization [StringName],parent=530
+__rec=ctx,ref=536=669,attr=655=658=661=665=663=668,data=0.000206=0.000206=0.000206=0.000206=1=0.000206
+__rec=node,id=153,attr=32,data=Apps_LTIMES:Lambda_Seq
+__rec=ctx,ref=153=669,attr=655=658=661=665=663=668,data=1.750165=1.750165=1.750165=1.750165=1=1.750165
+__rec=node,id=282,attr=32,data=Lcals_FIRST_MIN:Lambda_Seq
+__rec=ctx,ref=282=669,attr=655=658=661=665=663=668,data=0.085931=0.085931=0.085931=0.085931=1=0.085931
+__rec=node,id=410,attr=32,data=Kokkos::View::initialization [StringName],parent=403
+__rec=ctx,ref=410=669,attr=655=658=661=665=663=668,data=0.000208=0.000208=0.000208=0.000208=1=0.000208
+__rec=node,id=538,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=528
+__rec=ctx,ref=538=669,attr=655=658=661=665=663=668,data=0.001535=0.001535=0.001535=0.001535=1=0.001535
+__rec=node,id=155,attr=32,data=DIFF_PREDICT_Kokkos Kokkos_Lambda,parent=133
+__rec=ctx,ref=155=669,attr=655=658=661=665=663=668,data=0.132664=0.132664=0.132664=0.132664=1=0.132664
+__rec=node,id=284,attr=32,data=Stream_TRIAD:Base_Seq
+__rec=ctx,ref=284=669,attr=655=658=661=665=663=668,data=0.639792=0.639792=0.639792=0.639792=1=0.639792
+__rec=node,id=412,attr=32,data=GEN_LIN_RECUR_Kokkos Kokkos Lambda -- BODY1,parent=398
+__rec=ctx,ref=412=669,attr=655=658=661=665=663=668,data=0.148525=0.148525=0.148525=0.148525=1=0.148525
+__rec=node,id=540,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=530
+__rec=ctx,ref=540=669,attr=655=658=661=665=663=668,data=0.000356=0.000356=0.000356=0.000356=1=0.000356
+__rec=node,id=157,attr=32,data=Stream_DOT:Base_Seq
+__rec=ctx,ref=157=669,attr=655=658=661=665=663=668,data=3.293563=3.293563=3.293563=3.293563=1=3.293563
+__rec=node,id=286,attr=32,data=Basic_ATOMIC_PI:RAJA_Seq
+__rec=ctx,ref=286=669,attr=655=658=661=665=663=668,data=0.180493=0.180493=0.180493=0.180493=1=0.180493
+__rec=node,id=414,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=403
+__rec=ctx,ref=414=669,attr=655=658=661=665=663=668,data=0.000344=0.000344=0.000344=0.000344=1=0.000344
+__rec=node,id=542,attr=32,data=INT_PREDICT_Kokkos Kokkos_Lambda,parent=528
+__rec=ctx,ref=542=669,attr=655=658=661=665=663=668,data=0.157973=0.157973=0.157973=0.157973=1=0.157973
+__rec=node,id=159,attr=32,data=Apps_LTIMES:RAJA_Seq
+__rec=ctx,ref=159=669,attr=655=658=661=665=663=668,data=1.858030=1.858030=1.858030=1.858030=1=1.858030
+__rec=node,id=288,attr=32,data=Lcals_FIRST_MIN:RAJA_Seq
+__rec=ctx,ref=288=669,attr=655=658=661=665=663=668,data=0.093962=0.093962=0.093962=0.093962=1=0.093962
+__rec=node,id=416,attr=32,data=GEN_LIN_RECUR_Kokkos Kokkos Lambda -- BODY2,parent=398
+__rec=ctx,ref=416=669,attr=655=658=661=665=663=668,data=0.147622=0.147622=0.147622=0.147622=1=0.147622
+__rec=node,id=544,attr=32,data=MULTISUB-KokkosSeq Kokkos_Lambda,parent=530
+__rec=ctx,ref=544=669,attr=655=658=661=665=663=668,data=0.104036=0.104036=0.104036=0.104036=1=0.104036
+__rec=node,id=161,attr=32,data=Lcals_EOS:Base_Seq
+__rec=ctx,ref=161=669,attr=655=658=661=665=663=668,data=0.979655=0.979655=0.979655=0.979655=1=0.979655
+__rec=node,id=290,attr=32,data=Stream_TRIAD:Lambda_Seq
+__rec=ctx,ref=290=669,attr=655=658=661=665=663=668,data=0.640292=0.640292=0.640292=0.640292=1=0.640292
+__rec=node,id=418,attr=32,data=INIT3-Kokkos Kokkos_Lambda,parent=403
+__rec=ctx,ref=418=669,attr=655=658=661=665=663=668,data=0.148420=0.148420=0.148420=0.148420=1=0.148420
+__rec=node,id=546,attr=32,data=Lcals_PLANCKIAN:Base_Seq
+__rec=ctx,ref=546=669,attr=655=658=661=665=663=668,data=1.227552=1.227552=1.227552=1.227552=1=1.227552
+__rec=node,id=163,attr=32,data=Stream_DOT:Lambda_Seq
+__rec=ctx,ref=163=669,attr=655=658=661=665=663=668,data=3.292093=3.292093=3.292093=3.292093=1=3.292093
+__rec=node,id=292,attr=32,data=Basic_ATOMIC_PI:Base_CUDA
+__rec=ctx,ref=292=669,attr=655=658=661=665=663=668,data=0.365490=0.365490=0.365490=0.365490=1=0.365490
+__rec=node,id=420,attr=32,data=Lcals_HYDRO_1D:Base_Seq
+__rec=ctx,ref=420=669,attr=655=658=661=665=663=668,data=1.063346=1.063346=1.063346=1.063346=1=1.063346
+__rec=node,id=548,attr=32,data=Basic_NESTED_INIT:Base_Seq
+__rec=ctx,ref=548=669,attr=655=658=661=665=663=668,data=1.186890=1.186890=1.186890=1.186890=1=1.186890
+__rec=node,id=165,attr=32,data=Apps_LTIMES:Base_CUDA
+__rec=ctx,ref=165=669,attr=655=658=661=665=663=668,data=0.015713=0.015713=0.015713=0.015713=1=0.015713
+__rec=node,id=294,attr=32,data=Lcals_FIRST_MIN:Base_CUDA
+__rec=ctx,ref=294=669,attr=655=658=661=665=663=668,data=0.007322=0.007322=0.007322=0.007322=1=0.007322
+__rec=node,id=422,attr=32,data=Basic_INIT_VIEW1D:Base_Seq
+__rec=ctx,ref=422=669,attr=655=658=661=665=663=668,data=1.850074=1.850074=1.850074=1.850074=1=1.850074
+__rec=node,id=550,attr=32,data=Lcals_PLANCKIAN:Lambda_Seq
+__rec=ctx,ref=550=669,attr=655=658=661=665=663=668,data=1.227499=1.227499=1.227499=1.227499=1=1.227499
+__rec=node,id=167,attr=32,data=Lcals_EOS:Lambda_Seq
+__rec=ctx,ref=167=669,attr=655=658=661=665=663=668,data=0.979841=0.979841=0.979841=0.979841=1=0.979841
+__rec=node,id=296,attr=32,data=Stream_TRIAD:RAJA_Seq
+__rec=ctx,ref=296=669,attr=655=658=661=665=663=668,data=0.640196=0.640196=0.640196=0.640196=1=0.640196
+__rec=node,id=424,attr=32,data=Lcals_HYDRO_1D:Lambda_Seq
+__rec=ctx,ref=424=669,attr=655=658=661=665=663=668,data=1.064391=1.064391=1.064391=1.064391=1=1.064391
+__rec=node,id=552,attr=32,data=Basic_NESTED_INIT:Lambda_Seq
+__rec=ctx,ref=552=669,attr=655=658=661=665=663=668,data=1.187019=1.187019=1.187019=1.187019=1=1.187019
+__rec=node,id=169,attr=32,data=Stream_DOT:RAJA_Seq
+__rec=ctx,ref=169=669,attr=655=658=661=665=663=668,data=3.293021=3.293021=3.293021=3.293021=1=3.293021
+__rec=node,id=298,attr=32,data=Basic_ATOMIC_PI:Lambda_CUDA
+__rec=ctx,ref=298=669,attr=655=658=661=665=663=668,data=0.364673=0.364673=0.364673=0.364673=1=0.364673
+__rec=node,id=426,attr=32,data=Basic_INIT_VIEW1D:Lambda_Seq
+__rec=ctx,ref=426=669,attr=655=658=661=665=663=668,data=1.850176=1.850176=1.850176=1.850176=1=1.850176
+__rec=node,id=554,attr=32,data=Lcals_PLANCKIAN:RAJA_Seq
+__rec=ctx,ref=554=669,attr=655=658=661=665=663=668,data=1.227439=1.227439=1.227439=1.227439=1=1.227439
+__rec=node,id=171,attr=32,data=Apps_LTIMES:Lambda_CUDA
+__rec=ctx,ref=171=669,attr=655=658=661=665=663=668,data=0.019226=0.019226=0.019226=0.019226=1=0.019226
+__rec=node,id=300,attr=32,data=Lcals_FIRST_MIN:RAJA_CUDA
+__rec=ctx,ref=300=669,attr=655=658=661=665=663=668,data=0.004606=0.004606=0.004606=0.004606=1=0.004606
+__rec=node,id=428,attr=32,data=Lcals_HYDRO_1D:RAJA_Seq
+__rec=ctx,ref=428=669,attr=655=658=661=665=663=668,data=1.065823=1.065823=1.065823=1.065823=1=1.065823
+__rec=node,id=556,attr=32,data=Basic_NESTED_INIT:RAJA_Seq
+__rec=ctx,ref=556=669,attr=655=658=661=665=663=668,data=1.189873=1.189873=1.189873=1.189873=1=1.189873
+__rec=node,id=173,attr=32,data=Lcals_EOS:RAJA_Seq
+__rec=ctx,ref=173=669,attr=655=658=661=665=663=668,data=0.980935=0.980935=0.980935=0.980935=1=0.980935
+__rec=node,id=302,attr=32,data=Stream_TRIAD:Base_CUDA
+__rec=ctx,ref=302=669,attr=655=658=661=665=663=668,data=0.036945=0.036945=0.036945=0.036945=1=0.036945
+__rec=node,id=430,attr=32,data=Basic_INIT_VIEW1D:RAJA_Seq
+__rec=ctx,ref=430=669,attr=655=658=661=665=663=668,data=1.850641=1.850641=1.850641=1.850641=1=1.850641
+__rec=node,id=558,attr=32,data=Lcals_PLANCKIAN:Base_CUDA
+__rec=ctx,ref=558=669,attr=655=658=661=665=663=668,data=0.003870=0.003870=0.003870=0.003870=1=0.003870
+__rec=node,id=175,attr=32,data=Stream_DOT:Base_CUDA
+__rec=ctx,ref=175=669,attr=655=658=661=665=663=668,data=0.102069=0.102069=0.102069=0.102069=1=0.102069
+__rec=node,id=304,attr=32,data=Basic_ATOMIC_PI:RAJA_CUDA
+__rec=ctx,ref=304=669,attr=655=658=661=665=663=668,data=0.373727=0.373727=0.373727=0.373727=1=0.373727
+__rec=node,id=432,attr=32,data=Lcals_HYDRO_1D:Base_CUDA
+__rec=ctx,ref=432=669,attr=655=658=661=665=663=668,data=0.056034=0.056034=0.056034=0.056034=1=0.056034
+__rec=node,id=560,attr=32,data=Basic_NESTED_INIT:Base_CUDA
+__rec=ctx,ref=560=669,attr=655=658=661=665=663=668,data=0.040230=0.040230=0.040230=0.040230=1=0.040230
+__rec=node,id=177,attr=32,data=Apps_LTIMES:RAJA_CUDA
+__rec=ctx,ref=177=669,attr=655=658=661=665=663=668,data=0.019601=0.019601=0.019601=0.019601=1=0.019601
+__rec=node,id=306,attr=32,data=Lcals_FIRST_MIN:Kokkos_Lambda
+__rec=ctx,ref=306=669,attr=655=658=661=665=663=668,data=0.013250=0.013250=0.013250=0.013250=1=0.013250
+__rec=node,id=434,attr=32,data=Basic_INIT_VIEW1D:Base_CUDA
+__rec=ctx,ref=434=669,attr=655=658=661=665=663=668,data=0.033855=0.033855=0.033855=0.033855=1=0.033855
+__rec=node,id=562,attr=32,data=Lcals_PLANCKIAN:RAJA_CUDA
+__rec=ctx,ref=562=669,attr=655=658=661=665=663=668,data=0.003678=0.003678=0.003678=0.003678=1=0.003678
+__rec=node,id=179,attr=32,data=Lcals_EOS:Base_CUDA
+__rec=ctx,ref=179=669,attr=655=658=661=665=663=668,data=0.023795=0.023795=0.023795=0.023795=1=0.023795
+__rec=node,id=308,attr=32,data=Stream_TRIAD:Lambda_CUDA
+__rec=ctx,ref=308=669,attr=655=658=661=665=663=668,data=0.036651=0.036651=0.036651=0.036651=1=0.036651
+__rec=node,id=436,attr=32,data=Lcals_HYDRO_1D:RAJA_CUDA
+__rec=ctx,ref=436=669,attr=655=658=661=665=663=668,data=0.055910=0.055910=0.055910=0.055910=1=0.055910
+__rec=node,id=564,attr=32,data=Basic_NESTED_INIT:Lambda_CUDA
+__rec=ctx,ref=564=669,attr=655=658=661=665=663=668,data=0.040276=0.040276=0.040276=0.040276=1=0.040276
+__rec=node,id=181,attr=32,data=Stream_DOT:RAJA_CUDA
+__rec=ctx,ref=181=669,attr=655=658=661=665=663=668,data=0.081600=0.081600=0.081600=0.081600=1=0.081600
+__rec=node,id=310,attr=32,data=Basic_ATOMIC_PI:Kokkos_Lambda
+__rec=ctx,ref=310=669,attr=655=658=661=665=663=668,data=3.988739=3.988739=3.988739=3.988739=1=3.988739
+__rec=node,id=438,attr=32,data=Basic_INIT_VIEW1D:Lambda_CUDA
+__rec=ctx,ref=438=669,attr=655=658=661=665=663=668,data=0.033772=0.033772=0.033772=0.033772=1=0.033772
+__rec=node,id=566,attr=32,data=Lcals_PLANCKIAN:Kokkos_Lambda
+__rec=ctx,ref=566=669,attr=655=658=661=665=663=668,data=0.029269=0.029269=0.029269=0.029269=1=0.029269
+__rec=node,id=183,attr=32,data=Apps_LTIMES_NOVIEW:Base_Seq
+__rec=ctx,ref=183=669,attr=655=658=661=665=663=668,data=1.752317=1.752317=1.752317=1.752317=1=1.752317
+__rec=node,id=440,attr=32,data=Lcals_HYDRO_1D:Kokkos_Lambda
+__rec=ctx,ref=440=669,attr=655=658=661=665=663=668,data=0.665198=0.665198=0.665198=0.665198=1=0.665198
+__rec=node,id=568,attr=32,data=Basic_NESTED_INIT:RAJA_CUDA
+__rec=ctx,ref=568=669,attr=655=658=661=665=663=668,data=0.040253=0.040253=0.040253=0.040253=1=0.040253
+__rec=node,id=185,attr=32,data=Lcals_EOS:RAJA_CUDA
+__rec=ctx,ref=185=669,attr=655=658=661=665=663=668,data=0.023932=0.023932=0.023932=0.023932=1=0.023932
+__rec=node,id=313,attr=32,data=Stream_TRIAD:RAJA_CUDA
+__rec=ctx,ref=313=669,attr=655=658=661=665=663=668,data=0.036641=0.036641=0.036641=0.036641=1=0.036641
+__rec=node,id=442,attr=32,data=Basic_INIT_VIEW1D:RAJA_CUDA
+__rec=ctx,ref=442=669,attr=655=658=661=665=663=668,data=0.033478=0.033478=0.033478=0.033478=1=0.033478
+__rec=node,id=187,attr=32,data=Stream_DOT:Kokkos_Lambda
+__rec=ctx,ref=187=669,attr=655=658=661=665=663=668,data=0.184148=0.184148=0.184148=0.184148=1=0.184148
+__rec=node,id=571,attr=32,data=Basic_NESTED_INIT:Kokkos_Lambda
+__rec=ctx,ref=571=669,attr=655=658=661=665=663=668,data=0.221109=0.221109=0.221109=0.221109=1=0.221109
+__rec=node,id=316,attr=32,data=Kokkos::View::initialization [StringName],parent=306
+__rec=ctx,ref=316=669,attr=655=658=661=665=663=668,data=0.000072=0.000072=0.000072=0.000072=1=0.000072
+__rec=node,id=189,attr=32,data=Apps_LTIMES_NOVIEW:Lambda_Seq
+__rec=ctx,ref=189=669,attr=655=658=661=665=663=668,data=1.750704=1.750704=1.750704=1.750704=1=1.750704
+__rec=node,id=445,attr=32,data=Basic_INIT_VIEW1D:Kokkos_Lambda
+__rec=ctx,ref=445=669,attr=655=658=661=665=663=668,data=0.305735=0.305735=0.305735=0.305735=1=0.305735
+__rec=node,id=573,attr=32,data=Kokkos::View::initialization [StringName],parent=566
+__rec=ctx,ref=573=669,attr=655=658=661=665=663=668,data=0.000206=0.000206=0.000206=0.000206=1=0.000206
+__rec=node,id=318,attr=32,data=Stream_TRIAD:Kokkos_Lambda
+__rec=ctx,ref=318=669,attr=655=658=661=665=663=668,data=0.091240=0.091240=0.091240=0.091240=1=0.091240
+__rec=node,id=191,attr=32,data=Lcals_EOS:Kokkos_Lambda
+__rec=ctx,ref=191=669,attr=655=658=661=665=663=668,data=0.272451=0.272451=0.272451=0.272451=1=0.272451
+__rec=node,id=447,attr=32,data=Kokkos::View::initialization [StringName],parent=440
+__rec=ctx,ref=447=669,attr=655=658=661=665=663=668,data=0.000127=0.000127=0.000127=0.000127=1=0.000127
+__rec=node,id=320,attr=32,data=Kokkos::View::initialization [StringName],parent=310
+__rec=ctx,ref=320=669,attr=655=658=661=665=663=668,data=0.351871=0.351871=0.351871=0.351871=1=0.351871
+__rec=node,id=576,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=566
+__rec=ctx,ref=576=669,attr=655=658=661=665=663=668,data=0.000322=0.000322=0.000322=0.000322=1=0.000322
+__rec=node,id=194,attr=32,data=Apps_LTIMES_NOVIEW:RAJA_Seq
+__rec=ctx,ref=194=669,attr=655=658=661=665=663=668,data=1.861122=1.861122=1.861122=1.861122=1=1.861122
+__rec=node,id=322,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=306
+__rec=ctx,ref=322=669,attr=655=658=661=665=663=668,data=0.000860=0.000860=0.000860=0.000860=1=0.000860
+__rec=node,id=450,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=440
+__rec=ctx,ref=450=669,attr=655=658=661=665=663=668,data=0.000211=0.000211=0.000211=0.000211=1=0.000211
+__rec=node,id=578,attr=32,data=Kokkos::View::initialization [StringName],parent=571
+__rec=ctx,ref=578=669,attr=655=658=661=665=663=668,data=0.000358=0.000358=0.000358=0.000358=1=0.000358
+__rec=node,id=452,attr=32,data=Kokkos::View::initialization [StringName],parent=445
+__rec=ctx,ref=452=669,attr=655=658=661=665=663=668,data=0.000056=0.000056=0.000056=0.000056=1=0.000056
+__rec=node,id=580,attr=32,data=PLANCKIAN_Kokkos Kokkos_Lambda,parent=566
+__rec=ctx,ref=580=669,attr=655=658=661=665=663=668,data=0.014002=0.014002=0.014002=0.014002=1=0.014002
+__rec=node,id=197,attr=32,data=Kokkos::View::initialization [StringName],parent=187
+__rec=ctx,ref=197=669,attr=655=658=661=665=663=668,data=0.000141=0.000141=0.000141=0.000141=1=0.000141
+__rec=node,id=325,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=310
+__rec=ctx,ref=325=669,attr=655=658=661=665=663=668,data=0.361531=0.361531=0.361531=0.361531=1=0.361531
+__rec=node,id=454,attr=32,data=HYDRO_1D_Kokkos Kokkos_Lambda,parent=440
+__rec=ctx,ref=454=669,attr=655=658=661=665=663=668,data=0.369104=0.369104=0.369104=0.369104=1=0.369104
+__rec=node,id=582,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=571
+__rec=ctx,ref=582=669,attr=655=658=661=665=663=668,data=0.016743=0.016743=0.016743=0.016743=1=0.016743
+__rec=node,id=199,attr=32,data=Apps_LTIMES_NOVIEW:Base_CUDA
+__rec=ctx,ref=199=669,attr=655=658=661=665=663=668,data=0.015669=0.015669=0.015669=0.015669=1=0.015669
+__rec=node,id=328,attr=32,data=Kokkos::View::initialization [StringName],parent=318
+__rec=ctx,ref=328=669,attr=655=658=661=665=663=668,data=0.000218=0.000218=0.000218=0.000218=1=0.000218
+__rec=node,id=456,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=445
+__rec=ctx,ref=456=669,attr=655=658=661=665=663=668,data=0.000418=0.000418=0.000418=0.000418=1=0.000418
+__rec=node,id=584,attr=32,data=Lcals_TRIDIAG_ELIM:Base_Seq
+__rec=ctx,ref=584=669,attr=655=658=661=665=663=668,data=0.696334=0.696334=0.696334=0.696334=1=0.696334
+__rec=node,id=201,attr=32,data=Kokkos::View::initialization [StringName],parent=191
+__rec=ctx,ref=201=669,attr=655=658=661=665=663=668,data=0.000168=0.000168=0.000168=0.000168=1=0.000168
+__rec=node,id=330,attr=32,data=ATOMIC_PI-Kokkos Kokkos_Lambda,parent=310
+__rec=ctx,ref=330=669,attr=655=658=661=665=663=668,data=0.341852=0.341852=0.341852=0.341852=1=0.341852
+__rec=node,id=458,attr=32,data=Lcals_HYDRO_2D:Base_Seq
+__rec=ctx,ref=458=669,attr=655=658=661=665=663=668,data=2.796564=2.796564=2.796564=2.796564=1=2.796564
+__rec=node,id=586,attr=32,data=Kokkos::ViewCopy-3D,parent=571
+__rec=ctx,ref=586=669,attr=655=658=661=665=663=668,data=0.141955=0.141955=0.141955=0.141955=1=0.141955
+__rec=node,id=203,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=187
+__rec=ctx,ref=203=669,attr=655=658=661=665=663=668,data=0.000686=0.000686=0.000686=0.000686=1=0.000686
+__rec=node,id=332,attr=32,data=FIRST_MIN_Kokkos Kokkos_Lambda,parent=306
+__rec=ctx,ref=332=669,attr=655=658=661=665=663=668,data=0.006807=0.006807=0.006807=0.006807=1=0.006807
+__rec=node,id=460,attr=32,data=INIT_VIEW1D_Kokkos Kokkos_Lambda,parent=445
+__rec=ctx,ref=460=669,attr=655=658=661=665=663=668,data=0.194777=0.194777=0.194777=0.194777=1=0.194777
+__rec=node,id=588,attr=32,data=Lcals_TRIDIAG_ELIM:Lambda_Seq
+__rec=ctx,ref=588=669,attr=655=658=661=665=663=668,data=0.696087=0.696087=0.696087=0.696087=1=0.696087
+__rec=node,id=205,attr=32,data=Apps_LTIMES_NOVIEW:Lambda_CUDA
+__rec=ctx,ref=205=669,attr=655=658=661=665=663=668,data=0.019211=0.019211=0.019211=0.019211=1=0.019211
+__rec=node,id=334,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=318
+__rec=ctx,ref=334=669,attr=655=658=661=665=663=668,data=0.001603=0.001603=0.001603=0.001603=1=0.001603
+__rec=node,id=462,attr=32,data=Lcals_HYDRO_2D:Lambda_Seq
+__rec=ctx,ref=462=669,attr=655=658=661=665=663=668,data=2.798026=2.798026=2.798026=2.798026=1=2.798026
+__rec=node,id=590,attr=32,data=NESTED_INIT KokkosSeq,parent=571
+__rec=ctx,ref=590=669,attr=655=658=661=665=663=668,data=0.038175=0.038175=0.038175=0.038175=1=0.038175
+__rec=node,id=207,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=191
+__rec=ctx,ref=207=669,attr=655=658=661=665=663=668,data=0.000280=0.000280=0.000280=0.000280=1=0.000280
+__rec=node,id=336,attr=32,data=Basic_IF_QUAD:Base_Seq
+__rec=ctx,ref=336=669,attr=655=658=661=665=663=668,data=1.883588=1.883588=1.883588=1.883588=1=1.883588
+__rec=node,id=464,attr=32,data=Basic_INIT_VIEW1D_OFFSET:Base_Seq
+__rec=ctx,ref=464=669,attr=655=658=661=665=663=668,data=1.719481=1.719481=1.719481=1.719481=1=1.719481
+__rec=node,id=592,attr=32,data=Lcals_TRIDIAG_ELIM:RAJA_Seq
+__rec=ctx,ref=592=669,attr=655=658=661=665=663=668,data=0.696466=0.696466=0.696466=0.696466=1=0.696466
+__rec=node,id=210,attr=32,data=Apps_LTIMES_NOVIEW:RAJA_CUDA
+__rec=ctx,ref=210=669,attr=655=658=661=665=663=668,data=0.019557=0.019557=0.019557=0.019557=1=0.019557
+__rec=node,id=338,attr=32,data=Lcals_FIRST_SUM:Base_Seq
+__rec=ctx,ref=338=669,attr=655=658=661=665=663=668,data=0.844684=0.844684=0.844684=0.844684=1=0.844684
+__rec=node,id=466,attr=32,data=Lcals_HYDRO_2D:RAJA_Seq
+__rec=ctx,ref=466=669,attr=655=658=661=665=663=668,data=2.820956=2.820956=2.820956=2.820956=1=2.820956
+__rec=node,id=594,attr=32,data=Basic_REDUCE3_INT:Base_Seq
+__rec=ctx,ref=594=669,attr=655=658=661=665=663=668,data=0.038130=0.038130=0.038130=0.038130=1=0.038130
+__rec=node,id=212,attr=32,data=EOS_Kokkos Kokkos_Lambda,parent=191
+__rec=ctx,ref=212=669,attr=655=658=661=665=663=668,data=0.148336=0.148336=0.148336=0.148336=1=0.148336
+__rec=node,id=340,attr=32,data=TRIAD_Kokkos\, Kokkos_Lambda,parent=318
+__rec=ctx,ref=340=669,attr=655=658=661=665=663=668,data=0.056979=0.056979=0.056979=0.056979=1=0.056979
+__rec=node,id=468,attr=32,data=Basic_INIT_VIEW1D_OFFSET:Lambda_Seq
+__rec=ctx,ref=468=669,attr=655=658=661=665=663=668,data=1.719355=1.719355=1.719355=1.719355=1=1.719355
+__rec=node,id=596,attr=32,data=Lcals_TRIDIAG_ELIM:Base_CUDA
+__rec=ctx,ref=596=669,attr=655=658=661=665=663=668,data=0.036997=0.036997=0.036997=0.036997=1=0.036997
+__rec=node,id=214,attr=32,data=DOT-Kokkos Kokkos_Lambda,parent=187
+__rec=ctx,ref=214=669,attr=655=658=661=665=663=668,data=0.125236=0.125236=0.125236=0.125236=1=0.125236
+__rec=node,id=342,attr=32,data=Basic_IF_QUAD:Lambda_Seq
+__rec=ctx,ref=342=669,attr=655=658=661=665=663=668,data=1.891616=1.891616=1.891616=1.891616=1=1.891616
+__rec=node,id=470,attr=32,data=Lcals_HYDRO_2D:Base_CUDA
+__rec=ctx,ref=470=669,attr=655=658=661=665=663=668,data=0.060898=0.060898=0.060898=0.060898=1=0.060898
+__rec=node,id=598,attr=32,data=Basic_REDUCE3_INT:Lambda_Seq
+__rec=ctx,ref=598=669,attr=655=658=661=665=663=668,data=0.038056=0.038056=0.038056=0.038056=1=0.038056
+__rec=node,id=216,attr=32,data=Apps_PRESSURE:Base_Seq
+__rec=ctx,ref=216=669,attr=655=658=661=665=663=668,data=1.704831=1.704831=1.704831=1.704831=1=1.704831
+__rec=node,id=344,attr=32,data=Lcals_FIRST_SUM:Lambda_Seq
+__rec=ctx,ref=344=669,attr=655=658=661=665=663=668,data=0.844413=0.844413=0.844413=0.844413=1=0.844413
+__rec=node,id=472,attr=32,data=Basic_INIT_VIEW1D_OFFSET:RAJA_Seq
+__rec=ctx,ref=472=669,attr=655=658=661=665=663=668,data=3.610965=3.610965=3.610965=3.610965=1=3.610965
+__rec=node,id=600,attr=32,data=Lcals_TRIDIAG_ELIM:RAJA_CUDA
+__rec=ctx,ref=600=669,attr=655=658=661=665=663=668,data=0.037862=0.037862=0.037862=0.037862=1=0.037862
+__rec=node,id=218,attr=32,data=Lcals_FIRST_DIFF:Base_Seq
+__rec=ctx,ref=218=669,attr=655=658=661=665=663=668,data=0.848317=0.848317=0.848317=0.848317=1=0.848317
+__rec=node,id=346,attr=32,data=Basic_IF_QUAD:RAJA_Seq
+__rec=ctx,ref=346=669,attr=655=658=661=665=663=668,data=1.889964=1.889964=1.889964=1.889964=1=1.889964
+__rec=node,id=474,attr=32,data=Lcals_HYDRO_2D:RAJA_CUDA
+__rec=ctx,ref=474=669,attr=655=658=661=665=663=668,data=0.064773=0.064773=0.064773=0.064773=1=0.064773
+__rec=node,id=602,attr=32,data=Basic_REDUCE3_INT:RAJA_Seq
+__rec=ctx,ref=602=669,attr=655=658=661=665=663=668,data=0.372590=0.372590=0.372590=0.372590=1=0.372590
+__rec=node,id=220,attr=32,data=Stream_MUL:Base_Seq
+__rec=ctx,ref=220=669,attr=655=658=661=665=663=668,data=0.943877=0.943877=0.943877=0.943877=1=0.943877
+__rec=node,id=348,attr=32,data=Lcals_FIRST_SUM:RAJA_Seq
+__rec=ctx,ref=348=669,attr=655=658=661=665=663=668,data=0.847979=0.847979=0.847979=0.847979=1=0.847979
+__rec=node,id=476,attr=32,data=Basic_INIT_VIEW1D_OFFSET:Base_CUDA
+__rec=ctx,ref=476=669,attr=655=658=661=665=663=668,data=0.031275=0.031275=0.031275=0.031275=1=0.031275
+__rec=node,id=604,attr=32,data=Lcals_TRIDIAG_ELIM:Kokkos_Lambda
+__rec=ctx,ref=604=669,attr=655=658=661=665=663=668,data=0.289271=0.289271=0.289271=0.289271=1=0.289271
+__rec=node,id=222,attr=32,data=Apps_PRESSURE:Lambda_Seq
+__rec=ctx,ref=222=669,attr=655=658=661=665=663=668,data=1.580392=1.580392=1.580392=1.580392=1=1.580392
+__rec=node,id=350,attr=32,data=Basic_IF_QUAD:Base_CUDA
+__rec=ctx,ref=350=669,attr=655=658=661=665=663=668,data=0.011770=0.011770=0.011770=0.011770=1=0.011770
+__rec=node,id=478,attr=32,data=Lcals_HYDRO_2D:Kokkos_Lambda
+__rec=ctx,ref=478=669,attr=655=658=661=665=663=668,data=0.138156=0.138156=0.138156=0.138156=1=0.138156
+__rec=node,id=606,attr=32,data=Basic_REDUCE3_INT:Base_CUDA
+__rec=ctx,ref=606=669,attr=655=658=661=665=663=668,data=0.010997=0.010997=0.010997=0.010997=1=0.010997
+__rec=node,id=224,attr=32,data=Lcals_FIRST_DIFF:Lambda_Seq
+__rec=ctx,ref=224=669,attr=655=658=661=665=663=668,data=0.848917=0.848917=0.848917=0.848917=1=0.848917
+__rec=node,id=352,attr=32,data=Lcals_FIRST_SUM:Base_CUDA
+__rec=ctx,ref=352=669,attr=655=658=661=665=663=668,data=0.071056=0.071056=0.071056=0.071056=1=0.071056
+__rec=node,id=480,attr=32,data=Basic_INIT_VIEW1D_OFFSET:Lambda_CUDA
+__rec=ctx,ref=480=669,attr=655=658=661=665=663=668,data=0.031261=0.031261=0.031261=0.031261=1=0.031261
+__rec=node,id=609,attr=32,data=Basic_REDUCE3_INT:RAJA_CUDA
+__rec=ctx,ref=609=669,attr=655=658=661=665=663=668,data=0.011924=0.011924=0.011924=0.011924=1=0.011924
+__rec=node,id=226,attr=32,data=Stream_MUL:Lambda_Seq
+__rec=ctx,ref=226=669,attr=655=658=661=665=663=668,data=0.957268=0.957268=0.957268=0.957268=1=0.957268
+__rec=node,id=354,attr=32,data=Basic_IF_QUAD:Lambda_CUDA
+__rec=ctx,ref=354=669,attr=655=658=661=665=663=668,data=0.012242=0.012242=0.012242=0.012242=1=0.012242
+__rec=node,id=483,attr=32,data=Basic_INIT_VIEW1D_OFFSET:RAJA_CUDA
+__rec=ctx,ref=483=669,attr=655=658=661=665=663=668,data=0.031086=0.031086=0.031086=0.031086=1=0.031086
+__rec=node,id=611,attr=32,data=Kokkos::View::initialization [StringName],parent=604
+__rec=ctx,ref=611=669,attr=655=658=661=665=663=668,data=0.000185=0.000185=0.000185=0.000185=1=0.000185
+__rec=node,id=228,attr=32,data=Apps_PRESSURE:RAJA_Seq
+__rec=ctx,ref=228=669,attr=655=658=661=665=663=668,data=1.580107=1.580107=1.580107=1.580107=1=1.580107
+__rec=node,id=356,attr=32,data=Lcals_FIRST_SUM:RAJA_CUDA
+__rec=ctx,ref=356=669,attr=655=658=661=665=663=668,data=0.070864=0.070864=0.070864=0.070864=1=0.070864
+__rec=node,id=485,attr=32,data=Kokkos::View::initialization [StringName],parent=478
+__rec=ctx,ref=485=669,attr=655=658=661=665=663=668,data=0.000805=0.000805=0.000805=0.000805=1=0.000805
+__rec=node,id=613,attr=32,data=Basic_REDUCE3_INT:Kokkos_Lambda
+__rec=ctx,ref=613=669,attr=655=658=661=665=663=668,data=0.010060=0.010060=0.010060=0.010060=1=0.010060
+__rec=node,id=230,attr=32,data=Lcals_FIRST_DIFF:RAJA_Seq
+__rec=ctx,ref=230=669,attr=655=658=661=665=663=668,data=0.848055=0.848055=0.848055=0.848055=1=0.848055
+__rec=node,id=358,attr=32,data=Basic_IF_QUAD:RAJA_CUDA
+__rec=ctx,ref=358=669,attr=655=658=661=665=663=668,data=0.012247=0.012247=0.012247=0.012247=1=0.012247
+__rec=node,id=487,attr=32,data=Basic_INIT_VIEW1D_OFFSET:Kokkos_Lambda
+__rec=ctx,ref=487=669,attr=655=658=661=665=663=668,data=0.302510=0.302510=0.302510=0.302510=1=0.302510
+__rec=node,id=615,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=604
+__rec=ctx,ref=615=669,attr=655=658=661=665=663=668,data=0.000357=0.000357=0.000357=0.000357=1=0.000357
+__rec=node,id=232,attr=32,data=Stream_MUL:RAJA_Seq
+__rec=ctx,ref=232=669,attr=655=658=661=665=663=668,data=0.959973=0.959973=0.959973=0.959973=1=0.959973
+__rec=node,id=360,attr=32,data=Lcals_FIRST_SUM:Kokkos_Lambda
+__rec=ctx,ref=360=669,attr=655=658=661=665=663=668,data=0.833935=0.833935=0.833935=0.833935=1=0.833935
+__rec=node,id=489,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=478
+__rec=ctx,ref=489=669,attr=655=658=661=665=663=668,data=0.004175=0.004175=0.004175=0.004175=1=0.004175
+__rec=node,id=234,attr=32,data=Apps_PRESSURE:Base_CUDA
+__rec=ctx,ref=234=669,attr=655=658=661=665=663=668,data=0.063739=0.063739=0.063739=0.063739=1=0.063739
+__rec=node,id=362,attr=32,data=Basic_IF_QUAD:Kokkos_Lambda
+__rec=ctx,ref=362=669,attr=655=658=661=665=663=668,data=0.102427=0.102427=0.102427=0.102427=1=0.102427
+__rec=node,id=618,attr=32,data=TRIDIAG_ELIM_Kokkos Kokkos_Lambda,parent=604
+__rec=ctx,ref=618=669,attr=655=658=661=665=663=668,data=0.161668=0.161668=0.161668=0.161668=1=0.161668
+__rec=node,id=236,attr=32,data=Lcals_FIRST_DIFF:Base_CUDA
+__rec=ctx,ref=236=669,attr=655=658=661=665=663=668,data=0.070849=0.070849=0.070849=0.070849=1=0.070849
+__rec=node,id=492,attr=32,data=Kokkos::ViewCopy-2D,parent=478
+__rec=ctx,ref=492=669,attr=655=658=661=665=663=668,data=0.036018=0.036018=0.036018=0.036018=1=0.036018
+__rec=node,id=620,attr=32,data=Kokkos::View::initialization [StringName],parent=613
+__rec=ctx,ref=620=669,attr=655=658=661=665=663=668,data=0.000106=0.000106=0.000106=0.000106=1=0.000106
+__rec=node,id=238,attr=32,data=Stream_MUL:Base_CUDA
+__rec=ctx,ref=238=669,attr=655=658=661=665=663=668,data=0.044658=0.044658=0.044658=0.044658=1=0.044658
+__rec=node,id=366,attr=32,data=Kokkos::View::initialization [StringName],parent=360
+__rec=ctx,ref=366=669,attr=655=658=661=665=663=668,data=0.000086=0.000086=0.000086=0.000086=1=0.000086
+__rec=node,id=494,attr=32,data=Kokkos::View::initialization [StringName],parent=487
+__rec=ctx,ref=494=669,attr=655=658=661=665=663=668,data=0.000060=0.000060=0.000060=0.000060=1=0.000060
+__rec=node,id=622,attr=32,data=Stream_ADD:Base_Seq
+__rec=ctx,ref=622=669,attr=655=658=661=665=663=668,data=0.687712=0.687712=0.687712=0.687712=1=0.687712
+__rec=node,id=240,attr=32,data=Apps_PRESSURE:RAJA_CUDA
+__rec=ctx,ref=240=669,attr=655=658=661=665=663=668,data=0.063376=0.063376=0.063376=0.063376=1=0.063376
+__rec=node,id=368,attr=32,data=Kokkos::View::initialization [StringName],parent=362
+__rec=ctx,ref=368=669,attr=655=658=661=665=663=668,data=0.000211=0.000211=0.000211=0.000211=1=0.000211
+__rec=node,id=496,attr=32,data=HYDRO_2D_Kokkos Kokkos_Lambda--BODY1,parent=478
+__rec=ctx,ref=496=669,attr=655=658=661=665=663=668,data=0.019131=0.019131=0.019131=0.019131=1=0.019131
+__rec=node,id=624,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=613
+__rec=ctx,ref=624=669,attr=655=658=661=665=663=668,data=0.000342=0.000342=0.000342=0.000342=1=0.000342
+__rec=node,id=242,attr=32,data=Lcals_FIRST_DIFF:RAJA_CUDA
+__rec=ctx,ref=242=669,attr=655=658=661=665=663=668,data=0.070463=0.070463=0.070463=0.070463=1=0.070463
+__rec=node,id=370,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=360
+__rec=ctx,ref=370=669,attr=655=658=661=665=663=668,data=0.000151=0.000151=0.000151=0.000151=1=0.000151
+__rec=node,id=498,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=487
+__rec=ctx,ref=498=669,attr=655=658=661=665=663=668,data=0.000293=0.000293=0.000293=0.000293=1=0.000293
+__rec=node,id=626,attr=32,data=Stream_ADD:Lambda_Seq
+__rec=ctx,ref=626=669,attr=655=658=661=665=663=668,data=0.687649=0.687649=0.687649=0.687649=1=0.687649
+__rec=node,id=244,attr=32,data=Stream_MUL:Lambda_CUDA
+__rec=ctx,ref=244=669,attr=655=658=661=665=663=668,data=0.044383=0.044383=0.044383=0.044383=1=0.044383
+__rec=node,id=372,attr=32,data=Kokkos::View::initialization [StringName_mirror],parent=362
+__rec=ctx,ref=372=669,attr=655=658=661=665=663=668,data=0.000339=0.000339=0.000339=0.000339=1=0.000339
+__rec=node,id=500,attr=32,data=HYDRO_2D_Kokkos Kokkos_Lambda--BODY2,parent=478
+__rec=ctx,ref=500=669,attr=655=658=661=665=663=668,data=0.022423=0.022423=0.022423=0.022423=1=0.022423
+__rec=node,id=629,attr=32,data=Stream_ADD:RAJA_Seq
+__rec=ctx,ref=629=669,attr=655=658=661=665=663=668,data=0.688221=0.688221=0.688221=0.688221=1=0.688221
+__rec=node,id=246,attr=32,data=Apps_VOL3D:Base_Seq
+__rec=ctx,ref=246=669,attr=655=658=661=665=663=668,data=1.284044=1.284044=1.284044=1.284044=1=1.284044
+__rec=node,id=374,attr=32,data=FIRST_SUM_Kokkos Kokkos_Lambda,parent=360
+__rec=ctx,ref=374=669,attr=655=658=661=665=663=668,data=0.469881=0.469881=0.469881=0.469881=1=0.469881
+__rec=node,id=502,attr=32,data=INIT_VIEW1D_OFFSET_Kokkos Kokkos_Lambda,parent=487
+__rec=ctx,ref=502=669,attr=655=658=661=665=663=668,data=0.190499=0.190499=0.190499=0.190499=1=0.190499
+__rec=node,id=631,attr=32,data=REDUCE3-Kokkos Kokkos_Lambda,parent=613
+__rec=ctx,ref=631=669,attr=655=658=661=665=663=668,data=0.004707=0.004707=0.004707=0.004707=1=0.004707
+__rec=ctx,ref=248=669,attr=655=658=661=665=663=668,data=0.837812=0.837812=0.837812=0.837812=1=0.837812
+__rec=node,id=376,attr=32,data=IF_QUAD_Kokkos Kokkos_Lambda,parent=362
+__rec=ctx,ref=376=669,attr=655=658=661=665=663=668,data=0.053947=0.053947=0.053947=0.053947=1=0.053947
+__rec=node,id=504,attr=32,data=HYDRO_2D_Kokkos Kokkos_Lambda--BODY3,parent=478
+__rec=ctx,ref=504=669,attr=655=658=661=665=663=668,data=0.018467=0.018467=0.018467=0.018467=1=0.018467
+__rec=node,id=633,attr=32,data=Stream_ADD:Base_CUDA
+__rec=ctx,ref=633=669,attr=655=658=661=665=663=668,data=0.036846=0.036846=0.036846=0.036846=1=0.036846
+__rec=node,id=250,attr=32,data=Stream_MUL:RAJA_CUDA
+__rec=ctx,ref=250=669,attr=655=658=661=665=663=668,data=0.044400=0.044400=0.044400=0.044400=1=0.044400
+__rec=node,id=378,attr=32,data=Lcals_GEN_LIN_RECUR:Base_Seq
+__rec=ctx,ref=378=669,attr=655=658=661=665=663=668,data=1.199000=1.199000=1.199000=1.199000=1=1.199000
+__rec=node,id=506,attr=32,data=Basic_MULADDSUB:Base_Seq
+__rec=ctx,ref=506=669,attr=655=658=661=665=663=668,data=0.389643=0.389643=0.389643=0.389643=1=0.389643
+__rec=node,id=635,attr=32,data=Basic_TRAP_INT:Base_Seq
+__rec=ctx,ref=635=669,attr=655=658=661=665=663=668,data=1.086910=1.086910=1.086910=1.086910=1=1.086910
+__rec=node,id=252,attr=32,data=Apps_VOL3D:Lambda_Seq
+__rec=ctx,ref=252=669,attr=655=658=661=665=663=668,data=1.282895=1.282895=1.282895=1.282895=1=1.282895
+__rec=node,id=380,attr=32,data=Basic_INIT3:Base_Seq
+__rec=ctx,ref=380=669,attr=655=658=661=665=663=668,data=0.398330=0.398330=0.398330=0.398330=1=0.398330
+__rec=node,id=508,attr=32,data=Lcals_INT_PREDICT:Base_Seq
+__rec=ctx,ref=508=669,attr=655=658=661=665=663=668,data=1.078117=1.078117=1.078117=1.078117=1=1.078117
+__rec=node,id=637,attr=32,data=Stream_ADD:Lambda_CUDA
+__rec=ctx,ref=637=669,attr=655=658=661=665=663=668,data=0.036590=0.036590=0.036590=0.036590=1=0.036590
+__rec=node,id=382,attr=32,data=Lcals_GEN_LIN_RECUR:Lambda_Seq
+__rec=ctx,ref=382=669,attr=655=658=661=665=663=668,data=1.198517=1.198517=1.198517=1.198517=1=1.198517
+__rec=node,id=510,attr=32,data=Basic_MULADDSUB:Lambda_Seq
+__rec=ctx,ref=510=669,attr=655=658=661=665=663=668,data=0.389681=0.389681=0.389681=0.389681=1=0.389681
+__rec=ctx,ref=255=669,attr=655=658=661=665=663=668,data=0.138425=0.138425=0.138425=0.138425=1=0.138425
+__rec=node,id=639,attr=32,data=Basic_TRAP_INT:Lambda_Seq
+__rec=ctx,ref=639=669,attr=655=658=661=665=663=668,data=1.086837=1.086837=1.086837=1.086837=1=1.086837
+__rec=node,id=780,attr=10,data=512,parent=3
+__rec=node,id=785,attr=8,data=spot.options,parent=780
+__rec=node,id=783,attr=10,data=512,parent=1
+__rec=node,id=784,attr=8,data=spot.format.version,parent=783
+__rec=node,id=782,attr=8,data=spot.timeseries.metrics,parent=780
+__rec=node,id=781,attr=8,data=spot.metrics,parent=780
+__rec=node,id=16,attr=10,data=1612,parent=3
+__rec=node,id=17,attr=8,data=cali.caliper.version,parent=16
+__rec=node,id=18,attr=17,data=2.6.0-dev
+__rec=node,id=786,attr=781,data=min#inclusive#sum#time.duration\,max#inclusive#sum#time.duration\,avg#inclusive#sum#time.duration\,sum#inclusive#sum#time.duration,parent=18
+__rec=node,id=787,attr=782,data=,parent=786
+__rec=node,id=788,attr=784,data=2,parent=787
+__rec=node,id=789,attr=785,data=profile.kokkos,parent=788
+__rec=node,id=19,attr=10,data=84,parent=3
+__rec=node,id=670,attr=8,data=adiak.subcategory,parent=19
+__rec=node,id=671,attr=10,data=84,parent=1
+__rec=node,id=672,attr=8,data=adiak.category,parent=671
+__rec=node,id=673,attr=8,data=adiak.type,parent=19
+__rec=node,id=674,attr=673,data=double,parent=5
+__rec=node,id=675,attr=672,data=2,parent=674
+__rec=node,id=676,attr=670,data=none,parent=675
+__rec=node,id=677,attr=10,data=1612,parent=676
+__rec=node,id=678,attr=8,data=size_factor,parent=677
+__rec=node,id=679,attr=8,data=replication_factor,parent=677
+__rec=node,id=680,attr=8,data=Kokkos Version,parent=677
+__rec=node,id=681,attr=673,data=string,parent=3
+__rec=node,id=682,attr=672,data=2,parent=681
+__rec=node,id=683,attr=670,data=none,parent=682
+__rec=node,id=684,attr=10,data=1612,parent=683
+__rec=node,id=685,attr=8,data=KOKKOS_ENABLE_PRAGMA_VECTOR,parent=684
+__rec=node,id=686,attr=8,data=KOKKOS_ENABLE_PRAGMA_UNROLL,parent=684
+__rec=node,id=687,attr=8,data=KOKKOS_ENABLE_PRAGMA_SIMD,parent=684
+__rec=node,id=688,attr=8,data=KOKKOS_ENABLE_PRAGMA_LOOPCOUNT,parent=684
+__rec=node,id=689,attr=8,data=KOKKOS_ENABLE_PRAGMA_IVDEP,parent=684
+__rec=node,id=690,attr=8,data=compiler_family,parent=684
+__rec=node,id=691,attr=8,data=KOKKOS_ENABLE_MPI,parent=684
+__rec=node,id=692,attr=8,data=KOKKOS_ENABLE_LIBRT,parent=684
+__rec=node,id=693,attr=8,data=KOKKOS_ENABLE_HWLOC,parent=684
+__rec=node,id=694,attr=8,data=KOKKOS_ENABLE_DEBUG_BOUNDS_CHECK,parent=684
+__rec=node,id=695,attr=8,data=KOKKOS_ENABLE_CXX20,parent=684
+__rec=node,id=696,attr=8,data=KOKKOS_ENABLE_CXX17,parent=684
+__rec=node,id=697,attr=8,data=KOKKOS_ENABLE_CXX14,parent=684
+__rec=node,id=698,attr=8,data=KOKKOS_ENABLE_ASM,parent=684
+__rec=node,id=699,attr=8,data=KOKKOS_ENABLE_POSIX_MEMALIGN,parent=684
+__rec=node,id=700,attr=8,data=KOKKOS_ENABLE_INTEL_MM_ALLOC,parent=684
+__rec=node,id=701,attr=8,data=KOKKOS_ENABLE_HBWSPACE,parent=684
+__rec=node,id=702,attr=8,data=KOKKOS_COMPILER_NVCC,parent=677
+__rec=node,id=703,attr=8,data=KOKKOS_COMPILER_GNU,parent=677
+__rec=node,id=704,attr=8,data=KOKKOS_ENABLE_WINDOWS_ATOMICS,parent=684
+__rec=node,id=705,attr=8,data=KOKKOS_ENABLE_INTEL_ATOMICS,parent=684
+__rec=node,id=706,attr=8,data=KOKKOS_ENABLE_GNU_ATOMICS,parent=684
+__rec=node,id=707,attr=8,data=KOKKOS_ENABLE_ISA_X86_64,parent=684
+__rec=node,id=708,attr=8,data=KOKKOS_ENABLE_ISA_POWERPCLE,parent=684
+__rec=node,id=709,attr=8,data=KOKKOS_ENABLE_ISA_KNC,parent=684
+__rec=node,id=710,attr=8,data=Default Device,parent=684
+__rec=node,id=711,attr=673,data=unsigned int,parent=2
+__rec=node,id=712,attr=672,data=2,parent=711
+__rec=node,id=713,attr=670,data=mpi,parent=712
+__rec=node,id=714,attr=10,data=1612,parent=713
+__rec=node,id=715,attr=8,data=jobsize,parent=714
+__rec=node,id=716,attr=670,data=host,parent=682
+__rec=node,id=717,attr=10,data=1612,parent=716
+__rec=node,id=718,attr=8,data=cluster,parent=717
+__rec=node,id=719,attr=673,data=set of string,parent=3
+__rec=node,id=720,attr=672,data=2,parent=719
+__rec=node,id=721,attr=670,data=runinfo,parent=720
+__rec=node,id=722,attr=10,data=1612,parent=721
+__rec=node,id=723,attr=8,data=cmdline,parent=722
+__rec=node,id=724,attr=673,data=set of path,parent=3
+__rec=node,id=725,attr=672,data=2,parent=724
+__rec=node,id=726,attr=670,data=binary,parent=725
+__rec=node,id=727,attr=10,data=1612,parent=726
+__rec=node,id=728,attr=8,data=libraries,parent=727
+__rec=node,id=729,attr=673,data=path,parent=3
+__rec=node,id=730,attr=672,data=2,parent=729
+__rec=node,id=731,attr=670,data=binary,parent=730
+__rec=node,id=732,attr=10,data=1612,parent=731
+__rec=node,id=733,attr=8,data=executablepath,parent=732
+__rec=node,id=734,attr=673,data=date,parent=2
+__rec=node,id=735,attr=672,data=2,parent=734
+__rec=node,id=736,attr=670,data=runinfo,parent=735
+__rec=node,id=737,attr=10,data=1612,parent=736
+__rec=node,id=738,attr=8,data=launchdate,parent=737
+__rec=node,id=739,attr=670,data=runinfo,parent=682
+__rec=node,id=740,attr=10,data=1612,parent=739
+__rec=node,id=741,attr=8,data=user,parent=740
+__rec=node,id=742,attr=8,data=cali.channel,parent=16
+__rec=node,id=743,attr=742,data=spot
+__rec=node,id=744,attr=741,data=jenkins,parent=743
+__rec=node,id=745,attr=738,data=1627397228,parent=744
+__rec=node,id=746,attr=733,data=/home/jenkins/weaver-new/workspace/Kokkos_develop_weaver_cuda_raja_perfsuite/RAJAPerf/build/bin/raja-perf.exe,parent=745
+__rec=node,id=747,attr=728,data=[/lib64/librt.so.1\,/lib64/libcuda.so.1\,/home/projects/ppc64le-pwr9-nvidia/cuda/10.1.105/lib64/libcudart.so.10.1\,/lib64/libdl.so.2\,/lib64/libpthread.so.0\,/home/projects/ppc64le/gcc/7.2.0/lib64/libstdc++.so.6\,/lib64/libm.so.6\,/home/projects/ppc64le/gcc/7.2.0/lib64/libgcc_s.so.1\,/lib64/libc.so.6\,/lib64/ld64.so.2\,/home/jenkins/weaver-new/workspace/Kokkos_develop_weaver_cuda_raja_perfsuite/spot_kokkos_bundle/spot_tools_build_dir/libspot-bundle.so\,/home/jenkins/weaver-new/workspace/Kokkos_develop_weaver_cuda_raja_perfsuite/spot_kokkos_bundle/spot_tools_build_dir/tpl/caliper/src/libcaliper.so.2\,/home/projects/ppc64le-pwr9-nvidia/openmpi/4.0.1/gcc/7.2.0/cuda/10.1.105/lib/libmpi.so.40\,/home/projects/ppc64le-pwr9-nvidia/openmpi/4.0.1/gcc/7.2.0/cuda/10.1.105/lib/libmpi_usempif08.so.40\,/home/projects/ppc64le-pwr9-nvidia/openmpi/4.0.1/gcc/7.2.0/cuda/10.1.105/lib/libmpi_usempi_ignore_tkr.so.40\,/home/projects/ppc64le-pwr9-nvidia/openmpi/4.0.1/gcc/7.2.0/cuda/10.1.105/lib/libmpi_mpifh.so.40\,/home/projects/ppc64le/gcc/7.2.0/lib64/libgfortran.so.4\,/home/projects/ppc64le-pwr9-nvidia/openmpi/4.0.1/gcc/7.2.0/cuda/10.1.105/lib/libopen-rte.so.40\,/home/projects/ppc64le-pwr9-nvidia/openmpi/4.0.1/gcc/7.2.0/cuda/10.1.105/lib/libopen-pal.so.40\,/lib64/libutil.so.1\,/lib64/libz.so.1\,/lib64/libnss_files.so.2\,/lib64/libnss_ldap.so.2],parent=746
+__rec=node,id=748,attr=723,data=[./bin/raja-perf.exe],parent=747
+__rec=node,id=749,attr=718,data=weaver,parent=748
+__rec=node,id=750,attr=715,data=1,parent=749
+__rec=node,id=751,attr=710,data=N6Kokkos4CudaE,parent=750
+__rec=node,id=752,attr=709,data=no,parent=751
+__rec=node,id=753,attr=708,data=no,parent=752
+__rec=node,id=754,attr=707,data=no,parent=753
+__rec=node,id=755,attr=706,data=yes,parent=754
+__rec=node,id=756,attr=705,data=no,parent=755
+__rec=node,id=757,attr=704,data=no,parent=756
+__rec=node,id=758,attr=703,data=720.000000,parent=757
+__rec=node,id=759,attr=702,data=1.000000,parent=758
+__rec=node,id=760,attr=701,data=no,parent=759
+__rec=node,id=761,attr=700,data=no,parent=760
+__rec=node,id=762,attr=699,data=no,parent=761
+__rec=node,id=763,attr=698,data=yes,parent=762
+__rec=node,id=764,attr=697,data=yes,parent=763
+__rec=node,id=765,attr=696,data=no,parent=764
+__rec=node,id=766,attr=695,data=no,parent=765
+__rec=node,id=767,attr=694,data=no,parent=766
+__rec=node,id=768,attr=693,data=no,parent=767
+__rec=node,id=769,attr=692,data=no,parent=768
+__rec=node,id=770,attr=691,data=no,parent=769
+__rec=node,id=771,attr=690,data=nvcc,parent=770
+__rec=node,id=772,attr=689,data=no,parent=771
+__rec=node,id=773,attr=688,data=no,parent=772
+__rec=node,id=774,attr=687,data=no,parent=773
+__rec=node,id=775,attr=686,data=no,parent=774
+__rec=node,id=776,attr=685,data=no,parent=775
+__rec=node,id=777,attr=680,data=3.400000,parent=776
+__rec=node,id=778,attr=679,data=1.000000,parent=777
+__rec=node,id=779,attr=678,data=1.000000,parent=778
+__rec=globals,ref=789=779
