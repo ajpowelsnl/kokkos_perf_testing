@@ -1032,6 +1032,9 @@ Kokkos_ENABLE_HPX_ASYNC_DISPATCH:BOOL=OFF
 //Whether to enable the HWLOC library
 Kokkos_ENABLE_HWLOC:BOOL=Off
 
+//Whether to enable CudaMallocAsync (requires CUDA Toolkit 11.2)
+Kokkos_ENABLE_IMPL_CUDA_MALLOC_ASYNC:BOOL=OFF
+
 //Whether to use desul based atomics - option only during beta
 Kokkos_ENABLE_IMPL_DESUL_ATOMICS:BOOL=ON
 
