@@ -1,0 +1,36 @@
+Speedup Report (T_ref/T_var): ref var = Base_Seq  ,  ,  ,  ,  , 
+Kernel                    , Base_Seq , Base_OMPTarget , RAJA_OMPTarget , Kokkos_Lambda , Kokkos_Functor
+Apps_DEL_DOT_VEC_2D       ,    1.000 ,          5.896 ,         12.367 ,       Not run ,        Not run
+Apps_ENERGY               ,    1.000 ,          1.069 ,          2.364 ,       Not run ,        Not run
+Apps_FIR                  ,    1.000 ,         10.720 ,         16.097 ,       Not run ,        Not run
+Apps_HALOEXCHANGE         ,    1.000 ,          0.296 ,          0.274 ,       Not run ,        Not run
+Apps_LTIMES               ,    1.000 ,          0.705 ,          0.325 ,       Not run ,        Not run
+Apps_LTIMES_NOVIEW        ,    1.000 ,          1.053 ,          0.269 ,       Not run ,        Not run
+Apps_PRESSURE             ,    1.000 ,          1.116 ,          2.094 ,       Not run ,        Not run
+Apps_VOL3D                ,    1.000 ,          2.870 ,          6.704 ,       Not run ,        Not run
+Basic_DAXPY               ,    1.000 ,          0.641 ,        591.546 ,         0.174 ,        Not run
+Basic_IF_QUAD             ,    1.000 ,          7.576 ,       1697.349 ,         2.514 ,        Not run
+Basic_INIT3               ,    1.000 ,          0.928 ,     226080.950 ,         0.896 ,        Not run
+Basic_INIT_VIEW1D         ,    1.000 ,          1.218 ,     715170.479 ,         0.643 ,        Not run
+Basic_INIT_VIEW1D_OFFSET  ,    1.000 ,          0.336 ,     346915.683 ,         0.299 ,        Not run
+Basic_MULADDSUB           ,    1.000 ,          1.624 ,     143855.026 ,         0.558 ,        Not run
+Basic_NESTED_INIT         ,    1.000 ,          0.552 ,     494268.584 ,         0.531 ,        Not run
+Basic_PI_ATOMIC           ,    1.000 ,          1.089 ,          1.564 ,         0.004 ,        Not run
+Basic_REDUCE3_INT         ,    1.000 ,          1.024 ,          1.063 ,         0.004 ,        Not run
+Basic_TRAP_INT            ,    1.000 ,          0.717 ,          0.825 ,         0.003 ,        Not run
+Lcals_DIFF_PREDICT        ,    1.000 ,          6.208 ,          8.764 ,         1.728 ,        Not run
+Lcals_EOS                 ,    1.000 ,          3.551 ,          6.811 ,         1.320 ,        Not run
+Lcals_FIRST_DIFF          ,    1.000 ,          0.475 ,          2.829 ,         0.439 ,        Not run
+Lcals_FIRST_MIN           ,    1.000 ,          0.211 ,          0.001 ,         0.284 ,        Not run
+Lcals_FIRST_SUM           ,    1.000 ,          0.272 ,          1.621 ,         0.246 ,        Not run
+Lcals_GEN_LIN_RECUR       ,    1.000 ,          1.746 ,          3.117 ,         1.521 ,        Not run
+Lcals_HYDRO_1D            ,    1.000 ,          1.747 ,          3.585 ,         1.769 ,        Not run
+Lcals_HYDRO_2D            ,    1.000 ,          4.593 ,          0.823 ,         3.382 ,        Not run
+Lcals_INT_PREDICT         ,    1.000 ,          4.166 ,          9.494 ,         4.692 ,        Not run
+Lcals_PLANCKIAN           ,    1.000 ,          0.007 ,          0.283 ,         0.003 ,        Not run
+Lcals_TRIDIAG_ELIM        ,    1.000 ,          1.346 ,          2.414 ,         1.210 ,        Not run
+Stream_ADD                ,    1.000 ,          2.056 ,          3.568 ,         1.770 ,        Not run
+Stream_COPY               ,    1.000 ,          1.387 ,          2.256 ,         1.107 ,        Not run
+Stream_DOT                ,    1.000 ,          0.811 ,          0.000 ,         0.877 ,        Not run
+Stream_MUL                ,    1.000 ,          0.938 ,          1.644 ,         0.830 ,        Not run
+Stream_TRIAD              ,    1.000 ,          1.277 ,          2.417 ,         1.174 ,        Not run
