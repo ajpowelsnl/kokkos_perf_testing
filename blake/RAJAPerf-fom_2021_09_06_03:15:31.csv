@@ -1,0 +1,42 @@
+FOM Report : signed speedup(-)/slowdown(+) for each PM (base vs. RAJA) -> (T_RAJA - T_base) / T_base ) ,  ,  ,  ,  ,  ,  ,  , 
+'OVER_TOL' in column to right if RAJA speedup is over tolerance ,  ,  ,  ,  ,  ,  ,  , 
+Kernel                    , Lambda_Seq      ,         , RAJA_Seq        ,         , Lambda_OpenMP   ,         , RAJA_OpenMP     ,        
+Apps_DEL_DOT_VEC_2D       , -0.13           ,         , -0.13           ,         , -0.14           ,         , -0.1            ,        
+Apps_ENERGY               , 0.0018          ,         , 0.074           ,         , -0.14           ,         , -0.14           ,        
+Apps_FIR                  , -0.27           ,         , -0.27           ,         , -0.036          ,         , 0.46            ,OVER_TOL
+Apps_HALOEXCHANGE         , -0.005          ,         , 0.011           ,         , -0.26           ,         , 0.18            ,OVER_TOL
+Apps_LTIMES               , -0.23           ,         , 3.9             ,OVER_TOL , 0.0091          ,         , 4.6             ,OVER_TOL
+Apps_LTIMES_NOVIEW        , -0.25           ,         , 0.046           ,         , 0.016           ,         , 9.1             ,OVER_TOL
+Apps_PRESSURE             , 0.035           ,         , 0.033           ,         , 0.0028          ,         , 0.89            ,OVER_TOL
+Apps_VOL3D                , -0.021          ,         , -0.036          ,         , -0.0015         ,         , 0.11            ,OVER_TOL
+Basic_DAXPY               , -0.012          ,         , -0.012          ,         , 0.0038          ,         , 1.1             ,OVER_TOL
+Basic_IF_QUAD             , -0.036          ,         , -0.032          ,         , 0.044           ,         , 0.054           ,        
+Basic_INIT3               , -0.033          ,         , -0.18           ,         , -0.02           ,         , 0.068           ,        
+Basic_INIT_VIEW1D         , -0.0089         ,         , -0.0076         ,         , -0.041          ,         , 2.7             ,OVER_TOL
+Basic_INIT_VIEW1D_OFFSET  , -0.008          ,         , 0.3             ,OVER_TOL , -0.4            ,         , 1.3             ,OVER_TOL
+Basic_MULADDSUB           , -0.05           ,         , -0.18           ,         , -0.095          ,         , -0.057          ,        
+Basic_NESTED_INIT         , -0.019          ,         , 0.023           ,         , 0.009           ,         , 4.4             ,OVER_TOL
+Basic_PI_ATOMIC           , -0.001          ,         , 3.2             ,OVER_TOL , -0.031          ,         , 1.6             ,OVER_TOL
+Basic_REDUCE3_INT         , -0.016          ,         , 7.1             ,OVER_TOL , -0.15           ,         , 12              ,OVER_TOL
+Basic_TRAP_INT            , -0.0044         ,         , 0.057           ,         , -0.086          ,         , 1.5             ,OVER_TOL
+Lcals_DIFF_PREDICT        , -0.01           ,         , -0.096          ,         , 0.0049          ,         , 0.076           ,        
+Lcals_EOS                 , -0.034          ,         , -0.04           ,         , 0.0089          ,         , 1.7             ,OVER_TOL
+Lcals_FIRST_DIFF          , -0.0042         ,         , -0.0044         ,         , 0.00013         ,         , 0.36            ,OVER_TOL
+Lcals_FIRST_MIN           , -0.0032         ,         , 3               ,OVER_TOL , -0.0063         ,         , 3.8             ,OVER_TOL
+Lcals_FIRST_SUM           , -0.004          ,         , -0.004          ,         , -0.0051         ,         , 0.35            ,OVER_TOL
+Lcals_GEN_LIN_RECUR       , -0.025          ,         , -0.0018         ,         , -0.0074         ,         , 0.021           ,        
+Lcals_HYDRO_1D            , -0.01           ,         , -0.0065         ,         , 0.0046          ,         , 1.1             ,OVER_TOL
+Lcals_HYDRO_2D            , -0.027          ,         , 0.073           ,         , -0.014          ,         , 0.33            ,OVER_TOL
+Lcals_INT_PREDICT         , -0.0017         ,         , 0.046           ,         , 0.043           ,         , 0.051           ,        
+Lcals_PLANCKIAN           , -0.18           ,         , -0.18           ,         , 0.028           ,         , 0.13            ,OVER_TOL
+Lcals_TRIDIAG_ELIM        , -0.012          ,         , 0.0035          ,         , 0.0071          ,         , 0.25            ,OVER_TOL
+Stream_ADD                , -0.01           ,         , -0.0045         ,         , -0.0018         ,         , 0.3             ,OVER_TOL
+Stream_COPY               , -0.0049         ,         , -0.00086        ,         , -0.0015         ,         , 0.22            ,OVER_TOL
+Stream_DOT                , -0.0023         ,         , 1.2             ,OVER_TOL , 0.21            ,OVER_TOL , 5.6             ,OVER_TOL
+Stream_MUL                , -0.0033         ,         , -0.0032         ,         , -0.007          ,         , 1               ,OVER_TOL
+Stream_TRIAD              , -0.0083         ,         , -0.0021         ,         , -0.0049         ,         , 1.1             ,OVER_TOL
+                          ,                 ,         ,                 ,         ,                 ,         ,                 ,        
+Col Min                   , -0.27           ,         , -0.27           ,         , -0.4            ,         , -0.14           ,        
+Col Max                   , 0.035           ,         , 7.1             ,         , 0.21            ,         , 12              ,        
+Col Avg                   , -0.041          ,         , 0.53            ,         , -0.031          ,         , 1.7             ,        
+Col Std Dev               , 0.0056          ,         , 2.3             ,         , 0.0096          ,         , 7.1             ,        
