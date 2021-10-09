@@ -663,6 +663,9 @@ Kokkos_ARCH_VEGA906:BOOL=OFF
 //Optimize for AMD GPU MI100 GFX908 (GPU)
 Kokkos_ARCH_VEGA908:BOOL=OFF
 
+//Optimize for  (GPU)
+Kokkos_ARCH_VEGA90A:BOOL=OFF
+
 //Docstring
 Kokkos_ARCH_VOLTA70:BOOL=ON
 
