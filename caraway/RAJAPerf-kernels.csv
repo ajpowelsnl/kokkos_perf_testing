@@ -1,4 +1,6 @@
 Kernels                    ,    Problem size ,    Reps ,    Iterations/rep , Kernels/rep ,    Bytes/rep ,    FLOPS/rep
+Algorithm_SORT             ,         1000000 ,      20 ,           1000000 ,           1 ,     16000000 ,            0
+Algorithm_SORTPAIRS        ,         1000000 ,      20 ,           1000000 ,           1 ,     32000000 ,            0
 Apps_DEL_DOT_VEC_2D        ,         1000000 ,     100 ,           1000000 ,           1 ,     48064032 ,     54000000
 Apps_ENERGY                ,         1000000 ,     130 ,           6000000 ,           6 ,    216000000 ,     55000000
 Apps_FIR                   ,         1000000 ,     160 ,            999984 ,           1 ,     15999872 ,     31999488
