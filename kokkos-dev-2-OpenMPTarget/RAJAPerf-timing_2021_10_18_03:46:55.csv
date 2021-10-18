@@ -1,0 +1,38 @@
+Mean Runtime Report (sec.)  ,  ,  ,  ,  , 
+Kernel                    , Base_Seq , Base_OMPTarget , RAJA_OMPTarget , Kokkos_Lambda , Kokkos_Functor
+Algorithm_SORT            , 0.000000 ,        Not run ,        Not run ,      0.000025 ,        Not run
+Algorithm_SORTPAIRS       , 0.000000 ,        Not run ,        Not run ,      0.000000 ,        Not run
+Apps_DEL_DOT_VEC_2D       , 0.069921 ,       0.010205 ,       0.004984 ,      0.124808 ,        Not run
+Apps_ENERGY               , 0.054076 ,       0.026173 ,       0.012206 ,      0.021684 ,        Not run
+Apps_FIR                  , 0.077455 ,       0.003287 ,       0.002157 ,      0.005008 ,        Not run
+Apps_HALOEXCHANGE         , 0.000000 ,       0.000000 ,       0.000030 ,      0.000019 ,        Not run
+Apps_LTIMES               , 0.000000 ,       0.000000 ,       0.000000 ,      0.000023 ,        Not run
+Apps_LTIMES_NOVIEW        , 0.000000 ,       0.000000 ,       0.000000 ,       Not run ,        Not run
+Apps_PRESSURE             , 0.061057 ,       0.047654 ,       0.026331 ,      0.049454 ,        Not run
+Apps_VOL3D                , 0.048236 ,       0.014504 ,       0.005786 ,      0.006932 ,        Not run
+Basic_DAXPY               , 0.011181 ,       0.014344 ,       0.000000 ,      0.016523 ,        Not run
+Basic_IF_QUAD             , 0.015868 ,       0.003742 ,       0.000000 ,      0.004159 ,        Not run
+Basic_INIT3               , 0.018669 ,       0.016807 ,       0.000000 ,      0.017031 ,        Not run
+Basic_INIT_VIEW1D         , 0.066901 ,       0.064894 ,       0.000000 ,      0.079693 ,        Not run
+Basic_INIT_VIEW1D_OFFSET  , 0.065492 ,       0.065346 ,       0.000000 ,      0.082006 ,        Not run
+Basic_MULADDSUB           , 0.015946 ,       0.010184 ,       0.000000 ,      0.010841 ,        Not run
+Basic_NESTED_INIT         , 0.042805 ,       0.029934 ,       0.000000 ,      0.053877 ,        Not run
+Basic_PI_ATOMIC           , 0.000000 ,       0.000000 ,       0.000000 ,      0.000023 ,        Not run
+Basic_REDUCE3_INT         , 0.000000 ,       0.000000 ,       0.000000 ,      0.000023 ,        Not run
+Basic_TRAP_INT            , 0.000000 ,       0.000000 ,       0.000000 ,      0.000022 ,        Not run
+Lcals_DIFF_PREDICT        , 0.034108 ,       0.006625 ,       0.005141 ,      0.009404 ,        Not run
+Lcals_EOS                 , 0.047052 ,       0.019524 ,       0.010231 ,      0.019178 ,        Not run
+Lcals_FIRST_DIFF          , 0.091681 ,       0.052371 ,       0.033398 ,      0.066515 ,        Not run
+Lcals_FIRST_MIN           , 0.002133 ,       0.010051 ,       3.682013 ,      0.009394 ,        Not run
+Lcals_FIRST_SUM           , 0.052684 ,       0.052719 ,       0.033051 ,      0.067644 ,        Not run
+Lcals_GEN_LIN_RECUR       , 0.054386 ,       0.031855 ,       0.017674 ,      0.036110 ,        Not run
+Lcals_HYDRO_1D            , 0.063742 ,       0.035766 ,       0.017547 ,      0.035113 ,        Not run
+Lcals_HYDRO_2D            , 0.104608 ,       0.014098 ,       0.078250 ,      0.018457 ,        Not run
+Lcals_INT_PREDICT         , 0.041177 ,       0.018677 ,       0.009163 ,      0.026723 ,        Not run
+Lcals_PLANCKIAN           , 0.000000 ,       0.000000 ,       0.000000 ,      0.000022 ,        Not run
+Lcals_TRIDIAG_ELIM        , 0.028441 ,       0.031932 ,       0.016989 ,      0.034614 ,        Not run
+Stream_ADD                , 0.026448 ,       0.028807 ,       0.016514 ,      0.033369 ,        Not run
+Stream_COPY               , 0.039841 ,       0.047622 ,       0.028861 ,      0.059604 ,        Not run
+Stream_DOT                , 0.112927 ,       0.119514 ,     235.111534 ,      0.138988 ,        Not run
+Stream_MUL                , 0.049308 ,       0.051246 ,       0.057526 ,      0.059729 ,        Not run
+Stream_TRIAD              , 0.070186 ,       0.031008 ,       0.019795 ,      0.034175 ,        Not run
