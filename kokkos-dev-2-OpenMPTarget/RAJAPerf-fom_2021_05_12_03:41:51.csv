@@ -1,0 +1,18 @@
+FOM Report : signed speedup(-)/slowdown(+) for each PM (base vs. RAJA) -> (T_RAJA - T_base) / T_base ) ,  , 
+'OVER_TOL' in column to right if RAJA speedup is over tolerance ,  , 
+Kernel                    , RAJA_OMPTarget  ,        
+Basic_ATOMIC_PI           , -0.32           ,        
+Basic_DAXPY               , 0.048           ,        
+Basic_IF_QUAD             , 0.13            ,OVER_TOL
+Basic_INIT3               , -0.044          ,        
+Basic_INIT_VIEW1D         , 0               ,        
+Basic_INIT_VIEW1D_OFFSET  , -0.022          ,        
+Basic_MULADDSUB           , -0.14           ,        
+Basic_NESTED_INIT         , -0.022          ,        
+Basic_REDUCE3_INT         , 0.21            ,OVER_TOL
+Basic_TRAP_INT            , -0.12           ,        
+                          ,                 ,        
+Col Min                   , -0.32           ,        
+Col Max                   , 0.21            ,        
+Col Avg                   , -0.028          ,        
+Col Std Dev               , 0.019           ,        

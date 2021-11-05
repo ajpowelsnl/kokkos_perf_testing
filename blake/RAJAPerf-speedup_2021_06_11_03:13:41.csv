@@ -1,0 +1,17 @@
+Speedup Report (T_ref/T_var): ref var = Base_Seq  ,  ,  ,  ,  ,  ,  ,  , 
+Kernel                    , Base_Seq , Lambda_Seq , RAJA_Seq , Base_OpenMP , Lambda_OpenMP , RAJA_OpenMP , Kokkos_Lambda , Kokkos_Functor
+Basic_ATOMIC_PI           ,    1.000 ,      0.998 ,    0.223 ,       0.005 ,         0.005 ,       0.001 ,         0.003 ,        Not run
+Basic_DAXPY               ,    1.000 ,      1.054 ,    1.055 ,       1.255 ,         1.244 ,       0.626 ,         1.362 ,        Not run
+Basic_IF_QUAD             ,    1.000 ,      0.999 ,    0.898 ,      12.708 ,        12.238 ,       7.631 ,        12.786 ,        Not run
+Basic_INIT3               ,    1.000 ,      1.021 ,    1.222 ,       4.309 ,         4.331 ,       2.266 ,         4.299 ,        Not run
+Basic_INIT_VIEW1D         ,    1.000 ,      1.011 ,    0.807 ,       3.493 ,         3.599 ,       1.665 ,         3.624 ,        Not run
+Basic_INIT_VIEW1D_OFFSET  ,    1.000 ,      1.067 ,    0.853 ,       3.748 ,         3.768 ,       1.697 ,         3.840 ,        Not run
+Basic_MULADDSUB           ,    1.000 ,      1.050 ,    1.386 ,       4.800 ,         4.838 ,       2.555 ,         4.868 ,        Not run
+Basic_NESTED_INIT         ,    1.000 ,      1.005 ,    0.918 ,      15.524 ,        15.280 ,       8.666 ,        26.102 ,        Not run
+Basic_REDUCE3_INT         ,    1.000 ,      0.955 ,    0.134 ,       1.894 ,         1.836 ,       0.481 ,         1.822 ,        Not run
+Basic_TRAP_INT            ,    1.000 ,      0.968 ,    0.975 ,       1.688 ,         1.749 ,       1.184 ,         3.301 ,        Not run
+Stream_ADD                ,    1.000 ,      1.012 ,    0.997 ,      18.048 ,        18.318 ,      10.271 ,        18.386 ,        Not run
+Stream_COPY               ,    1.000 ,      1.010 ,    1.009 ,      11.401 ,        13.610 ,       7.490 ,        13.603 ,        Not run
+Stream_DOT                ,    1.000 ,      1.006 ,    0.451 ,       6.460 ,         6.012 ,       3.042 ,        11.011 ,        Not run
+Stream_MUL                ,    1.000 ,      0.937 ,    1.018 ,      12.240 ,        12.702 ,       6.740 ,        12.680 ,        Not run
+Stream_TRIAD              ,    1.000 ,      0.988 ,    0.957 ,      17.078 ,        17.120 ,       9.626 ,        14.559 ,        Not run

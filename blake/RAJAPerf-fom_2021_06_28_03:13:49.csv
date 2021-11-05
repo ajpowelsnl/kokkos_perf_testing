@@ -1,0 +1,23 @@
+FOM Report : signed speedup(-)/slowdown(+) for each PM (base vs. RAJA) -> (T_RAJA - T_base) / T_base ) ,  ,  ,  ,  ,  ,  ,  , 
+'OVER_TOL' in column to right if RAJA speedup is over tolerance ,  ,  ,  ,  ,  ,  ,  , 
+Kernel                    , Lambda_Seq      ,         , RAJA_Seq        ,         , Lambda_OpenMP   ,         , RAJA_OpenMP     ,        
+Basic_ATOMIC_PI           , -0.00021        ,         , 3.5             ,OVER_TOL , 0.31            ,OVER_TOL , 2               ,OVER_TOL
+Basic_DAXPY               , -0.076          ,         , -0.072          ,         , -0.74           ,         , -0.59           ,        
+Basic_IF_QUAD             , -0.017          ,         , 0.14            ,OVER_TOL , -0.038          ,         , 0.11            ,OVER_TOL
+Basic_INIT3               , -0.022          ,         , -0.19           ,         , 0.00086         ,         , 0.49            ,OVER_TOL
+Basic_INIT_VIEW1D         , -0.0098         ,         , 0.3             ,OVER_TOL , 0.21            ,OVER_TOL , 1.2             ,OVER_TOL
+Basic_INIT_VIEW1D_OFFSET  , -0.0085         ,         , 0.3             ,OVER_TOL , 0.013           ,         , 1.5             ,OVER_TOL
+Basic_MULADDSUB           , -0.046          ,         , -0.17           ,         , 0.1             ,OVER_TOL , 0.39            ,OVER_TOL
+Basic_NESTED_INIT         , -0.024          ,         , 0.086           ,         , -0.052          ,         , 0.72            ,OVER_TOL
+Basic_REDUCE3_INT         , 0.0093          ,         , 6.7             ,OVER_TOL , -0.04           ,         , 14              ,OVER_TOL
+Basic_TRAP_INT            , 0.039           ,         , 0.041           ,         , 0.0099          ,         , 3.7             ,OVER_TOL
+Stream_ADD                , 0.033           ,         , 0.048           ,         , 7.4e-05         ,         , 0.31            ,OVER_TOL
+Stream_COPY               , -0.0048         ,         , -0.0023         ,         , -0.054          ,         , 0.16            ,OVER_TOL
+Stream_DOT                , -0.0051         ,         , 1.1             ,OVER_TOL , -0.0052         ,         , 5.5             ,OVER_TOL
+Stream_MUL                , -0.0025         ,         , -0.0049         ,         , 0.0017          ,         , 0.35            ,OVER_TOL
+Stream_TRIAD              , -0.0054         ,         , -0.0066         ,         , -0.0049         ,         , 0.28            ,OVER_TOL
+                          ,                 ,         ,                 ,         ,                 ,         ,                 ,        
+Col Min                   , -0.076          ,         , -0.19           ,         , -0.74           ,         , -0.59           ,        
+Col Max                   , 0.039           ,         , 6.7             ,         , 0.31            ,         , 14              ,        
+Col Avg                   , -0.0093         ,         , 0.78            ,         , -0.019          ,         , 2               ,        
+Col Std Dev               , 0.00073         ,         , 3.3             ,         , 0.047           ,         , 13              ,        

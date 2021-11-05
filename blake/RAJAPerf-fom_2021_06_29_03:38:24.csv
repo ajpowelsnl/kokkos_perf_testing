@@ -1,0 +1,34 @@
+FOM Report : signed speedup(-)/slowdown(+) for each PM (base vs. RAJA) -> (T_RAJA - T_base) / T_base ) ,  ,  ,  ,  ,  ,  ,  , 
+'OVER_TOL' in column to right if RAJA speedup is over tolerance ,  ,  ,  ,  ,  ,  ,  , 
+Kernel                    , Lambda_Seq      ,         , RAJA_Seq        ,         , Lambda_OpenMP   ,         , RAJA_OpenMP     ,        
+Basic_ATOMIC_PI           , -0.00028        ,         , 3.1             ,OVER_TOL , -0.29           ,         , 2.1             ,OVER_TOL
+Basic_DAXPY               , -0.043          ,         , -0.055          ,         , -0.008          ,         , 0.94            ,OVER_TOL
+Basic_IF_QUAD             , 0.02            ,         , 0.13            ,OVER_TOL , -0.023          ,         , 0.65            ,OVER_TOL
+Basic_INIT3               , -0.017          ,         , -0.21           ,         , -0.0089         ,         , 0.85            ,OVER_TOL
+Basic_INIT_VIEW1D         , -0.0032         ,         , 0.29            ,OVER_TOL , -0.049          ,         , 0.89            ,OVER_TOL
+Basic_INIT_VIEW1D_OFFSET  , -0.0087         ,         , 0.4             ,OVER_TOL , -0.007          ,         , 1               ,OVER_TOL
+Basic_MULADDSUB           , -0.05           ,         , -0.3            ,         , -0.0062         ,         , 0.82            ,OVER_TOL
+Basic_NESTED_INIT         , -0.0082         ,         , 0.098           ,         , -0.071          ,         , 0.54            ,OVER_TOL
+Basic_REDUCE3_INT         , 0.025           ,         , 6.8             ,OVER_TOL , 0.012           ,         , 3.3             ,OVER_TOL
+Basic_TRAP_INT            , 0.032           ,         , 0.032           ,         , 0.011           ,         , 0.74            ,OVER_TOL
+Lcals_DIFF_PREDICT        , -0.021          ,         , -0.39           ,         , 0.018           ,         , 0.75            ,OVER_TOL
+Lcals_EOS                 , -0.018          ,         , -0.019          ,         , -0.26           ,         , 0.58            ,OVER_TOL
+Lcals_FIRST_DIFF          , -0.0076         ,         , -0.0072         ,         , 0.0067          ,         , 0.94            ,OVER_TOL
+Lcals_FIRST_MIN           , -0.007          ,         , 3               ,OVER_TOL , 0.063           ,         , 0.8             ,OVER_TOL
+Lcals_FIRST_SUM           , -0.0088         ,         , -0.0083         ,         , 0.011           ,         , 0.95            ,OVER_TOL
+Lcals_GEN_LIN_RECUR       , -0.022          ,         , -0.02           ,         , -0.0051         ,         , 0.86            ,OVER_TOL
+Lcals_HYDRO_1D            , -0.018          ,         , -0.017          ,         , -0.0056         ,         , 0.93            ,OVER_TOL
+Lcals_HYDRO_2D            , -0.03           ,         , 0.55            ,OVER_TOL , 0.022           ,         , 1               ,OVER_TOL
+Lcals_INT_PREDICT         , -0.014          ,         , 0.022           ,         , -0.11           ,         , 0.6             ,OVER_TOL
+Lcals_PLANCKIAN           , -0.21           ,         , -0.21           ,         , 0.0005          ,         , 0.59            ,OVER_TOL
+Lcals_TRIDIAG_ELIM        , -0.0033         ,         , -0.0032         ,         , -0.0061         ,         , 0.9             ,OVER_TOL
+Stream_ADD                , 0.022           ,         , -0.021          ,         , -0.0071         ,         , 0.78            ,OVER_TOL
+Stream_COPY               , -0.0049         ,         , -0.0035         ,         , -0.087          ,         , 0.71            ,OVER_TOL
+Stream_DOT                , -0.0045         ,         , 1.2             ,OVER_TOL , -0.026          ,         , 0.91            ,OVER_TOL
+Stream_MUL                , -0.0065         ,         , -0.0051         ,         , -0.017          ,         , 0.83            ,OVER_TOL
+Stream_TRIAD              , -0.04           ,         , -0.0019         ,         , -0.021          ,         , 0.78            ,OVER_TOL
+                          ,                 ,         ,                 ,         ,                 ,         ,                 ,        
+Col Min                   , -0.21           ,         , -0.39           ,         , -0.29           ,         , 0.54            ,        
+Col Max                   , 0.032           ,         , 6.8             ,         , 0.063           ,         , 3.3             ,        
+Col Avg                   , -0.017          ,         , 0.55            ,         , -0.033          ,         , 0.95            ,        
+Col Std Dev               , 0.0019          ,         , 2.3             ,         , 0.0061          ,         , 0.3             ,        

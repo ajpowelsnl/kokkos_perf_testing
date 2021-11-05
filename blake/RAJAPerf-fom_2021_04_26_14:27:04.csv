@@ -1,0 +1,18 @@
+FOM Report : signed speedup(-)/slowdown(+) for each PM (base vs. RAJA) -> (T_RAJA - T_base) / T_base ) ,  ,  ,  ,  ,  ,  ,  , 
+'OVER_TOL' in column to right if RAJA speedup is over tolerance ,  ,  ,  ,  ,  ,  ,  , 
+Kernel                    , Lambda_Seq      ,         , RAJA_Seq        ,         , Lambda_OpenMP   ,         , RAJA_OpenMP     ,        
+Basic_ATOMIC_PI           , -0.039          ,         , 0.24            ,OVER_TOL , -0.46           ,         , -0.44           ,        
+Basic_DAXPY               , 0.032           ,         , 0.022           ,         , 0.03            ,         , -0.0061         ,        
+Basic_IF_QUAD             , 0.024           ,         , 0.03            ,         , -0.24           ,         , -0.31           ,        
+Basic_INIT3               , -0.12           ,         , 0.056           ,         , 0.23            ,OVER_TOL , 0.18            ,OVER_TOL
+Basic_INIT_VIEW1D         , 0.14            ,OVER_TOL , 0.63            ,OVER_TOL , 0.026           ,         , 0.026           ,        
+Basic_INIT_VIEW1D_OFFSET  , -0.87           ,         , -0.8            ,         , -0.048          ,         , -0.095          ,        
+Basic_MULADDSUB           , -0.49           ,         , -0.48           ,         , 0.057           ,         , 0.057           ,        
+Basic_NESTED_INIT         , -0.052          ,         , 0.43            ,OVER_TOL , 0.064           ,         , 0.11            ,OVER_TOL
+Basic_REDUCE3_INT         , -0.35           ,         , -0.36           ,         , -0.037          ,         , 0.0061          ,        
+Basic_TRAP_INT            , -0.31           ,         , -0.26           ,         , 0               ,         , -0.065          ,        
+                          ,                 ,         ,                 ,         ,                 ,         ,                 ,        
+Col Min                   , -0.87           ,         , -0.8            ,         , -0.46           ,         , -0.44           ,        
+Col Max                   , 0.14            ,         , 0.63            ,         , 0.23            ,         , 0.18            ,        
+Col Avg                   , -0.2            ,         , -0.05           ,         , -0.037          ,         , -0.054          ,        
+Col Std Dev               , 0.084           ,         , 0.17            ,         , 0.032           ,         , 0.032           ,        

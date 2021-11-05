@@ -1,0 +1,12 @@
+Speedup Report (T_ref/T_var): ref var = Base_Seq  ,  ,  ,  ,  , 
+Kernel                    , Base_Seq , Base_OMPTarget , RAJA_OMPTarget , Kokkos_Lambda , Kokkos_Functor
+Basic_ATOMIC_PI           ,    1.000 ,          0.836 ,          1.000 ,         0.361 ,        Not run
+Basic_DAXPY               ,    1.000 ,          0.891 ,          0.891 ,         0.336 ,        Not run
+Basic_IF_QUAD             ,    1.000 ,         65.451 ,         61.815 ,         0.093 ,        Not run
+Basic_INIT3               ,    1.000 ,          1.236 ,          1.193 ,         0.450 ,        Not run
+Basic_INIT_VIEW1D         ,    1.000 ,          1.426 ,          1.489 ,         0.416 ,        Not run
+Basic_INIT_VIEW1D_OFFSET  ,    1.000 ,          1.737 ,          1.467 ,         0.455 ,        Not run
+Basic_MULADDSUB           ,    1.000 ,          1.229 ,          1.255 ,         0.396 ,        Not run
+Basic_NESTED_INIT         ,    1.000 ,          1.250 ,          1.250 ,         0.034 ,        Not run
+Basic_REDUCE3_INT         ,    1.000 ,          0.364 ,          1.364 ,         0.392 ,        Not run
+Basic_TRAP_INT            ,    1.000 ,          0.635 ,          1.650 ,         0.532 ,        Not run

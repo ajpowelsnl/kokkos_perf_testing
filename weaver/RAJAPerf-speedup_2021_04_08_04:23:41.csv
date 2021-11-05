@@ -1,0 +1,12 @@
+Speedup Report (T_ref/T_var): ref var = Base_Seq  ,  ,  ,  ,  ,  ,  ,  ,  , 
+Kernel                    , Base_Seq , Lambda_Seq , RAJA_Seq , Base_CUDA , Lambda_CUDA , RAJA_CUDA , RAJA_WORKGROUP_CUDA , Kokkos_Lambda , Kokkos_Functor
+Basic_ATOMIC_PI           ,    1.000 ,      1.000 ,    0.397 ,     0.188 ,       0.188 ,     0.183 ,             Not run ,         0.037 ,        Not run
+Basic_DAXPY               ,    1.000 ,      1.000 ,    1.002 ,    10.745 ,      10.852 ,    10.570 ,             Not run ,         7.423 ,        Not run
+Basic_IF_QUAD             ,    1.000 ,      0.982 ,    0.981 ,   160.319 ,     148.215 ,   149.722 ,             Not run ,       111.500 ,        Not run
+Basic_INIT3               ,    1.000 ,      1.000 ,    1.001 ,    15.345 ,      15.222 ,    15.184 ,             Not run ,         8.639 ,        Not run
+Basic_INIT_VIEW1D         ,    1.000 ,      1.000 ,    1.000 ,    61.476 ,      61.417 ,    61.322 ,             Not run ,        25.973 ,        Not run
+Basic_INIT_VIEW1D_OFFSET  ,    1.000 ,      1.000 ,    0.477 ,    59.978 ,      59.930 ,    59.904 ,             Not run ,        24.664 ,        Not run
+Basic_MULADDSUB           ,    1.000 ,      1.000 ,    0.999 ,    23.005 ,      22.541 ,    22.662 ,             Not run ,        11.992 ,        Not run
+Basic_NESTED_INIT         ,    1.000 ,      1.003 ,    1.000 ,   103.509 ,     103.454 ,   103.510 ,             Not run ,        33.272 ,        Not run
+Basic_REDUCE3_INT         ,    1.000 ,      1.001 ,    0.105 ,     3.855 ,     Not run ,     3.339 ,             Not run ,        11.389 ,        Not run
+Basic_TRAP_INT            ,    1.000 ,      1.000 ,    1.000 ,    18.775 ,     Not run ,    30.596 ,             Not run ,        22.607 ,        Not run

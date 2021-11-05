@@ -1,0 +1,1490 @@
+__rec=node,id=12,attr=10,data=64,parent=3
+__rec=node,id=13,attr=8,data=attribute.alias,parent=12
+__rec=node,id=14,attr=8,data=attribute.unit,parent=12
+__rec=node,id=1705,attr=14,data=sec,parent=5
+__rec=node,id=1706,attr=13,data=Min time/rank,parent=1705
+__rec=node,id=1707,attr=10,data=65,parent=1706
+__rec=node,id=1708,attr=8,data=min#inclusive#sum#time.duration,parent=1707
+__rec=node,id=1709,attr=13,data=Max time/rank,parent=1705
+__rec=node,id=1710,attr=10,data=65,parent=1709
+__rec=node,id=1711,attr=8,data=max#inclusive#sum#time.duration,parent=1710
+__rec=node,id=1712,attr=13,data=Avg time/rank,parent=1705
+__rec=node,id=1713,attr=10,data=65,parent=1712
+__rec=node,id=1714,attr=8,data=avg#inclusive#sum#time.duration,parent=1713
+__rec=node,id=1717,attr=10,data=193,parent=5
+__rec=node,id=1718,attr=8,data=avg.sum#inclusive#sum#time.duration,parent=1717
+__rec=node,id=1715,attr=10,data=193,parent=2
+__rec=node,id=1716,attr=8,data=avg.count#inclusive#sum#time.duration,parent=1715
+__rec=node,id=1719,attr=13,data=Total time,parent=1705
+__rec=node,id=1720,attr=10,data=65,parent=1719
+__rec=node,id=1721,attr=8,data=sum#inclusive#sum#time.duration,parent=1720
+__rec=node,id=15,attr=8,data=spot.channel,parent=12
+__rec=node,id=1722,attr=15,data=regionprofile
+__rec=ctx,ref=1722,attr=1708=1711=1714=1718=1716=1721,data=1.874913=1.874913=1.874913=1.874913=1=1.874913
+__rec=node,id=31,attr=10,data=276,parent=3
+__rec=node,id=32,attr=8,data=function,parent=31
+__rec=node,id=38,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence
+__rec=ctx,ref=38=1722,attr=1708=1711=1714=1718=1716=1721,data=0.005053=0.005053=0.005053=0.005053=1=0.005053
+__rec=node,id=41,attr=32,data=Basic_DAXPY:Base_Seq
+__rec=ctx,ref=41=1722,attr=1708=1711=1714=1718=1716=1721,data=0.605201=0.605201=0.605201=0.605201=1=0.605201
+__rec=node,id=44,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=41
+__rec=ctx,ref=44=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000057=0.000057=0.000057=0.000057=1=0.000057
+__rec=node,id=46,attr=32,data=Basic_DAXPY:Lambda_Seq
+__rec=ctx,ref=46=1722,attr=1708=1711=1714=1718=1716=1721,data=0.603271=0.603271=0.603271=0.603271=1=0.603271
+__rec=node,id=49,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=46
+__rec=ctx,ref=49=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000037=0.000037=0.000037=0.000037=1=0.000037
+__rec=node,id=51,attr=32,data=Basic_DAXPY:RAJA_Seq
+__rec=ctx,ref=51=1722,attr=1708=1711=1714=1718=1716=1721,data=0.605346=0.605346=0.605346=0.605346=1=0.605346
+__rec=node,id=54,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=51
+__rec=ctx,ref=54=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000039=0.000039=0.000039=0.000039=1=0.000039
+__rec=node,id=56,attr=32,data=Basic_DAXPY:Base_CUDA
+__rec=ctx,ref=56=1722,attr=1708=1711=1714=1718=1716=1721,data=0.041474=0.041474=0.041474=0.041474=1=0.041474
+__rec=node,id=59,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=56
+__rec=ctx,ref=59=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000048=0.000048=0.000048=0.000048=1=0.000048
+__rec=node,id=61,attr=32,data=Basic_DAXPY:Lambda_CUDA
+__rec=ctx,ref=61=1722,attr=1708=1711=1714=1718=1716=1721,data=0.041233=0.041233=0.041233=0.041233=1=0.041233
+__rec=node,id=64,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=61
+__rec=ctx,ref=64=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000046=0.000046=0.000046=0.000046=1=0.000046
+__rec=node,id=66,attr=32,data=Basic_DAXPY:RAJA_CUDA
+__rec=ctx,ref=66=1722,attr=1708=1711=1714=1718=1716=1721,data=0.041251=0.041251=0.041251=0.041251=1=0.041251
+__rec=node,id=69,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=66
+__rec=ctx,ref=69=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000044=0.000044=0.000044=0.000044=1=0.000044
+__rec=node,id=71,attr=32,data=Basic_DAXPY:Kokkos_Lambda
+__rec=ctx,ref=71=1722,attr=1708=1711=1714=1718=1716=1721,data=0.102046=0.102046=0.102046=0.102046=1=0.102046
+__rec=node,id=74,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=71
+__rec=ctx,ref=74=1722,attr=1708=1711=1714=1718=1716=1721,data=0.009330=0.009330=0.009330=0.009330=1=0.009330
+__rec=node,id=78,attr=32,data=Apps_PRESSURE:RAJA_CUDA
+__rec=ctx,ref=78=1722,attr=1708=1711=1714=1718=1716=1721,data=0.055862=0.055862=0.055862=0.055862=1=0.055862
+__rec=node,id=79,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=78
+__rec=ctx,ref=79=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000039=0.000039=0.000039=0.000039=1=0.000039
+__rec=node,id=82,attr=32,data=Basic_INIT_VIEW1D_OFFSET:Base_CUDA
+__rec=ctx,ref=82=1722,attr=1708=1711=1714=1718=1716=1721,data=0.030095=0.030095=0.030095=0.030095=1=0.030095
+__rec=node,id=86,attr=32,data=Basic_PI_ATOMIC:Kokkos_Lambda
+__rec=ctx,ref=86=1722,attr=1708=1711=1714=1718=1716=1721,data=0.136216=0.136216=0.136216=0.136216=1=0.136216
+__rec=node,id=87,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=86
+__rec=ctx,ref=87=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000024=0.000024=0.000024=0.000024=1=0.000024
+__rec=node,id=89,attr=32,data=Lcals_FIRST_DIFF:Lambda_Seq
+__rec=ctx,ref=89=1722,attr=1708=1711=1714=1718=1716=1721,data=1.196190=1.196190=1.196190=1.196190=1=1.196190
+__rec=node,id=91,attr=32,data=Lcals_HYDRO_1D:Base_Seq
+__rec=ctx,ref=91=1722,attr=1708=1711=1714=1718=1716=1721,data=0.936431=0.936431=0.936431=0.936431=1=0.936431
+__rec=node,id=97,attr=32,data=Lcals_PLANCKIAN:Kokkos_Lambda
+__rec=ctx,ref=97=1722,attr=1708=1711=1714=1718=1716=1721,data=0.043422=0.043422=0.043422=0.043422=1=0.043422
+__rec=node,id=98,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=97
+__rec=ctx,ref=98=1722,attr=1708=1711=1714=1718=1716=1721,data=0.007826=0.007826=0.007826=0.007826=1=0.007826
+__rec=node,id=99,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=98
+__rec=ctx,ref=99=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000139=0.000139=0.000139=0.000139=1=0.000139
+__rec=node,id=105,attr=32,data=Stream_DOT:Kokkos_Lambda
+__rec=ctx,ref=105=1722,attr=1708=1711=1714=1718=1716=1721,data=0.248987=0.248987=0.248987=0.248987=1=0.248987
+__rec=node,id=106,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=105
+__rec=ctx,ref=106=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000089=0.000089=0.000089=0.000089=1=0.000089
+__rec=node,id=107,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=106
+__rec=ctx,ref=107=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000033=0.000033=0.000033=0.000033=1=0.000033
+__rec=node,id=110,attr=32,data=Apps_VOL3D:Base_Seq
+__rec=ctx,ref=110=1722,attr=1708=1711=1714=1718=1716=1721,data=1.196631=1.196631=1.196631=1.196631=1=1.196631
+__rec=node,id=112,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=82
+__rec=ctx,ref=112=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000026=0.000026=0.000026=0.000026=1=0.000026
+__rec=node,id=115,attr=32,data=PI_ATOMIC-Kokkos Kokkos_Lambda,parent=86
+__rec=ctx,ref=115=1722,attr=1708=1711=1714=1718=1716=1721,data=0.115232=0.115232=0.115232=0.115232=1=0.115232
+__rec=node,id=120,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=97
+__rec=ctx,ref=120=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000190=0.000190=0.000190=0.000190=1=0.000190
+__rec=node,id=122,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=105
+__rec=ctx,ref=122=1722,attr=1708=1711=1714=1718=1716=1721,data=0.001704=0.001704=0.001704=0.001704=1=0.001704
+__rec=node,id=124,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=71
+__rec=ctx,ref=124=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000163=0.000163=0.000163=0.000163=1=0.000163
+__rec=node,id=127,attr=32,data=Basic_INIT_VIEW1D_OFFSET:Lambda_CUDA
+__rec=ctx,ref=127=1722,attr=1708=1711=1714=1718=1716=1721,data=0.030153=0.030153=0.030153=0.030153=1=0.030153
+__rec=node,id=486,attr=32,data=Stream_MUL:RAJA_CUDA
+__rec=node,id=512,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=486
+__rec=ctx,ref=512=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000024=0.000024=0.000024=0.000024=1=0.000024
+__rec=node,id=640,attr=32,data=Lcals_FIRST_MIN:RAJA_CUDA
+__rec=ctx,ref=640=1722,attr=1708=1711=1714=1718=1716=1721,data=0.004878=0.004878=0.004878=0.004878=1=0.004878
+__rec=node,id=768,attr=32,data=Apps_FIR:Lambda_Seq
+__rec=ctx,ref=768=1722,attr=1708=1711=1714=1718=1716=1721,data=0.843621=0.843621=0.843621=0.843621=1=0.843621
+__rec=node,id=1255,attr=32,data=Basic_INIT_VIEW1D:Lambda_Seq
+__rec=node,id=1280,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1255
+__rec=ctx,ref=1280=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000020=0.000020=0.000020=0.000020=1=0.000020
+__rec=node,id=1520,attr=32,data=Lcals_EOS:Kokkos_Lambda
+__rec=node,id=1664,attr=32,data=EOS_Kokkos Kokkos_Lambda,parent=1520
+__rec=ctx,ref=1664=1722,attr=1708=1711=1714=1718=1716=1721,data=0.028816=0.028816=0.028816=0.028816=1=0.028816
+__rec=node,id=217,attr=32,data=DOT-Kokkos Kokkos_Lambda,parent=105
+__rec=node,id=257,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=217
+__rec=ctx,ref=257=1722,attr=1708=1711=1714=1718=1716=1721,data=0.024792=0.024792=0.024792=0.024792=1=0.024792
+__rec=node,id=266,attr=32,data=Lcals_FIRST_DIFF:Kokkos_Lambda
+__rec=node,id=360,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=266
+__rec=node,id=385,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=360
+__rec=ctx,ref=385=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000054=0.000054=0.000054=0.000054=1=0.000054
+__rec=node,id=723,attr=32,data=Lcals_HYDRO_2D:Kokkos_Lambda
+__rec=node,id=871,attr=32,data=Kokkos::ViewCopy-2D,parent=723
+__rec=node,id=897,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=871
+__rec=ctx,ref=897=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000308=0.000308=0.000308=0.000308=1=0.000308
+__rec=node,id=1126,attr=32,data=Lcals_INT_PREDICT:Lambda_Seq
+__rec=node,id=1153,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1126
+__rec=ctx,ref=1153=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000059=0.000059=0.000059=0.000059=1=0.000059
+__rec=node,id=1385,attr=32,data=Apps_LTIMES_NOVIEW:Lambda_Seq
+__rec=node,id=1409,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1385
+__rec=ctx,ref=1409=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000017=0.000017=0.000017=0.000017=1=0.000017
+__rec=node,id=130,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=89
+__rec=ctx,ref=130=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=488,attr=32,data=Apps_DEL_DOT_VEC_2D:RAJA_CUDA
+__rec=node,id=514,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=488
+__rec=ctx,ref=514=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000042=0.000042=0.000042=0.000042=1=0.000042
+__rec=node,id=642,attr=32,data=Lcals_HYDRO_2D:Base_CUDA
+__rec=ctx,ref=642=1722,attr=1708=1711=1714=1718=1716=1721,data=0.045433=0.045433=0.045433=0.045433=1=0.045433
+__rec=node,id=770,attr=32,data=Basic_INIT3:Base_Seq
+__rec=ctx,ref=770=1722,attr=1708=1711=1714=1718=1716=1721,data=1.068151=1.068151=1.068151=1.068151=1=1.068151
+__rec=node,id=1121,attr=32,data=Basic_NESTED_INIT:Kokkos_Lambda
+__rec=node,id=1257,attr=32,data=Kokkos::ViewCopy-3D,parent=1121
+__rec=node,id=1282,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1257
+__rec=ctx,ref=1282=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000030=0.000030=0.000030=0.000030=1=0.000030
+__rec=node,id=1434,attr=32,data=Basic_INIT_VIEW1D:Kokkos_Lambda
+__rec=node,id=1516,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=1434
+__rec=node,id=1538,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1516
+__rec=ctx,ref=1538=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000029=0.000029=0.000029=0.000029=1=0.000029
+__rec=node,id=307,attr=32,data=Lcals_HYDRO_1D:Kokkos_Lambda
+__rec=node,id=362,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=307
+__rec=node,id=387,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=362
+__rec=ctx,ref=387=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000035=0.000035=0.000035=0.000035=1=0.000035
+__rec=node,id=1001,attr=32,data=Basic_NESTED_INIT:Base_CUDA
+__rec=node,id=1027,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1001
+__rec=ctx,ref=1027=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000023=0.000023=0.000023=0.000023=1=0.000023
+__rec=node,id=1155,attr=32,data=Stream_COPY:RAJA_Seq
+__rec=ctx,ref=1155=1722,attr=1708=1711=1714=1718=1716=1721,data=1.094813=1.094813=1.094813=1.094813=1=1.094813
+__rec=node,id=132,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=91
+__rec=ctx,ref=132=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000032=0.000032=0.000032=0.000032=1=0.000032
+__rec=node,id=235,attr=32,data=Apps_VOL3D:Base_CUDA
+__rec=node,id=260,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=235
+__rec=ctx,ref=260=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000039=0.000039=0.000039=0.000039=1=0.000039
+__rec=node,id=516,attr=32,data=Basic_IF_QUAD:RAJA_CUDA
+__rec=ctx,ref=516=1722,attr=1708=1711=1714=1718=1716=1721,data=0.025436=0.025436=0.025436=0.025436=1=0.025436
+__rec=node,id=618,attr=32,data=Stream_ADD:Base_Seq
+__rec=node,id=644,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=618
+__rec=ctx,ref=644=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000058=0.000058=0.000058=0.000058=1=0.000058
+__rec=node,id=900,attr=32,data=Stream_TRIAD:Lambda_CUDA
+__rec=ctx,ref=900=1722,attr=1708=1711=1714=1718=1716=1721,data=0.036997=0.036997=0.036997=0.036997=1=0.036997
+__rec=node,id=1150,attr=32,data=Lcals_DIFF_PREDICT:Kokkos_Lambda
+__rec=node,id=1284,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=1150
+__rec=ctx,ref=1284=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000238=0.000238=0.000238=0.000238=1=0.000238
+__rec=node,id=1412,attr=32,data=Basic_PI_ATOMIC:Lambda_Seq
+__rec=ctx,ref=1412=1722,attr=1708=1711=1714=1718=1716=1721,data=0.058845=0.058845=0.058845=0.058845=1=0.058845
+__rec=node,id=1518,attr=32,data=Basic_PI_ATOMIC:Lambda_CUDA
+__rec=node,id=1540,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1518
+__rec=ctx,ref=1540=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000013=0.000013=0.000013=0.000013=1=0.000013
+__rec=node,id=1649,attr=32,data=Basic_INIT_VIEW1D_OFFSET:Lambda_Seq
+__rec=node,id=1668,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1649
+__rec=ctx,ref=1668=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000017=0.000017=0.000017=0.000017=1=0.000017
+__rec=node,id=364,attr=32,data=Lcals_TRIDIAG_ELIM:RAJA_CUDA
+__rec=node,id=389,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=364
+__rec=ctx,ref=389=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000036=0.000036=0.000036=0.000036=1=0.000036
+__rec=node,id=773,attr=32,data=Basic_TRAP_INT:RAJA_CUDA
+__rec=ctx,ref=773=1722,attr=1708=1711=1714=1718=1716=1721,data=0.001288=0.001288=0.001288=0.001288=1=0.001288
+__rec=node,id=1029,attr=32,data=Lcals_DIFF_PREDICT:RAJA_Seq
+__rec=ctx,ref=1029=1722,attr=1708=1711=1714=1718=1716=1721,data=1.372849=1.372849=1.372849=1.372849=1=1.372849
+__rec=node,id=983,attr=32,data=Stream_TRIAD:Kokkos_Lambda
+__rec=node,id=1157,attr=32,data=TRIAD_Kokkos\, Kokkos_Lambda,parent=983
+__rec=ctx,ref=1157=1722,attr=1708=1711=1714=1718=1716=1721,data=0.049378=0.049378=0.049378=0.049378=1=0.049378
+__rec=node,id=134,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=97
+__rec=ctx,ref=134=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000450=0.000450=0.000450=0.000450=1=0.000450
+__rec=node,id=209,attr=32,data=Basic_INIT_VIEW1D_OFFSET:Kokkos_Lambda
+__rec=node,id=262,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=209
+__rec=ctx,ref=262=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000041=0.000041=0.000041=0.000041=1=0.000041
+__rec=node,id=527,attr=32,data=Stream_MUL:Kokkos_Lambda
+__rec=node,id=620,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=527
+__rec=node,id=646,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=620
+__rec=ctx,ref=646=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000072=0.000072=0.000072=0.000072=1=0.000072
+__rec=node,id=1138,attr=32,data=Lcals_FIRST_SUM:Kokkos_Lambda
+__rec=node,id=1286,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=1138
+__rec=ctx,ref=1286=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=1414,attr=32,data=Lcals_EOS:RAJA_Seq
+__rec=ctx,ref=1414=1722,attr=1708=1711=1714=1718=1716=1721,data=0.726508=0.726508=0.726508=0.726508=1=0.726508
+__rec=node,id=1542,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1520
+__rec=ctx,ref=1542=1722,attr=1708=1711=1714=1718=1716=1721,data=0.004787=0.004787=0.004787=0.004787=1=0.004787
+__rec=node,id=366,attr=32,data=Stream_MUL:RAJA_Seq
+__rec=node,id=391,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=366
+__rec=ctx,ref=391=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000038=0.000038=0.000038=0.000038=1=0.000038
+__rec=node,id=358,attr=32,data=Basic_REDUCE3_INT:Kokkos_Lambda
+__rec=node,id=519,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=358
+__rec=ctx,ref=519=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000020=0.000020=0.000020=0.000020=1=0.000020
+__rec=node,id=681,attr=32,data=Lcals_FIRST_MIN:Kokkos_Lambda
+__rec=node,id=775,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=681
+__rec=ctx,ref=775=1722,attr=1708=1711=1714=1718=1716=1721,data=0.001423=0.001423=0.001423=0.001423=1=0.001423
+__rec=node,id=1131,attr=32,data=Apps_LTIMES:Base_Seq
+__rec=node,id=1159,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1131
+__rec=ctx,ref=1159=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=239,attr=32,data=Basic_REDUCE3_INT:RAJA_Seq
+__rec=node,id=264,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=239
+__rec=ctx,ref=264=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000016=0.000016=0.000016=0.000016=1=0.000016
+__rec=node,id=648,attr=32,data=Apps_ENERGY:Base_CUDA
+__rec=ctx,ref=648=1722,attr=1708=1711=1714=1718=1716=1721,data=0.068730=0.068730=0.068730=0.068730=1=0.068730
+__rec=node,id=879,attr=32,data=Basic_NESTED_INIT:Base_Seq
+__rec=node,id=904,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=879
+__rec=ctx,ref=904=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000017=0.000017=0.000017=0.000017=1=0.000017
+__rec=node,id=1006,attr=32,data=HYDRO_2D_Kokkos Kokkos_Lambda--BODY2,parent=723
+__rec=node,id=1032,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1006
+__rec=ctx,ref=1032=1722,attr=1708=1711=1714=1718=1716=1721,data=0.008252=0.008252=0.008252=0.008252=1=0.008252
+__rec=node,id=1509,attr=32,data=Lcals_GEN_LIN_RECUR:Kokkos_Lambda
+__rec=node,id=1655,attr=32,data=GEN_LIN_RECUR_Kokkos Kokkos Lambda -- BODY1,parent=1509
+__rec=node,id=1672,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1655
+__rec=ctx,ref=1672=1722,attr=1708=1711=1714=1718=1716=1721,data=0.020612=0.020612=0.020612=0.020612=1=0.020612
+__rec=node,id=368,attr=32,data=Apps_DEL_DOT_VEC_2D:RAJA_Seq
+__rec=node,id=393,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=368
+__rec=ctx,ref=393=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000056=0.000056=0.000056=0.000056=1=0.000056
+__rec=node,id=521,attr=32,data=Lcals_FIRST_MIN:Lambda_Seq
+__rec=ctx,ref=521=1722,attr=1708=1711=1714=1718=1716=1721,data=0.109062=0.109062=0.109062=0.109062=1=0.109062
+__rec=node,id=777,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=723
+__rec=ctx,ref=777=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000400=0.000400=0.000400=0.000400=1=0.000400
+__rec=node,id=1014,attr=32,data=Basic_INIT3:Kokkos_Lambda
+__rec=node,id=1161,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=1014
+__rec=ctx,ref=1161=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000452=0.000452=0.000452=0.000452=1=0.000452
+__rec=node,id=1265,attr=32,data=Stream_COPY:RAJA_CUDA
+__rec=node,id=1289,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1265
+__rec=ctx,ref=1289=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000026=0.000026=0.000026=0.000026=1=0.000026
+__rec=node,id=1275,attr=32,data=Lcals_INT_PREDICT:Kokkos_Lambda
+__rec=node,id=1417,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=1275
+__rec=ctx,ref=1417=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000033=0.000033=0.000033=0.000033=1=0.000033
+__rec=node,id=138,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=110
+__rec=ctx,ref=138=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000044=0.000044=0.000044=0.000044=1=0.000044
+__rec=ctx,ref=266=1722,attr=1708=1711=1714=1718=1716=1721,data=0.139010=0.139010=0.139010=0.139010=1=0.139010
+__rec=node,id=557,attr=32,data=Basic_IF_QUAD:Kokkos_Lambda
+__rec=node,id=650,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=557
+__rec=ctx,ref=650=1722,attr=1708=1711=1714=1718=1716=1721,data=0.007530=0.007530=0.007530=0.007530=1=0.007530
+__rec=node,id=814,attr=32,data=Basic_TRAP_INT:Kokkos_Lambda
+__rec=node,id=881,attr=32,data=TRAP_INT_Kokkos Kokkos_Lambda,parent=814
+__rec=node,id=906,attr=32,data=Kokkos::Impl::ParallelReduce<Cuda\, RangePolicy>::execute: Result Not Device Accessible,parent=881
+__rec=ctx,ref=906=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000844=0.000844=0.000844=0.000844=1=0.000844
+__rec=node,id=860,attr=32,data=Stream_ADD:Kokkos_Lambda
+__rec=node,id=1034,attr=32,data=ADD_Kokkos Kokkos_Lambda,parent=860
+__rec=ctx,ref=1034=1722,attr=1708=1711=1714=1718=1716=1721,data=0.049710=0.049710=0.049710=0.049710=1=0.049710
+__rec=node,id=1525,attr=32,data=Stream_DOT:Lambda_Seq
+__rec=node,id=1546,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1525
+__rec=ctx,ref=1546=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000030=0.000030=0.000030=0.000030=1=0.000030
+__rec=node,id=1674,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=97
+__rec=ctx,ref=1674=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000197=0.000197=0.000197=0.000197=1=0.000197
+__rec=node,id=395,attr=32,data=Basic_IF_QUAD:RAJA_Seq
+__rec=ctx,ref=395=1722,attr=1708=1711=1714=1718=1716=1721,data=1.277257=1.277257=1.277257=1.277257=1=1.277257
+__rec=node,id=523,attr=32,data=Lcals_HYDRO_2D:Base_Seq
+__rec=ctx,ref=523=1722,attr=1708=1711=1714=1718=1716=1721,data=1.041627=1.041627=1.041627=1.041627=1=1.041627
+__rec=node,id=779,attr=32,data=Stream_ADD:Lambda_CUDA
+__rec=ctx,ref=779=1722,attr=1708=1711=1714=1718=1716=1721,data=0.036914=0.036914=0.036914=0.036914=1=0.036914
+__rec=node,id=1302,attr=32,data=Stream_COPY:Kokkos_Lambda
+__rec=node,id=1419,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=1302
+__rec=ctx,ref=1419=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000106=0.000106=0.000106=0.000106=1=0.000106
+__rec=node,id=268,attr=32,data=Lcals_HYDRO_1D:RAJA_CUDA
+__rec=ctx,ref=268=1722,attr=1708=1711=1714=1718=1716=1721,data=0.038383=0.038383=0.038383=0.038383=1=0.038383
+__rec=node,id=624,attr=32,data=Basic_MULADDSUB:RAJA_CUDA
+__rec=node,id=652,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=624
+__rec=ctx,ref=652=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000026=0.000026=0.000026=0.000026=1=0.000026
+__rec=node,id=869,attr=32,data=FIRST_MIN_Kokkos Kokkos_Lambda,parent=681
+__rec=node,id=908,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=869
+__rec=ctx,ref=908=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000952=0.000952=0.000952=0.000952=1=0.000952
+__rec=node,id=1036,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=983
+__rec=ctx,ref=1036=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000128=0.000128=0.000128=0.000128=1=0.000128
+__rec=node,id=1292,attr=32,data=Basic_INIT_VIEW1D:RAJA_Seq
+__rec=ctx,ref=1292=1722,attr=1708=1711=1714=1718=1716=1721,data=1.453424=1.453424=1.453424=1.453424=1=1.453424
+__rec=node,id=1527,attr=32,data=Apps_LTIMES_NOVIEW:RAJA_CUDA
+__rec=node,id=1548,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1527
+__rec=ctx,ref=1548=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=1676,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=105
+__rec=ctx,ref=1676=1722,attr=1708=1711=1714=1718=1716=1721,data=0.024085=0.024085=0.024085=0.024085=1=0.024085
+__rec=node,id=141,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=115
+__rec=ctx,ref=141=1722,attr=1708=1711=1714=1718=1716=1721,data=0.114230=0.114230=0.114230=0.114230=1=0.114230
+__rec=node,id=403,attr=32,data=Lcals_TRIDIAG_ELIM:Kokkos_Lambda
+__rec=node,id=497,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=403
+__rec=node,id=525,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=497
+__rec=ctx,ref=525=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000150=0.000150=0.000150=0.000150=1=0.000150
+__rec=node,id=781,attr=32,data=Stream_TRIAD:Lambda_Seq
+__rec=ctx,ref=781=1722,attr=1708=1711=1714=1718=1716=1721,data=1.022439=1.022439=1.022439=1.022439=1=1.022439
+__rec=node,id=1165,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1138
+__rec=ctx,ref=1165=1722,attr=1708=1711=1714=1718=1716=1721,data=0.018568=0.018568=0.018568=0.018568=1=0.018568
+__rec=node,id=1421,attr=32,data=Apps_LTIMES_NOVIEW:RAJA_Seq
+__rec=ctx,ref=1421=1722,attr=1708=1711=1714=1718=1716=1721,data=0.987788=0.987788=0.987788=0.987788=1=0.987788
+__rec=node,id=243,attr=32,data=Lcals_TRIDIAG_ELIM:Lambda_Seq
+__rec=node,id=270,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=243
+__rec=ctx,ref=270=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000047=0.000047=0.000047=0.000047=1=0.000047
+__rec=node,id=654,attr=32,data=Basic_TRAP_INT:Lambda_Seq
+__rec=ctx,ref=654=1722,attr=1708=1711=1714=1718=1716=1721,data=0.285568=0.285568=0.285568=0.285568=1=0.285568
+__rec=node,id=910,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post copy fence,parent=723
+__rec=ctx,ref=910=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000205=0.000205=0.000205=0.000205=1=0.000205
+__rec=node,id=1012,attr=32,data=Apps_HALOEXCHANGE:RAJA_Seq
+__rec=node,id=1038,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1012
+__rec=ctx,ref=1038=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=1294,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post copy fence,parent=1121
+__rec=ctx,ref=1294=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=1550,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=1434
+__rec=ctx,ref=1550=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000038=0.000038=0.000038=0.000038=1=0.000038
+__rec=node,id=1659,attr=32,data=Apps_PRESSURE:Base_CUDA
+__rec=node,id=1678,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1659
+__rec=ctx,ref=1678=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000037=0.000037=0.000037=0.000037=1=0.000037
+__rec=node,id=143,attr=32,data=Lcals_FIRST_DIFF:RAJA_Seq
+__rec=ctx,ref=143=1722,attr=1708=1711=1714=1718=1716=1721,data=1.196158=1.196158=1.196158=1.196158=1=1.196158
+__rec=node,id=399,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=266
+__rec=ctx,ref=399=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000076=0.000076=0.000076=0.000076=1=0.000076
+__rec=ctx,ref=527=1722,attr=1708=1711=1714=1718=1716=1721,data=0.147044=0.147044=0.147044=0.147044=1=0.147044
+__rec=node,id=1167,attr=32,data=Lcals_INT_PREDICT:RAJA_Seq
+__rec=ctx,ref=1167=1722,attr=1708=1711=1714=1718=1716=1721,data=2.157589=2.157589=2.157589=2.157589=1=2.157589
+__rec=node,id=1397,attr=32,data=Basic_INIT_VIEW1D:RAJA_CUDA
+__rec=node,id=1423,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1397
+__rec=ctx,ref=1423=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000022=0.000022=0.000022=0.000022=1=0.000022
+__rec=node,id=272,attr=32,data=Kokkos::parallel_reduce: fence due to result being value\, not view,parent=105
+__rec=ctx,ref=272=1722,attr=1708=1711=1714=1718=1716=1721,data=0.012731=0.012731=0.012731=0.012731=1=0.012731
+__rec=node,id=912,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=860
+__rec=ctx,ref=912=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000134=0.000134=0.000134=0.000134=1=0.000134
+__rec=node,id=1040,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1014
+__rec=ctx,ref=1040=1722,attr=1708=1711=1714=1718=1716=1721,data=0.004803=0.004803=0.004803=0.004803=1=0.004803
+__rec=node,id=1296,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=1150
+__rec=ctx,ref=1296=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000033=0.000033=0.000033=0.000033=1=0.000033
+__rec=node,id=1552,attr=32,data=Basic_PI_ATOMIC:RAJA_CUDA
+__rec=ctx,ref=1552=1722,attr=1708=1711=1714=1718=1716=1721,data=0.115042=0.115042=0.115042=0.115042=1=0.115042
+__rec=node,id=1680,attr=32,data=Basic_INIT_VIEW1D_OFFSET:RAJA_Seq
+__rec=ctx,ref=1680=1722,attr=1708=1711=1714=1718=1716=1721,data=2.212413=2.212413=2.212413=2.212413=1=2.212413
+__rec=node,id=145,attr=32,data=Lcals_HYDRO_1D:Lambda_Seq
+__rec=ctx,ref=145=1722,attr=1708=1711=1714=1718=1716=1721,data=0.945142=0.945142=0.945142=0.945142=1=0.945142
+__rec=node,id=401,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=307
+__rec=ctx,ref=401=1722,attr=1708=1711=1714=1718=1716=1721,data=0.003926=0.003926=0.003926=0.003926=1=0.003926
+__rec=node,id=529,attr=32,data=Apps_ENERGY:Base_Seq
+__rec=ctx,ref=529=1722,attr=1708=1711=1714=1718=1716=1721,data=1.467689=1.467689=1.467689=1.467689=1=1.467689
+__rec=node,id=664,attr=32,data=Basic_MULADDSUB:Kokkos_Lambda
+__rec=node,id=757,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=664
+__rec=node,id=785,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=757
+__rec=ctx,ref=785=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000152=0.000152=0.000152=0.000152=1=0.000152
+__rec=node,id=247,attr=32,data=DAXPY-Kokkos Kokkos_Lambda,parent=71
+__rec=node,id=274,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=247
+__rec=ctx,ref=274=1722,attr=1708=1711=1714=1718=1716=1721,data=0.028465=0.028465=0.028465=0.028465=1=0.028465
+__rec=node,id=658,attr=32,data=Stream_ADD:Lambda_Seq
+__rec=ctx,ref=658=1722,attr=1708=1711=1714=1718=1716=1721,data=1.033072=1.033072=1.033072=1.033072=1=1.033072
+__rec=node,id=1042,attr=32,data=Basic_NESTED_INIT:Lambda_CUDA
+__rec=ctx,ref=1042=1722,attr=1708=1711=1714=1718=1716=1721,data=0.020877=0.020877=0.020877=0.020877=1=0.020877
+__rec=node,id=1298,attr=32,data=FIRST_SUM_Kokkos Kokkos_Lambda,parent=1138
+__rec=ctx,ref=1298=1722,attr=1708=1711=1714=1718=1716=1721,data=0.077408=0.077408=0.077408=0.077408=1=0.077408
+__rec=node,id=1662,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=86
+__rec=node,id=1682,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1662
+__rec=ctx,ref=1682=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000902=0.000902=0.000902=0.000902=1=0.000902
+__rec=node,id=147,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=97
+__rec=ctx,ref=147=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=ctx,ref=403=1722,attr=1708=1711=1714=1718=1716=1721,data=0.127445=0.127445=0.127445=0.127445=1=0.127445
+__rec=node,id=889,attr=32,data=Apps_FIR:RAJA_CUDA
+__rec=node,id=915,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=889
+__rec=ctx,ref=915=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000024=0.000024=0.000024=0.000024=1=0.000024
+__rec=node,id=1171,attr=32,data=Apps_LTIMES:Lambda_Seq
+__rec=ctx,ref=1171=1722,attr=1708=1711=1714=1718=1716=1721,data=0.974512=0.974512=0.974512=0.974512=1=0.974512
+__rec=node,id=1403,attr=32,data=Lcals_GEN_LIN_RECUR:RAJA_Seq
+__rec=node,id=1427,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1403
+__rec=ctx,ref=1427=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000041=0.000041=0.000041=0.000041=1=0.000041
+__rec=node,id=1555,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=1509
+__rec=ctx,ref=1555=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000147=0.000147=0.000147=0.000147=1=0.000147
+__rec=node,id=276,attr=32,data=Apps_VOL3D:RAJA_CUDA
+__rec=ctx,ref=276=1722,attr=1708=1711=1714=1718=1716=1721,data=0.015063=0.015063=0.015063=0.015063=1=0.015063
+__rec=node,id=503,attr=32,data=Basic_MULADDSUB:RAJA_Seq
+__rec=node,id=532,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=503
+__rec=ctx,ref=532=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000045=0.000045=0.000045=0.000045=1=0.000045
+__rec=node,id=660,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=527
+__rec=ctx,ref=660=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000099=0.000099=0.000099=0.000099=1=0.000099
+__rec=node,id=1300,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1275
+__rec=ctx,ref=1300=1722,attr=1708=1711=1714=1718=1716=1721,data=0.003727=0.003727=0.003727=0.003727=1=0.003727
+__rec=node,id=1684,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1664
+__rec=ctx,ref=1684=1722,attr=1708=1711=1714=1718=1716=1721,data=0.019678=0.019678=0.019678=0.019678=1=0.019678
+__rec=node,id=149,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=122
+__rec=ctx,ref=149=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000035=0.000035=0.000035=0.000035=1=0.000035
+__rec=node,id=405,attr=32,data=Stream_MUL:Base_CUDA
+__rec=ctx,ref=405=1722,attr=1708=1711=1714=1718=1716=1721,data=0.044929=0.044929=0.044929=0.044929=1=0.044929
+__rec=node,id=891,attr=32,data=Basic_INIT3:Base_CUDA
+__rec=node,id=917,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=891
+__rec=ctx,ref=917=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000044=0.000044=0.000044=0.000044=1=0.000044
+__rec=node,id=1019,attr=32,data=Lcals_FIRST_SUM:RAJA_Seq
+__rec=node,id=1045,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1019
+__rec=ctx,ref=1045=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000020=0.000020=0.000020=0.000020=1=0.000020
+__rec=node,id=1173,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=1014
+__rec=ctx,ref=1173=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=1429,attr=32,data=INT_PREDICT_Kokkos Kokkos_Lambda,parent=1275
+__rec=ctx,ref=1429=1722,attr=1708=1711=1714=1718=1716=1721,data=0.050365=0.050365=0.050365=0.050365=1=0.050365
+__rec=node,id=1534,attr=32,data=Lcals_PLANCKIAN:RAJA_Seq
+__rec=node,id=1557,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1534
+__rec=ctx,ref=1557=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000049=0.000049=0.000049=0.000049=1=0.000049
+__rec=ctx,ref=1302=1722,attr=1708=1711=1714=1718=1716=1721,data=0.146806=0.146806=0.146806=0.146806=1=0.146806
+__rec=node,id=1686,attr=32,data=GEN_LIN_RECUR_Kokkos Kokkos Lambda -- BODY2,parent=1509
+__rec=ctx,ref=1686=1722,attr=1708=1711=1714=1718=1716=1721,data=0.029576=0.029576=0.029576=0.029576=1=0.029576
+__rec=node,id=151,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=124
+__rec=ctx,ref=151=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000046=0.000046=0.000046=0.000046=1=0.000046
+__rec=node,id=279,attr=32,data=Basic_REDUCE3_INT:Base_CUDA
+__rec=ctx,ref=279=1722,attr=1708=1711=1714=1718=1716=1721,data=0.004369=0.004369=0.004369=0.004369=1=0.004369
+__rec=node,id=407,attr=32,data=Apps_DEL_DOT_VEC_2D:Base_CUDA
+__rec=ctx,ref=407=1722,attr=1708=1711=1714=1718=1716=1721,data=0.019728=0.019728=0.019728=0.019728=1=0.019728
+__rec=node,id=919,attr=32,data=Basic_NESTED_INIT:Lambda_Seq
+__rec=ctx,ref=919=1722,attr=1708=1711=1714=1718=1716=1721,data=0.886690=0.886690=0.886690=0.886690=1=0.886690
+__rec=node,id=1047,attr=32,data=HYDRO_2D_Kokkos Kokkos_Lambda--BODY3,parent=723
+__rec=ctx,ref=1047=1722,attr=1708=1711=1714=1718=1716=1721,data=0.008214=0.008214=0.008214=0.008214=1=0.008214
+__rec=node,id=1175,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=1121
+__rec=ctx,ref=1175=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000039=0.000039=0.000039=0.000039=1=0.000039
+__rec=node,id=1431,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=1302
+__rec=ctx,ref=1431=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000200=0.000200=0.000200=0.000200=1=0.000200
+__rec=node,id=1559,attr=32,data=Stream_DOT:RAJA_Seq
+__rec=ctx,ref=1559=1722,attr=1708=1711=1714=1718=1716=1721,data=4.925933=4.925933=4.925933=4.925933=1=4.925933
+__rec=ctx,ref=664=1722,attr=1708=1711=1714=1718=1716=1721,data=0.074766=0.074766=0.074766=0.074766=1=0.074766
+__rec=node,id=792,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=768
+__rec=ctx,ref=792=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000022=0.000022=0.000022=0.000022=1=0.000022
+__rec=node,id=1278,attr=32,data=Apps_LTIMES:Lambda_CUDA
+__rec=node,id=1304,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1278
+__rec=ctx,ref=1304=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000022=0.000022=0.000022=0.000022=1=0.000022
+__rec=node,id=153,attr=32,data=Apps_VOL3D:Lambda_Seq
+__rec=ctx,ref=153=1722,attr=1708=1711=1714=1718=1716=1721,data=1.199321=1.199321=1.199321=1.199321=1=1.199321
+__rec=node,id=537,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=403
+__rec=ctx,ref=537=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000196=0.000196=0.000196=0.000196=1=0.000196
+__rec=node,id=921,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=881
+__rec=ctx,ref=921=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000471=0.000471=0.000471=0.000471=1=0.000471
+__rec=node,id=1177,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1150
+__rec=ctx,ref=1177=1722,attr=1708=1711=1714=1718=1716=1721,data=0.001958=0.001958=0.001958=0.001958=1=0.001958
+__rec=node,id=1561,attr=32,data=Apps_PRESSURE:Base_Seq
+__rec=ctx,ref=1561=1722,attr=1708=1711=1714=1718=1716=1721,data=1.738861=1.738861=1.738861=1.738861=1=1.738861
+__rec=node,id=381,attr=32,data=INIT_VIEW1D_OFFSET_Kokkos Kokkos_Lambda,parent=209
+__rec=node,id=410,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=381
+__rec=ctx,ref=410=1722,attr=1708=1711=1714=1718=1716=1721,data=0.028844=0.028844=0.028844=0.028844=1=0.028844
+__rec=node,id=794,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=770
+__rec=ctx,ref=794=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000045=0.000045=0.000045=0.000045=1=0.000045
+__rec=ctx,ref=1434=1722,attr=1708=1711=1714=1718=1716=1721,data=0.142884=0.142884=0.142884=0.142884=1=0.142884
+__rec=node,id=1690,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=86
+__rec=ctx,ref=1690=1722,attr=1708=1711=1714=1718=1716=1721,data=0.001890=0.001890=0.001890=0.001890=1=0.001890
+__rec=node,id=155,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=127
+__rec=ctx,ref=155=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000025=0.000025=0.000025=0.000025=1=0.000025
+__rec=node,id=283,attr=32,data=Lcals_TRIDIAG_ELIM:RAJA_Seq
+__rec=ctx,ref=283=1722,attr=1708=1711=1714=1718=1716=1721,data=1.468034=1.468034=1.468034=1.468034=1=1.468034
+__rec=node,id=667,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=640
+__rec=ctx,ref=667=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000020=0.000020=0.000020=0.000020=1=0.000020
+__rec=node,id=923,attr=32,data=Kokkos::parallel_reduce: fence due to result being value\, not view,parent=681
+__rec=ctx,ref=923=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000477=0.000477=0.000477=0.000477=1=0.000477
+__rec=node,id=1051,attr=32,data=Apps_HALOEXCHANGE:Base_CUDA
+__rec=ctx,ref=1051=1722,attr=1708=1711=1714=1718=1716=1721,data=0.031817=0.031817=0.031817=0.031817=1=0.031817
+__rec=node,id=1307,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=1121
+__rec=ctx,ref=1307=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=1563,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=1434
+__rec=ctx,ref=1563=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000090=0.000090=0.000090=0.000090=1=0.000090
+__rec=node,id=412,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=358
+__rec=ctx,ref=412=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000039=0.000039=0.000039=0.000039=1=0.000039
+__rec=node,id=796,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=664
+__rec=ctx,ref=796=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000214=0.000214=0.000214=0.000214=1=0.000214
+__rec=node,id=1436,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1412
+__rec=ctx,ref=1436=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000010=0.000010=0.000010=0.000010=1=0.000010
+__rec=node,id=1692,attr=32,data=Lcals_FIRST_DIFF:Base_Seq
+__rec=ctx,ref=1692=1722,attr=1708=1711=1714=1718=1716=1721,data=1.196478=1.196478=1.196478=1.196478=1=1.196478
+__rec=node,id=157,attr=32,data=Basic_REDUCE3_INT:Base_Seq
+__rec=ctx,ref=157=1722,attr=1708=1711=1714=1718=1716=1721,data=0.015566=0.015566=0.015566=0.015566=1=0.015566
+__rec=node,id=285,attr=32,data=Stream_MUL:Base_Seq
+__rec=ctx,ref=285=1722,attr=1708=1711=1714=1718=1716=1721,data=1.092539=1.092539=1.092539=1.092539=1=1.092539
+__rec=node,id=541,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=516
+__rec=ctx,ref=541=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000026=0.000026=0.000026=0.000026=1=0.000026
+__rec=node,id=669,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=642
+__rec=ctx,ref=669=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000037=0.000037=0.000037=0.000037=1=0.000037
+__rec=node,id=925,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=723
+__rec=ctx,ref=925=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000214=0.000214=0.000214=0.000214=1=0.000214
+__rec=node,id=1181,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1155
+__rec=ctx,ref=1181=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000027=0.000027=0.000027=0.000027=1=0.000027
+__rec=node,id=1309,attr=32,data=DIFF_PREDICT_Kokkos Kokkos_Lambda,parent=1150
+__rec=ctx,ref=1309=1722,attr=1708=1711=1714=1718=1716=1721,data=0.074380=0.074380=0.074380=0.074380=1=0.074380
+__rec=node,id=414,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=266
+__rec=ctx,ref=414=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000179=0.000179=0.000179=0.000179=1=0.000179
+__rec=node,id=798,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=773
+__rec=ctx,ref=798=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000013=0.000013=0.000013=0.000013=1=0.000013
+__rec=node,id=1438,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1414
+__rec=ctx,ref=1438=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000045=0.000045=0.000045=0.000045=1=0.000045
+__rec=node,id=1566,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=1520
+__rec=ctx,ref=1566=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000146=0.000146=0.000146=0.000146=1=0.000146
+__rec=node,id=287,attr=32,data=Apps_DEL_DOT_VEC_2D:Base_Seq
+__rec=ctx,ref=287=1722,attr=1708=1711=1714=1718=1716=1721,data=0.815025=0.815025=0.815025=0.815025=1=0.815025
+__rec=node,id=543,attr=32,data=Basic_MULADDSUB:Base_CUDA
+__rec=ctx,ref=543=1722,attr=1708=1711=1714=1718=1716=1721,data=0.031668=0.031668=0.031668=0.031668=1=0.031668
+__rec=node,id=1055,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1029
+__rec=ctx,ref=1055=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000040=0.000040=0.000040=0.000040=1=0.000040
+__rec=node,id=1183,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1157
+__rec=ctx,ref=1183=1722,attr=1708=1711=1714=1718=1716=1721,data=0.027167=0.027167=0.027167=0.027167=1=0.027167
+__rec=node,id=1695,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1674
+__rec=ctx,ref=1695=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000061=0.000061=0.000061=0.000061=1=0.000061
+__rec=node,id=672,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=527
+__rec=ctx,ref=672=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000212=0.000212=0.000212=0.000212=1=0.000212
+__rec=node,id=800,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=775
+__rec=ctx,ref=800=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000031=0.000031=0.000031=0.000031=1=0.000031
+__rec=node,id=928,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=900
+__rec=ctx,ref=928=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000027=0.000027=0.000027=0.000027=1=0.000027
+__rec=node,id=1440,attr=32,data=Lcals_GEN_LIN_RECUR:Base_CUDA
+__rec=ctx,ref=1440=1722,attr=1708=1711=1714=1718=1716=1721,data=0.059185=0.059185=0.059185=0.059185=1=0.059185
+__rec=node,id=161,attr=32,data=PLANCKIAN_Kokkos Kokkos_Lambda,parent=97
+__rec=ctx,ref=161=1722,attr=1708=1711=1714=1718=1716=1721,data=0.003372=0.003372=0.003372=0.003372=1=0.003372
+__rec=node,id=545,attr=32,data=REDUCE3-Kokkos Kokkos_Lambda,parent=358
+__rec=ctx,ref=545=1722,attr=1708=1711=1714=1718=1716=1721,data=0.002737=0.002737=0.002737=0.002737=1=0.002737
+__rec=node,id=1057,attr=32,data=Lcals_FIRST_SUM:Base_CUDA
+__rec=ctx,ref=1057=1722,attr=1708=1711=1714=1718=1716=1721,data=0.049817=0.049817=0.049817=0.049817=1=0.049817
+__rec=node,id=1569,attr=32,data=Lcals_PLANCKIAN:Base_CUDA
+__rec=ctx,ref=1569=1722,attr=1708=1711=1714=1718=1716=1721,data=0.013591=0.013591=0.013591=0.013591=1=0.013591
+__rec=node,id=1697,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1680
+__rec=ctx,ref=1697=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000018=0.000018=0.000018=0.000018=1=0.000018
+__rec=node,id=290,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=262
+__rec=ctx,ref=290=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000012=0.000012=0.000012=0.000012=1=0.000012
+__rec=node,id=674,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=648
+__rec=ctx,ref=674=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000041=0.000041=0.000041=0.000041=1=0.000041
+__rec=node,id=802,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=777
+__rec=ctx,ref=802=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000140=0.000140=0.000140=0.000140=1=0.000140
+__rec=node,id=930,attr=32,data=Apps_HALOEXCHANGE:Base_Seq
+__rec=ctx,ref=930=1722,attr=1708=1711=1714=1718=1716=1721,data=0.031450=0.031450=0.031450=0.031450=1=0.031450
+__rec=node,id=1186,attr=32,data=INIT3-Kokkos Kokkos_Lambda,parent=1014
+__rec=ctx,ref=1186=1722,attr=1708=1711=1714=1718=1716=1721,data=0.033952=0.033952=0.033952=0.033952=1=0.033952
+__rec=node,id=1314,attr=32,data=Apps_LTIMES:RAJA_CUDA
+__rec=ctx,ref=1314=1722,attr=1708=1711=1714=1718=1716=1721,data=0.024395=0.024395=0.024395=0.024395=1=0.024395
+__rec=node,id=547,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=521
+__rec=ctx,ref=547=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000016=0.000016=0.000016=0.000016=1=0.000016
+__rec=node,id=1443,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=1302
+__rec=ctx,ref=1443=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000026=0.000026=0.000026=0.000026=1=0.000026
+__rec=node,id=1699,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=86
+__rec=ctx,ref=1699=1722,attr=1708=1711=1714=1718=1716=1721,data=0.001880=0.001880=0.001880=0.001880=1=0.001880
+__rec=node,id=164,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=105
+__rec=ctx,ref=164=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000055=0.000055=0.000055=0.000055=1=0.000055
+__rec=node,id=420,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=395
+__rec=ctx,ref=420=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000051=0.000051=0.000051=0.000051=1=0.000051
+__rec=node,id=676,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=650
+__rec=ctx,ref=676=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000140=0.000140=0.000140=0.000140=1=0.000140
+__rec=node,id=804,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=779
+__rec=ctx,ref=804=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000029=0.000029=0.000029=0.000029=1=0.000029
+__rec=node,id=932,attr=32,data=Basic_INIT3:Lambda_CUDA
+__rec=ctx,ref=932=1722,attr=1708=1711=1714=1718=1716=1721,data=0.039378=0.039378=0.039378=0.039378=1=0.039378
+__rec=node,id=1060,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1034
+__rec=ctx,ref=1060=1722,attr=1708=1711=1714=1718=1716=1721,data=0.027214=0.027214=0.027214=0.027214=1=0.027214
+__rec=node,id=1316,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1292
+__rec=ctx,ref=1316=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000017=0.000017=0.000017=0.000017=1=0.000017
+__rec=node,id=293,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=266
+__rec=ctx,ref=293=1722,attr=1708=1711=1714=1718=1716=1721,data=0.018466=0.018466=0.018466=0.018466=1=0.018466
+__rec=node,id=549,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=523
+__rec=ctx,ref=549=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000053=0.000053=0.000053=0.000053=1=0.000053
+__rec=node,id=1445,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1421
+__rec=ctx,ref=1445=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000018=0.000018=0.000018=0.000018=1=0.000018
+__rec=node,id=1573,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=1434
+__rec=ctx,ref=1573=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000020=0.000020=0.000020=0.000020=1=0.000020
+__rec=node,id=166,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=71
+__rec=ctx,ref=166=1722,attr=1708=1711=1714=1718=1716=1721,data=0.006470=0.006470=0.006470=0.006470=1=0.006470
+__rec=node,id=422,attr=32,data=Basic_MULADDSUB:Base_Seq
+__rec=ctx,ref=422=1722,attr=1708=1711=1714=1718=1716=1721,data=0.731387=0.731387=0.731387=0.731387=1=0.731387
+__rec=node,id=806,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=781
+__rec=ctx,ref=806=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000042=0.000042=0.000042=0.000042=1=0.000042
+__rec=node,id=1062,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1036
+__rec=ctx,ref=1062=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000041=0.000041=0.000041=0.000041=1=0.000041
+__rec=node,id=1190,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=1138
+__rec=ctx,ref=1190=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000074=0.000074=0.000074=0.000074=1=0.000074
+__rec=node,id=1318,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=1121
+__rec=ctx,ref=1318=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000063=0.000063=0.000063=0.000063=1=0.000063
+__rec=node,id=1702,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1686
+__rec=ctx,ref=1702=1722,attr=1708=1711=1714=1718=1716=1721,data=0.020546=0.020546=0.020546=0.020546=1=0.020546
+__rec=node,id=295,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=268
+__rec=ctx,ref=295=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000025=0.000025=0.000025=0.000025=1=0.000025
+__rec=node,id=551,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=403
+__rec=ctx,ref=551=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000399=0.000399=0.000399=0.000399=1=0.000399
+__rec=node,id=679,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=654
+__rec=ctx,ref=679=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000011=0.000011=0.000011=0.000011=1=0.000011
+__rec=node,id=935,attr=32,data=Kokkos::parallel_reduce: fence due to result being value\, not view,parent=814
+__rec=ctx,ref=935=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000238=0.000238=0.000238=0.000238=1=0.000238
+__rec=node,id=1575,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1552
+__rec=ctx,ref=1575=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000011=0.000011=0.000011=0.000011=1=0.000011
+__rec=node,id=808,attr=32,data=Apps_FIR:RAJA_Seq
+__rec=ctx,ref=808=1722,attr=1708=1711=1714=1718=1716=1721,data=0.852565=0.852565=0.852565=0.852565=1=0.852565
+__rec=node,id=1192,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1167
+__rec=ctx,ref=1192=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000045=0.000045=0.000045=0.000045=1=0.000045
+__rec=node,id=1448,attr=32,data=Basic_PI_ATOMIC:RAJA_Seq
+__rec=ctx,ref=1448=1722,attr=1708=1711=1714=1718=1716=1721,data=0.123185=0.123185=0.123185=0.123185=1=0.123185
+__rec=node,id=1704,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1692
+__rec=ctx,ref=1704=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000022=0.000022=0.000022=0.000022=1=0.000022
+__rec=node,id=169,attr=32,data=Basic_INIT_VIEW1D_OFFSET:RAJA_CUDA
+__rec=ctx,ref=169=1722,attr=1708=1711=1714=1718=1716=1721,data=0.030197=0.030197=0.030197=0.030197=1=0.030197
+__rec=node,id=425,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=266
+__rec=ctx,ref=425=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=553,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=527
+__rec=ctx,ref=553=1722,attr=1708=1711=1714=1718=1716=1721,data=0.021328=0.021328=0.021328=0.021328=1=0.021328
+__rec=ctx,ref=681=1722,attr=1708=1711=1714=1718=1716=1721,data=0.018633=0.018633=0.018633=0.018633=1=0.018633
+__rec=node,id=937,attr=32,data=Lcals_FIRST_SUM:Base_Seq
+__rec=ctx,ref=937=1722,attr=1708=1711=1714=1718=1716=1721,data=1.195677=1.195677=1.195677=1.195677=1=1.195677
+__rec=node,id=1065,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=1014
+__rec=ctx,ref=1065=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000185=0.000185=0.000185=0.000185=1=0.000185
+__rec=node,id=1321,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1298
+__rec=ctx,ref=1321=1722,attr=1708=1711=1714=1718=1716=1721,data=0.041531=0.041531=0.041531=0.041531=1=0.041531
+__rec=node,id=810,attr=32,data=Basic_INIT3:Lambda_Seq
+__rec=ctx,ref=810=1722,attr=1708=1711=1714=1718=1716=1721,data=1.047430=1.047430=1.047430=1.047430=1=1.047430
+__rec=node,id=1194,attr=32,data=Stream_COPY:Base_CUDA
+__rec=ctx,ref=1194=1722,attr=1708=1711=1714=1718=1716=1721,data=0.044866=0.044866=0.044866=0.044866=1=0.044866
+__rec=node,id=1450,attr=32,data=Lcals_EOS:Base_CUDA
+__rec=ctx,ref=1450=1722,attr=1708=1711=1714=1718=1716=1721,data=0.030132=0.030132=0.030132=0.030132=1=0.030132
+__rec=node,id=1578,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1555
+__rec=ctx,ref=1578=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000044=0.000044=0.000044=0.000044=1=0.000044
+__rec=node,id=427,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=401
+__rec=ctx,ref=427=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000081=0.000081=0.000081=0.000081=1=0.000081
+__rec=node,id=555,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=529
+__rec=ctx,ref=555=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000055=0.000055=0.000055=0.000055=1=0.000055
+__rec=node,id=683,attr=32,data=Lcals_HYDRO_2D:RAJA_CUDA
+__rec=ctx,ref=683=1722,attr=1708=1711=1714=1718=1716=1721,data=0.047612=0.047612=0.047612=0.047612=1=0.047612
+__rec=node,id=939,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=723
+__rec=ctx,ref=939=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000680=0.000680=0.000680=0.000680=1=0.000680
+__rec=node,id=1067,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1042
+__rec=ctx,ref=1067=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000022=0.000022=0.000022=0.000022=1=0.000022
+__rec=node,id=1323,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=1275
+__rec=ctx,ref=1323=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000155=0.000155=0.000155=0.000155=1=0.000155
+__rec=node,id=172,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=143
+__rec=ctx,ref=172=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000018=0.000018=0.000018=0.000018=1=0.000018
+__rec=node,id=300,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=276
+__rec=ctx,ref=300=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000029=0.000029=0.000029=0.000029=1=0.000029
+__rec=node,id=812,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=664
+__rec=ctx,ref=812=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000486=0.000486=0.000486=0.000486=1=0.000486
+__rec=node,id=1196,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1171
+__rec=ctx,ref=1196=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000017=0.000017=0.000017=0.000017=1=0.000017
+__rec=node,id=429,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=403
+__rec=ctx,ref=429=1722,attr=1708=1711=1714=1718=1716=1721,data=0.011986=0.011986=0.011986=0.011986=1=0.011986
+__rec=ctx,ref=557=1722,attr=1708=1711=1714=1718=1716=1721,data=0.057244=0.057244=0.057244=0.057244=1=0.057244
+__rec=node,id=685,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=658
+__rec=ctx,ref=685=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000043=0.000043=0.000043=0.000043=1=0.000043
+__rec=node,id=941,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=912
+__rec=ctx,ref=941=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000043=0.000043=0.000043=0.000043=1=0.000043
+__rec=node,id=1069,attr=32,data=Lcals_DIFF_PREDICT:Base_CUDA
+__rec=ctx,ref=1069=1722,attr=1708=1711=1714=1718=1716=1721,data=0.118652=0.118652=0.118652=0.118652=1=0.118652
+__rec=node,id=1325,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1302
+__rec=ctx,ref=1325=1722,attr=1708=1711=1714=1718=1716=1721,data=0.021507=0.021507=0.021507=0.021507=1=0.021507
+__rec=node,id=1453,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1429
+__rec=ctx,ref=1453=1722,attr=1708=1711=1714=1718=1716=1721,data=0.043119=0.043119=0.043119=0.043119=1=0.043119
+__rec=node,id=1581,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1559
+__rec=ctx,ref=1581=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000039=0.000039=0.000039=0.000039=1=0.000039
+__rec=node,id=174,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=145
+__rec=ctx,ref=174=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000041=0.000041=0.000041=0.000041=1=0.000041
+__rec=node,id=302,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=209
+__rec=ctx,ref=302=1722,attr=1708=1711=1714=1718=1716=1721,data=0.001180=0.001180=0.001180=0.001180=1=0.001180
+__rec=ctx,ref=814=1722,attr=1708=1711=1714=1718=1716=1721,data=0.004320=0.004320=0.004320=0.004320=1=0.004320
+__rec=node,id=431,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=405
+__rec=ctx,ref=431=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000025=0.000025=0.000025=0.000025=1=0.000025
+__rec=node,id=687,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=527
+__rec=ctx,ref=687=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000027=0.000027=0.000027=0.000027=1=0.000027
+__rec=node,id=943,attr=32,data=Stream_TRIAD:RAJA_CUDA
+__rec=ctx,ref=943=1722,attr=1708=1711=1714=1718=1716=1721,data=0.036995=0.036995=0.036995=0.036995=1=0.036995
+__rec=node,id=1199,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1175
+__rec=ctx,ref=1199=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000012=0.000012=0.000012=0.000012=1=0.000012
+__rec=node,id=1455,attr=32,data=COPY_Kokkos Kokkos_Lambda,parent=1302
+__rec=ctx,ref=1455=1722,attr=1708=1711=1714=1718=1716=1721,data=0.072272=0.072272=0.072272=0.072272=1=0.072272
+__rec=node,id=1583,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1561
+__rec=ctx,ref=1583=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000051=0.000051=0.000051=0.000051=1=0.000051
+__rec=node,id=304,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=279
+__rec=ctx,ref=304=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000018=0.000018=0.000018=0.000018=1=0.000018
+__rec=node,id=816,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=681
+__rec=ctx,ref=816=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000039=0.000039=0.000039=0.000039=1=0.000039
+__rec=node,id=1072,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1047
+__rec=ctx,ref=1072=1722,attr=1708=1711=1714=1718=1716=1721,data=0.006372=0.006372=0.006372=0.006372=1=0.006372
+__rec=node,id=1328,attr=32,data=Basic_INIT_VIEW1D:Base_CUDA
+__rec=ctx,ref=1328=1722,attr=1708=1711=1714=1718=1716=1721,data=0.030241=0.030241=0.030241=0.030241=1=0.030241
+__rec=node,id=177,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=105
+__rec=ctx,ref=177=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000128=0.000128=0.000128=0.000128=1=0.000128
+__rec=node,id=433,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=407
+__rec=ctx,ref=433=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000032=0.000032=0.000032=0.000032=1=0.000032
+__rec=node,id=561,attr=32,data=Lcals_FIRST_MIN:RAJA_Seq
+__rec=ctx,ref=561=1722,attr=1708=1711=1714=1718=1716=1721,data=0.108729=0.108729=0.108729=0.108729=1=0.108729
+__rec=node,id=689,attr=32,data=Apps_ENERGY:RAJA_CUDA
+__rec=ctx,ref=689=1722,attr=1708=1711=1714=1718=1716=1721,data=0.068478=0.068478=0.068478=0.068478=1=0.068478
+__rec=node,id=1201,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=1150
+__rec=ctx,ref=1201=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000330=0.000330=0.000330=0.000330=1=0.000330
+__rec=node,id=1457,attr=32,data=Apps_LTIMES_NOVIEW:Base_CUDA
+__rec=ctx,ref=1457=1722,attr=1708=1711=1714=1718=1716=1721,data=0.019382=0.019382=0.019382=0.019382=1=0.019382
+__rec=node,id=1585,attr=32,data=INIT_VIEW1D_Kokkos Kokkos_Lambda,parent=1434
+__rec=ctx,ref=1585=1722,attr=1708=1711=1714=1718=1716=1721,data=0.073480=0.073480=0.073480=0.073480=1=0.073480
+__rec=node,id=818,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=723
+__rec=ctx,ref=818=1722,attr=1708=1711=1714=1718=1716=1721,data=0.012531=0.012531=0.012531=0.012531=1=0.012531
+__rec=node,id=1074,attr=32,data=Stream_COPY:Base_Seq
+__rec=ctx,ref=1074=1722,attr=1708=1711=1714=1718=1716=1721,data=1.093664=1.093664=1.093664=1.093664=1=1.093664
+__rec=node,id=1330,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=1121
+__rec=ctx,ref=1330=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000020=0.000020=0.000020=0.000020=1=0.000020
+__rec=ctx,ref=307=1722,attr=1708=1711=1714=1718=1716=1721,data=0.094847=0.094847=0.094847=0.094847=1=0.094847
+__rec=node,id=435,attr=32,data=Basic_IF_QUAD:Base_CUDA
+__rec=ctx,ref=435=1722,attr=1708=1711=1714=1718=1716=1721,data=0.023678=0.023678=0.023678=0.023678=1=0.023678
+__rec=node,id=563,attr=32,data=Lcals_HYDRO_2D:Lambda_Seq
+__rec=ctx,ref=563=1722,attr=1708=1711=1714=1718=1716=1721,data=1.041254=1.041254=1.041254=1.041254=1=1.041254
+__rec=node,id=691,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=557
+__rec=ctx,ref=691=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000204=0.000204=0.000204=0.000204=1=0.000204
+__rec=node,id=947,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=919
+__rec=ctx,ref=947=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=1459,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1434
+__rec=ctx,ref=1459=1722,attr=1708=1711=1714=1718=1716=1721,data=0.023001=0.023001=0.023001=0.023001=1=0.023001
+__rec=node,id=1587,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1566
+__rec=ctx,ref=1587=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000043=0.000043=0.000043=0.000043=1=0.000043
+__rec=node,id=180,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=153
+__rec=ctx,ref=180=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000060=0.000060=0.000060=0.000060=1=0.000060
+__rec=node,id=820,attr=32,data=Stream_ADD:RAJA_CUDA
+__rec=ctx,ref=820=1722,attr=1708=1711=1714=1718=1716=1721,data=0.036900=0.036900=0.036900=0.036900=1=0.036900
+__rec=node,id=1076,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=983
+__rec=ctx,ref=1076=1722,attr=1708=1711=1714=1718=1716=1721,data=0.005778=0.005778=0.005778=0.005778=1=0.005778
+__rec=node,id=1204,attr=32,data=Lcals_INT_PREDICT:Base_CUDA
+__rec=ctx,ref=1204=1722,attr=1708=1711=1714=1718=1716=1721,data=0.083966=0.083966=0.083966=0.083966=1=0.083966
+__rec=node,id=1332,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1309
+__rec=ctx,ref=1332=1722,attr=1708=1711=1714=1718=1716=1721,data=0.070709=0.070709=0.070709=0.070709=1=0.070709
+__rec=node,id=309,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=283
+__rec=ctx,ref=309=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000093=0.000093=0.000093=0.000093=1=0.000093
+__rec=node,id=565,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=403
+__rec=ctx,ref=565=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000026=0.000026=0.000026=0.000026=1=0.000026
+__rec=node,id=693,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=664
+__rec=ctx,ref=693=1722,attr=1708=1711=1714=1718=1716=1721,data=0.003448=0.003448=0.003448=0.003448=1=0.003448
+__rec=node,id=949,attr=32,data=Lcals_DIFF_PREDICT:Base_Seq
+__rec=ctx,ref=949=1722,attr=1708=1711=1714=1718=1716=1721,data=1.426972=1.426972=1.426972=1.426972=1=1.426972
+__rec=node,id=1589,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=1509
+__rec=ctx,ref=1589=1722,attr=1708=1711=1714=1718=1716=1721,data=0.005172=0.005172=0.005172=0.005172=1=0.005172
+__rec=node,id=438,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=412
+__rec=ctx,ref=438=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000014=0.000014=0.000014=0.000014=1=0.000014
+__rec=node,id=822,attr=32,data=Stream_TRIAD:RAJA_Seq
+__rec=ctx,ref=822=1722,attr=1708=1711=1714=1718=1716=1721,data=1.027992=1.027992=1.027992=1.027992=1=1.027992
+__rec=node,id=1078,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1051
+__rec=ctx,ref=1078=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000032=0.000032=0.000032=0.000032=1=0.000032
+__rec=node,id=1334,attr=32,data=Lcals_GEN_LIN_RECUR:Base_Seq
+__rec=ctx,ref=1334=1722,attr=1708=1711=1714=1718=1716=1721,data=1.449815=1.449815=1.449815=1.449815=1=1.449815
+__rec=node,id=183,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=157
+__rec=ctx,ref=183=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000014=0.000014=0.000014=0.000014=1=0.000014
+__rec=node,id=311,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=285
+__rec=ctx,ref=311=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000028=0.000028=0.000028=0.000028=1=0.000028
+__rec=node,id=695,attr=32,data=Basic_TRAP_INT:RAJA_Seq
+__rec=ctx,ref=695=1722,attr=1708=1711=1714=1718=1716=1721,data=0.285168=0.285168=0.285168=0.285168=1=0.285168
+__rec=node,id=1207,attr=32,data=Apps_LTIMES:RAJA_Seq
+__rec=ctx,ref=1207=1722,attr=1708=1711=1714=1718=1716=1721,data=0.989401=0.989401=0.989401=0.989401=1=0.989401
+__rec=node,id=1463,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1440
+__rec=ctx,ref=1463=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000035=0.000035=0.000035=0.000035=1=0.000035
+__rec=node,id=1591,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1569
+__rec=ctx,ref=1591=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000036=0.000036=0.000036=0.000036=1=0.000036
+__rec=node,id=440,attr=32,data=FIRST_DIFF_Kokkos Kokkos_Lambda,parent=266
+__rec=ctx,ref=440=1722,attr=1708=1711=1714=1718=1716=1721,data=0.074437=0.074437=0.074437=0.074437=1=0.074437
+__rec=node,id=568,attr=32,data=Apps_ENERGY:Lambda_Seq
+__rec=ctx,ref=568=1722,attr=1708=1711=1714=1718=1716=1721,data=1.464026=1.464026=1.464026=1.464026=1=1.464026
+__rec=node,id=952,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=723
+__rec=ctx,ref=952=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000022=0.000022=0.000022=0.000022=1=0.000022
+__rec=node,id=185,attr=32,data=Lcals_FIRST_DIFF:Base_CUDA
+__rec=ctx,ref=185=1722,attr=1708=1711=1714=1718=1716=1721,data=0.049909=0.049909=0.049909=0.049909=1=0.049909
+__rec=node,id=313,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=287
+__rec=ctx,ref=313=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000143=0.000143=0.000143=0.000143=1=0.000143
+__rec=node,id=1081,attr=32,data=Basic_NESTED_INIT:RAJA_CUDA
+__rec=ctx,ref=1081=1722,attr=1708=1711=1714=1718=1716=1721,data=0.020927=0.020927=0.020927=0.020927=1=0.020927
+__rec=node,id=1209,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1186
+__rec=ctx,ref=1209=1722,attr=1708=1711=1714=1718=1716=1721,data=0.024881=0.024881=0.024881=0.024881=1=0.024881
+__rec=node,id=1465,attr=32,data=Lcals_PLANCKIAN:Base_Seq
+__rec=ctx,ref=1465=1722,attr=1708=1711=1714=1718=1716=1721,data=0.782920=0.782920=0.782920=0.782920=1=0.782920
+__rec=node,id=1593,attr=32,data=Stream_DOT:Base_CUDA
+__rec=ctx,ref=1593=1722,attr=1708=1711=1714=1718=1716=1721,data=0.074797=0.074797=0.074797=0.074797=1=0.074797
+__rec=node,id=442,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=307
+__rec=ctx,ref=442=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000121=0.000121=0.000121=0.000121=1=0.000121
+__rec=node,id=826,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=664
+__rec=ctx,ref=826=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=954,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=860
+__rec=ctx,ref=954=1722,attr=1708=1711=1714=1718=1716=1721,data=0.005649=0.005649=0.005649=0.005649=1=0.005649
+__rec=node,id=1338,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1314
+__rec=ctx,ref=1338=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000020=0.000020=0.000020=0.000020=1=0.000020
+__rec=node,id=187,attr=32,data=Lcals_HYDRO_1D:RAJA_Seq
+__rec=ctx,ref=187=1722,attr=1708=1711=1714=1718=1716=1721,data=0.935602=0.935602=0.935602=0.935602=1=0.935602
+__rec=node,id=315,attr=32,data=Basic_IF_QUAD:Base_Seq
+__rec=ctx,ref=315=1722,attr=1708=1711=1714=1718=1716=1721,data=1.350022=1.350022=1.350022=1.350022=1=1.350022
+__rec=node,id=571,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=543
+__rec=ctx,ref=571=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000040=0.000040=0.000040=0.000040=1=0.000040
+__rec=node,id=699,attr=32,data=Stream_ADD:RAJA_Seq
+__rec=ctx,ref=699=1722,attr=1708=1711=1714=1718=1716=1721,data=1.028527=1.028527=1.028527=1.028527=1=1.028527
+__rec=node,id=1211,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=1121
+__rec=ctx,ref=1211=1722,attr=1708=1711=1714=1718=1716=1721,data=0.001101=0.001101=0.001101=0.001101=1=0.001101
+__rec=node,id=1595,attr=32,data=Apps_PRESSURE:Lambda_Seq
+__rec=ctx,ref=1595=1722,attr=1708=1711=1714=1718=1716=1721,data=1.681824=1.681824=1.681824=1.681824=1=1.681824
+__rec=node,id=1084,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1057
+__rec=ctx,ref=1084=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000020=0.000020=0.000020=0.000020=1=0.000020
+__rec=node,id=189,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=161
+__rec=ctx,ref=189=1722,attr=1708=1711=1714=1718=1716=1721,data=0.002398=0.002398=0.002398=0.002398=1=0.002398
+__rec=node,id=445,attr=32,data=Stream_MUL:Lambda_CUDA
+__rec=ctx,ref=445=1722,attr=1708=1711=1714=1718=1716=1721,data=0.044861=0.044861=0.044861=0.044861=1=0.044861
+__rec=node,id=573,attr=32,data=Kokkos::Impl::ParallelReduce<Cuda\, RangePolicy>::execute: Result Not Device Accessible,parent=545
+__rec=ctx,ref=573=1722,attr=1708=1711=1714=1718=1716=1721,data=0.001016=0.001016=0.001016=0.001016=1=0.001016
+__rec=node,id=701,attr=32,data=MUL_Kokkos Kokkos_Lambda,parent=527
+__rec=ctx,ref=701=1722,attr=1708=1711=1714=1718=1716=1721,data=0.072498=0.072498=0.072498=0.072498=1=0.072498
+__rec=node,id=829,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=681
+__rec=ctx,ref=829=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000091=0.000091=0.000091=0.000091=1=0.000091
+__rec=node,id=957,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=930
+__rec=ctx,ref=957=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000022=0.000022=0.000022=0.000022=1=0.000022
+__rec=node,id=1341,attr=32,data=NESTED_INIT KokkosSeq,parent=1121
+__rec=ctx,ref=1341=1722,attr=1708=1711=1714=1718=1716=1721,data=0.044585=0.044585=0.044585=0.044585=1=0.044585
+__rec=node,id=318,attr=32,data=Basic_REDUCE3_INT:RAJA_CUDA
+__rec=ctx,ref=318=1722,attr=1708=1711=1714=1718=1716=1721,data=0.018681=0.018681=0.018681=0.018681=1=0.018681
+__rec=node,id=1086,attr=32,data=Lcals_INT_PREDICT:Base_Seq
+__rec=ctx,ref=1086=1722,attr=1708=1711=1714=1718=1716=1721,data=2.223947=2.223947=2.223947=2.223947=1=2.223947
+__rec=node,id=1214,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1190
+__rec=ctx,ref=1214=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000026=0.000026=0.000026=0.000026=1=0.000026
+__rec=node,id=1470,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1448
+__rec=ctx,ref=1470=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000010=0.000010=0.000010=0.000010=1=0.000010
+__rec=node,id=1598,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=1520
+__rec=ctx,ref=1598=1722,attr=1708=1711=1714=1718=1716=1721,data=0.006059=0.006059=0.006059=0.006059=1=0.006059
+__rec=node,id=191,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=105
+__rec=ctx,ref=191=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000026=0.000026=0.000026=0.000026=1=0.000026
+__rec=node,id=447,attr=32,data=Apps_DEL_DOT_VEC_2D:Lambda_CUDA
+__rec=ctx,ref=447=1722,attr=1708=1711=1714=1718=1716=1721,data=0.019190=0.019190=0.019190=0.019190=1=0.019190
+__rec=node,id=959,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=932
+__rec=ctx,ref=959=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000028=0.000028=0.000028=0.000028=1=0.000028
+__rec=node,id=1343,attr=32,data=Lcals_EOS:Base_Seq
+__rec=ctx,ref=1343=1722,attr=1708=1711=1714=1718=1716=1721,data=0.745427=0.745427=0.745427=0.745427=1=0.745427
+__rec=node,id=320,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=266
+__rec=ctx,ref=320=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000076=0.000076=0.000076=0.000076=1=0.000076
+__rec=node,id=704,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=557
+__rec=ctx,ref=704=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000444=0.000444=0.000444=0.000444=1=0.000444
+__rec=node,id=1472,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1450
+__rec=ctx,ref=1472=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000036=0.000036=0.000036=0.000036=1=0.000036
+__rec=node,id=193,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=166
+__rec=ctx,ref=193=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000102=0.000102=0.000102=0.000102=1=0.000102
+__rec=node,id=577,attr=32,data=TRIDIAG_ELIM_Kokkos Kokkos_Lambda,parent=403
+__rec=ctx,ref=577=1722,attr=1708=1711=1714=1718=1716=1721,data=0.060650=0.060650=0.060650=0.060650=1=0.060650
+__rec=node,id=961,attr=32,data=Basic_NESTED_INIT:RAJA_Seq
+__rec=ctx,ref=961=1722,attr=1708=1711=1714=1718=1716=1721,data=0.688578=0.688578=0.688578=0.688578=1=0.688578
+__rec=node,id=1217,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1194
+__rec=ctx,ref=1217=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000028=0.000028=0.000028=0.000028=1=0.000028
+__rec=node,id=1601,attr=32,data=Lcals_PLANCKIAN:RAJA_CUDA
+__rec=ctx,ref=1601=1722,attr=1708=1711=1714=1718=1716=1721,data=0.013104=0.013104=0.013104=0.013104=1=0.013104
+__rec=node,id=450,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=422
+__rec=ctx,ref=450=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000049=0.000049=0.000049=0.000049=1=0.000049
+__rec=node,id=834,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=808
+__rec=ctx,ref=834=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000024=0.000024=0.000024=0.000024=1=0.000024
+__rec=node,id=1090,attr=32,data=Apps_HALOEXCHANGE:RAJA_CUDA
+__rec=ctx,ref=1090=1722,attr=1708=1711=1714=1718=1716=1721,data=0.032371=0.032371=0.032371=0.032371=1=0.032371
+__rec=node,id=1346,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1323
+__rec=ctx,ref=1346=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000117=0.000117=0.000117=0.000117=1=0.000117
+__rec=node,id=1474,attr=32,data=Lcals_GEN_LIN_RECUR:RAJA_CUDA
+__rec=ctx,ref=1474=1722,attr=1708=1711=1714=1718=1716=1721,data=0.053921=0.053921=0.053921=0.053921=1=0.053921
+__rec=node,id=195,attr=32,data=Apps_VOL3D:RAJA_Seq
+__rec=ctx,ref=195=1722,attr=1708=1711=1714=1718=1716=1721,data=1.193743=1.193743=1.193743=1.193743=1=1.193743
+__rec=node,id=323,attr=32,data=Lcals_TRIDIAG_ELIM:Base_CUDA
+__rec=ctx,ref=323=1722,attr=1708=1711=1714=1718=1716=1721,data=0.049557=0.049557=0.049557=0.049557=1=0.049557
+__rec=node,id=579,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=527
+__rec=ctx,ref=579=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000086=0.000086=0.000086=0.000086=1=0.000086
+__rec=node,id=452,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=358
+__rec=ctx,ref=452=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000833=0.000833=0.000833=0.000833=1=0.000833
+__rec=node,id=708,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=681
+__rec=ctx,ref=708=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000976=0.000976=0.000976=0.000976=1=0.000976
+__rec=node,id=836,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=810
+__rec=ctx,ref=836=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000041=0.000041=0.000041=0.000041=1=0.000041
+__rec=node,id=964,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=937
+__rec=ctx,ref=964=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=1092,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1065
+__rec=ctx,ref=1092=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000056=0.000056=0.000056=0.000056=1=0.000056
+__rec=node,id=1220,attr=32,data=Basic_INIT_VIEW1D:Base_Seq
+__rec=ctx,ref=1220=1722,attr=1708=1711=1714=1718=1716=1721,data=1.471975=1.471975=1.471975=1.471975=1=1.471975
+__rec=node,id=1348,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=1302
+__rec=ctx,ref=1348=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000088=0.000088=0.000088=0.000088=1=0.000088
+__rec=node,id=197,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=169
+__rec=ctx,ref=197=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000022=0.000022=0.000022=0.000022=1=0.000022
+__rec=node,id=325,attr=32,data=Stream_MUL:Lambda_Seq
+__rec=ctx,ref=325=1722,attr=1708=1711=1714=1718=1716=1721,data=1.088638=1.088638=1.088638=1.088638=1=1.088638
+__rec=node,id=1477,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1455
+__rec=ctx,ref=1477=1722,attr=1708=1711=1714=1718=1716=1721,data=0.032539=0.032539=0.032539=0.032539=1=0.032539
+__rec=node,id=1605,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1585
+__rec=ctx,ref=1605=1722,attr=1708=1711=1714=1718=1716=1721,data=0.028876=0.028876=0.028876=0.028876=1=0.028876
+__rec=node,id=582,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=557
+__rec=ctx,ref=582=1722,attr=1708=1711=1714=1718=1716=1721,data=0.001845=0.001845=0.001845=0.001845=1=0.001845
+__rec=node,id=710,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=683
+__rec=ctx,ref=710=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000035=0.000035=0.000035=0.000035=1=0.000035
+__rec=node,id=838,attr=32,data=MULTISUB-KokkosSeq Kokkos_Lambda,parent=664
+__rec=ctx,ref=838=1722,attr=1708=1711=1714=1718=1716=1721,data=0.024178=0.024178=0.024178=0.024178=1=0.024178
+__rec=node,id=966,attr=32,data=HYDRO_2D_Kokkos Kokkos_Lambda--BODY1,parent=723
+__rec=ctx,ref=966=1722,attr=1708=1711=1714=1718=1716=1721,data=0.008720=0.008720=0.008720=0.008720=1=0.008720
+__rec=node,id=1350,attr=32,data=Apps_LTIMES_NOVIEW:Base_Seq
+__rec=ctx,ref=1350=1722,attr=1708=1711=1714=1718=1716=1721,data=0.974797=0.974797=0.974797=0.974797=1=0.974797
+__rec=node,id=199,attr=32,data=Basic_REDUCE3_INT:Lambda_Seq
+__rec=ctx,ref=199=1722,attr=1708=1711=1714=1718=1716=1721,data=0.014497=0.014497=0.014497=0.014497=1=0.014497
+__rec=node,id=327,attr=32,data=Apps_DEL_DOT_VEC_2D:Lambda_Seq
+__rec=ctx,ref=327=1722,attr=1708=1711=1714=1718=1716=1721,data=0.809967=0.809967=0.809967=0.809967=1=0.809967
+__rec=node,id=455,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=307
+__rec=ctx,ref=455=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000273=0.000273=0.000273=0.000273=1=0.000273
+__rec=node,id=1095,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1069
+__rec=ctx,ref=1095=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000037=0.000037=0.000037=0.000037=1=0.000037
+__rec=node,id=1223,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1201
+__rec=ctx,ref=1223=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000255=0.000255=0.000255=0.000255=1=0.000255
+__rec=node,id=1479,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1457
+__rec=ctx,ref=1479=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000020=0.000020=0.000020=0.000020=1=0.000020
+__rec=node,id=1607,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=86
+__rec=ctx,ref=1607=1722,attr=1708=1711=1714=1718=1716=1721,data=0.002014=0.002014=0.002014=0.002014=1=0.002014
+__rec=node,id=584,attr=32,data=Basic_MULADDSUB:Lambda_CUDA
+__rec=ctx,ref=584=1722,attr=1708=1711=1714=1718=1716=1721,data=0.035017=0.035017=0.035017=0.035017=1=0.035017
+__rec=node,id=840,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=814
+__rec=ctx,ref=840=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000018=0.000018=0.000018=0.000018=1=0.000018
+__rec=node,id=1352,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1328
+__rec=ctx,ref=1352=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000022=0.000022=0.000022=0.000022=1=0.000022
+__rec=node,id=457,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=403
+__rec=ctx,ref=457=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000178=0.000178=0.000178=0.000178=1=0.000178
+__rec=node,id=969,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=943
+__rec=ctx,ref=969=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000026=0.000026=0.000026=0.000026=1=0.000026
+__rec=node,id=1097,attr=32,data=Lcals_FIRST_SUM:RAJA_CUDA
+__rec=ctx,ref=1097=1722,attr=1708=1711=1714=1718=1716=1721,data=0.052362=0.052362=0.052362=0.052362=1=0.052362
+__rec=node,id=1225,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=1138
+__rec=ctx,ref=1225=1722,attr=1708=1711=1714=1718=1716=1721,data=0.002229=0.002229=0.002229=0.002229=1=0.002229
+__rec=node,id=1481,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=1434
+__rec=ctx,ref=1481=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000042=0.000042=0.000042=0.000042=1=0.000042
+__rec=node,id=330,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=302
+__rec=ctx,ref=330=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000028=0.000028=0.000028=0.000028=1=0.000028
+__rec=node,id=586,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=545
+__rec=ctx,ref=586=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000493=0.000493=0.000493=0.000493=1=0.000493
+__rec=node,id=714,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=689
+__rec=ctx,ref=714=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000034=0.000034=0.000034=0.000034=1=0.000034
+__rec=node,id=842,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=681
+__rec=ctx,ref=842=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=1610,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1589
+__rec=ctx,ref=1610=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000105=0.000105=0.000105=0.000105=1=0.000105
+__rec=node,id=203,attr=32,data=Lcals_TRIDIAG_ELIM:Base_Seq
+__rec=ctx,ref=203=1722,attr=1708=1711=1714=1718=1716=1721,data=1.398596=1.398596=1.398596=1.398596=1=1.398596
+__rec=node,id=971,attr=32,data=Apps_HALOEXCHANGE:Lambda_Seq
+__rec=ctx,ref=971=1722,attr=1708=1711=1714=1718=1716=1721,data=0.031141=0.031141=0.031141=0.031141=1=0.031141
+__rec=node,id=1227,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1204
+__rec=ctx,ref=1227=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000038=0.000038=0.000038=0.000038=1=0.000038
+__rec=node,id=1483,attr=32,data=Basic_PI_ATOMIC:Base_CUDA
+__rec=ctx,ref=1483=1722,attr=1708=1711=1714=1718=1716=1721,data=0.115088=0.115088=0.115088=0.115088=1=0.115088
+__rec=node,id=588,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=561
+__rec=ctx,ref=588=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000016=0.000016=0.000016=0.000016=1=0.000016
+__rec=node,id=716,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=557
+__rec=ctx,ref=716=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=844,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=818
+__rec=ctx,ref=844=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000291=0.000291=0.000291=0.000291=1=0.000291
+__rec=node,id=1100,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1074
+__rec=ctx,ref=1100=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000026=0.000026=0.000026=0.000026=1=0.000026
+__rec=node,id=1356,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1334
+__rec=ctx,ref=1356=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000043=0.000043=0.000043=0.000043=1=0.000043
+__rec=node,id=461,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=435
+__rec=ctx,ref=461=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000040=0.000040=0.000040=0.000040=1=0.000040
+__rec=node,id=973,attr=32,data=Basic_INIT3:RAJA_CUDA
+__rec=ctx,ref=973=1722,attr=1708=1711=1714=1718=1716=1721,data=0.039289=0.039289=0.039289=0.039289=1=0.039289
+__rec=node,id=1229,attr=32,data=Stream_COPY:Lambda_CUDA
+__rec=ctx,ref=1229=1722,attr=1708=1711=1714=1718=1716=1721,data=0.044575=0.044575=0.044575=0.044575=1=0.044575
+__rec=node,id=1485,attr=32,data=Lcals_EOS:RAJA_CUDA
+__rec=ctx,ref=1485=1722,attr=1708=1711=1714=1718=1716=1721,data=0.029806=0.029806=0.029806=0.029806=1=0.029806
+__rec=node,id=1613,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1593
+__rec=ctx,ref=1613=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000025=0.000025=0.000025=0.000025=1=0.000025
+__rec=node,id=206,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=71
+__rec=ctx,ref=206=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000153=0.000153=0.000153=0.000153=1=0.000153
+__rec=node,id=334,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=307
+__rec=ctx,ref=334=1722,attr=1708=1711=1714=1718=1716=1721,data=0.009364=0.009364=0.009364=0.009364=1=0.009364
+__rec=node,id=590,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=563
+__rec=ctx,ref=590=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000048=0.000048=0.000048=0.000048=1=0.000048
+__rec=node,id=718,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=664
+__rec=ctx,ref=718=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000189=0.000189=0.000189=0.000189=1=0.000189
+__rec=node,id=846,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=820
+__rec=ctx,ref=846=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000027=0.000027=0.000027=0.000027=1=0.000027
+__rec=node,id=1102,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1076
+__rec=ctx,ref=1102=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000107=0.000107=0.000107=0.000107=1=0.000107
+__rec=node,id=1358,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=1275
+__rec=ctx,ref=1358=1722,attr=1708=1711=1714=1718=1716=1721,data=0.051277=0.051277=0.051277=0.051277=1=0.051277
+__rec=node,id=463,attr=32,data=Basic_MULADDSUB:Lambda_Seq
+__rec=ctx,ref=463=1722,attr=1708=1711=1714=1718=1716=1721,data=0.726933=0.726933=0.726933=0.726933=1=0.726933
+__rec=node,id=1231,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1207
+__rec=ctx,ref=1231=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000074=0.000074=0.000074=0.000074=1=0.000074
+__rec=node,id=1615,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1595
+__rec=ctx,ref=1615=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000044=0.000044=0.000044=0.000044=1=0.000044
+__rec=node,id=720,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=695
+__rec=ctx,ref=720=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000012=0.000012=0.000012=0.000012=1=0.000012
+__rec=node,id=848,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=822
+__rec=ctx,ref=848=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000053=0.000053=0.000053=0.000053=1=0.000053
+__rec=node,id=976,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=949
+__rec=ctx,ref=976=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000033=0.000033=0.000033=0.000033=1=0.000033
+__rec=node,id=1488,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1465
+__rec=ctx,ref=1488=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000047=0.000047=0.000047=0.000047=1=0.000047
+__rec=ctx,ref=209=1722,attr=1708=1711=1714=1718=1716=1721,data=0.142672=0.142672=0.142672=0.142672=1=0.142672
+__rec=node,id=1105,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=1014
+__rec=ctx,ref=1105=1722,attr=1708=1711=1714=1718=1716=1721,data=0.006299=0.006299=0.006299=0.006299=1=0.006299
+__rec=node,id=1617,attr=32,data=Basic_INIT_VIEW1D_OFFSET:Base_Seq
+__rec=ctx,ref=1617=1722,attr=1708=1711=1714=1718=1716=1721,data=1.393305=1.393305=1.393305=1.393305=1=1.393305
+__rec=node,id=466,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=440
+__rec=ctx,ref=466=1722,attr=1708=1711=1714=1718=1716=1721,data=0.038595=0.038595=0.038595=0.038595=1=0.038595
+__rec=node,id=594,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=568
+__rec=ctx,ref=594=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000111=0.000111=0.000111=0.000111=1=0.000111
+__rec=node,id=850,attr=32,data=Apps_FIR:Base_CUDA
+__rec=ctx,ref=850=1722,attr=1708=1711=1714=1718=1716=1721,data=0.009106=0.009106=0.009106=0.009106=1=0.009106
+__rec=node,id=978,attr=32,data=Lcals_FIRST_SUM:Lambda_Seq
+__rec=ctx,ref=978=1722,attr=1708=1711=1714=1718=1716=1721,data=1.195436=1.195436=1.195436=1.195436=1=1.195436
+__rec=node,id=1234,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1211
+__rec=ctx,ref=1234=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000026=0.000026=0.000026=0.000026=1=0.000026
+__rec=node,id=1362,attr=32,data=Basic_INIT_VIEW1D:Lambda_CUDA
+__rec=ctx,ref=1362=1722,attr=1708=1711=1714=1718=1716=1721,data=0.030005=0.030005=0.030005=0.030005=1=0.030005
+__rec=node,id=1490,attr=32,data=Stream_DOT:Base_Seq
+__rec=ctx,ref=1490=1722,attr=1708=1711=1714=1718=1716=1721,data=2.191093=2.191093=2.191093=2.191093=1=2.191093
+__rec=node,id=339,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=315
+__rec=ctx,ref=339=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000054=0.000054=0.000054=0.000054=1=0.000054
+__rec=ctx,ref=723=1722,attr=1708=1711=1714=1718=1716=1721,data=0.138476=0.138476=0.138476=0.138476=1=0.138476
+__rec=node,id=1107,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1081
+__rec=ctx,ref=1107=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000023=0.000023=0.000023=0.000023=1=0.000023
+__rec=node,id=1619,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1598
+__rec=ctx,ref=1619=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000109=0.000109=0.000109=0.000109=1=0.000109
+__rec=node,id=212,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=185
+__rec=ctx,ref=212=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000024=0.000024=0.000024=0.000024=1=0.000024
+__rec=node,id=468,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=307
+__rec=ctx,ref=468=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=852,attr=32,data=Basic_INIT3:RAJA_Seq
+__rec=ctx,ref=852=1722,attr=1708=1711=1714=1718=1716=1721,data=1.039639=1.039639=1.039639=1.039639=1=1.039639
+__rec=node,id=1236,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=1150
+__rec=ctx,ref=1236=1722,attr=1708=1711=1714=1718=1716=1721,data=0.106988=0.106988=0.106988=0.106988=1=0.106988
+__rec=node,id=1364,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1341
+__rec=ctx,ref=1364=1722,attr=1708=1711=1714=1718=1716=1721,data=0.026762=0.026762=0.026762=0.026762=1=0.026762
+__rec=node,id=1492,attr=32,data=Apps_LTIMES_NOVIEW:Lambda_CUDA
+__rec=ctx,ref=1492=1722,attr=1708=1711=1714=1718=1716=1721,data=0.024019=0.024019=0.024019=0.024019=1=0.024019
+__rec=node,id=341,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=209
+__rec=ctx,ref=341=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000039=0.000039=0.000039=0.000039=1=0.000039
+__rec=node,id=725,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=699
+__rec=ctx,ref=725=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000056=0.000056=0.000056=0.000056=1=0.000056
+__rec=node,id=981,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=954
+__rec=ctx,ref=981=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000111=0.000111=0.000111=0.000111=1=0.000111
+__rec=node,id=1109,attr=32,data=Lcals_DIFF_PREDICT:RAJA_CUDA
+__rec=ctx,ref=1109=1722,attr=1708=1711=1714=1718=1716=1721,data=0.119946=0.119946=0.119946=0.119946=1=0.119946
+__rec=node,id=1621,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=1509
+__rec=ctx,ref=1621=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000156=0.000156=0.000156=0.000156=1=0.000156
+__rec=node,id=214,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=187
+__rec=ctx,ref=214=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000033=0.000033=0.000033=0.000033=1=0.000033
+__rec=node,id=598,attr=32,data=Kokkos::parallel_reduce: fence due to result being value\, not view,parent=358
+__rec=ctx,ref=598=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000235=0.000235=0.000235=0.000235=1=0.000235
+__rec=node,id=1366,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1343
+__rec=ctx,ref=1366=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000044=0.000044=0.000044=0.000044=1=0.000044
+__rec=node,id=343,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=318
+__rec=ctx,ref=343=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000023=0.000023=0.000023=0.000023=1=0.000023
+__rec=node,id=471,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=445
+__rec=ctx,ref=471=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000023=0.000023=0.000023=0.000023=1=0.000023
+__rec=node,id=727,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=701
+__rec=ctx,ref=727=1722,attr=1708=1711=1714=1718=1716=1721,data=0.032582=0.032582=0.032582=0.032582=1=0.032582
+__rec=node,id=855,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=814
+__rec=ctx,ref=855=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000459=0.000459=0.000459=0.000459=1=0.000459
+__rec=ctx,ref=983=1722,attr=1708=1711=1714=1718=1716=1721,data=0.107549=0.107549=0.107549=0.107549=1=0.107549
+__rec=node,id=1239,attr=32,data=Lcals_INT_PREDICT:RAJA_CUDA
+__rec=ctx,ref=1239=1722,attr=1708=1711=1714=1718=1716=1721,data=0.083934=0.083934=0.083934=0.083934=1=0.083934
+__rec=node,id=1623,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1601
+__rec=ctx,ref=1623=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000030=0.000030=0.000030=0.000030=1=0.000030
+__rec=node,id=600,attr=32,data=Lcals_FIRST_MIN:Base_CUDA
+__rec=ctx,ref=600=1722,attr=1708=1711=1714=1718=1716=1721,data=0.005571=0.005571=0.005571=0.005571=1=0.005571
+__rec=node,id=1112,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1086
+__rec=ctx,ref=1112=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000057=0.000057=0.000057=0.000057=1=0.000057
+__rec=node,id=1368,attr=32,data=Lcals_GEN_LIN_RECUR:Lambda_Seq
+__rec=ctx,ref=1368=1722,attr=1708=1711=1714=1718=1716=1721,data=1.447976=1.447976=1.447976=1.447976=1=1.447976
+__rec=ctx,ref=217=1722,attr=1708=1711=1714=1718=1716=1721,data=0.153034=0.153034=0.153034=0.153034=1=0.153034
+__rec=node,id=345,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=320
+__rec=ctx,ref=345=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000025=0.000025=0.000025=0.000025=1=0.000025
+__rec=node,id=473,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=447
+__rec=ctx,ref=473=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000031=0.000031=0.000031=0.000031=1=0.000031
+__rec=node,id=729,attr=32,data=Apps_FIR:Base_Seq
+__rec=ctx,ref=729=1722,attr=1708=1711=1714=1718=1716=1721,data=0.845038=0.845038=0.845038=0.845038=1=0.845038
+__rec=node,id=1497,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1474
+__rec=ctx,ref=1497=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000028=0.000028=0.000028=0.000028=1=0.000028
+__rec=node,id=1625,attr=32,data=Stream_DOT:RAJA_CUDA
+__rec=ctx,ref=1625=1722,attr=1708=1711=1714=1718=1716=1721,data=0.070562=0.070562=0.070562=0.070562=1=0.070562
+__rec=node,id=602,attr=32,data=Lcals_HYDRO_2D:RAJA_Seq
+__rec=ctx,ref=602=1722,attr=1708=1711=1714=1718=1716=1721,data=1.032935=1.032935=1.032935=1.032935=1=1.032935
+__rec=node,id=858,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre copy fence,parent=723
+__rec=ctx,ref=858=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000201=0.000201=0.000201=0.000201=1=0.000201
+__rec=node,id=1114,attr=32,data=Stream_COPY:Lambda_Seq
+__rec=ctx,ref=1114=1722,attr=1708=1711=1714=1718=1716=1721,data=1.094458=1.094458=1.094458=1.094458=1=1.094458
+__rec=node,id=1242,attr=32,data=Apps_LTIMES:Base_CUDA
+__rec=ctx,ref=1242=1722,attr=1708=1711=1714=1718=1716=1721,data=0.019570=0.019570=0.019570=0.019570=1=0.019570
+__rec=node,id=219,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=71
+__rec=ctx,ref=219=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000355=0.000355=0.000355=0.000355=1=0.000355
+__rec=node,id=475,attr=32,data=Basic_IF_QUAD:Lambda_CUDA
+__rec=ctx,ref=475=1722,attr=1708=1711=1714=1718=1716=1721,data=0.025405=0.025405=0.025405=0.025405=1=0.025405
+__rec=node,id=731,attr=32,data=IF_QUAD_Kokkos Kokkos_Lambda,parent=557
+__rec=ctx,ref=731=1722,attr=1708=1711=1714=1718=1716=1721,data=0.013719=0.013719=0.013719=0.013719=1=0.013719
+__rec=node,id=987,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=961
+__rec=ctx,ref=987=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=1371,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1348
+__rec=ctx,ref=1371=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000030=0.000030=0.000030=0.000030=1=0.000030
+__rec=node,id=1499,attr=32,data=Lcals_PLANCKIAN:Lambda_Seq
+__rec=ctx,ref=1499=1722,attr=1708=1711=1714=1718=1716=1721,data=0.785596=0.785596=0.785596=0.785596=1=0.785596
+__rec=node,id=1627,attr=32,data=Apps_PRESSURE:RAJA_Seq
+__rec=ctx,ref=1627=1722,attr=1708=1711=1714=1718=1716=1721,data=1.677340=1.677340=1.677340=1.677340=1=1.677340
+__rec=node,id=348,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=323
+__rec=ctx,ref=348=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000053=0.000053=0.000053=0.000053=1=0.000053
+__rec=node,id=604,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=577
+__rec=ctx,ref=604=1722,attr=1708=1711=1714=1718=1716=1721,data=0.038475=0.038475=0.038475=0.038475=1=0.038475
+__rec=ctx,ref=860=1722,attr=1708=1711=1714=1718=1716=1721,data=0.107604=0.107604=0.107604=0.107604=1=0.107604
+__rec=node,id=1116,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=983
+__rec=ctx,ref=1116=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000145=0.000145=0.000145=0.000145=1=0.000145
+__rec=node,id=1244,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1220
+__rec=ctx,ref=1244=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000077=0.000077=0.000077=0.000077=1=0.000077
+__rec=node,id=221,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=195
+__rec=ctx,ref=221=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000044=0.000044=0.000044=0.000044=1=0.000044
+__rec=node,id=989,attr=32,data=Lcals_DIFF_PREDICT:Lambda_Seq
+__rec=ctx,ref=989=1722,attr=1708=1711=1714=1718=1716=1721,data=1.410490=1.410490=1.410490=1.410490=1=1.410490
+__rec=node,id=1373,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1350
+__rec=ctx,ref=1373=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=350,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=325
+__rec=ctx,ref=350=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000028=0.000028=0.000028=0.000028=1=0.000028
+__rec=node,id=478,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=452
+__rec=ctx,ref=478=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000027=0.000027=0.000027=0.000027=1=0.000027
+__rec=node,id=606,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=579
+__rec=ctx,ref=606=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000027=0.000027=0.000027=0.000027=1=0.000027
+__rec=node,id=734,attr=32,data=Basic_TRAP_INT:Base_CUDA
+__rec=ctx,ref=734=1722,attr=1708=1711=1714=1718=1716=1721,data=0.001712=0.001712=0.001712=0.001712=1=0.001712
+__rec=node,id=862,attr=32,data=Stream_TRIAD:Base_CUDA
+__rec=ctx,ref=862=1722,attr=1708=1711=1714=1718=1716=1721,data=0.037343=0.037343=0.037343=0.037343=1=0.037343
+__rec=node,id=1118,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1090
+__rec=ctx,ref=1118=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000028=0.000028=0.000028=0.000028=1=0.000028
+__rec=node,id=1246,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre copy fence,parent=1121
+__rec=ctx,ref=1246=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=1630,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=86
+__rec=ctx,ref=1630=1722,attr=1708=1711=1714=1718=1716=1721,data=0.001372=0.001372=0.001372=0.001372=1=0.001372
+__rec=node,id=1503,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1481
+__rec=ctx,ref=1503=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000013=0.000013=0.000013=0.000013=1=0.000013
+__rec=node,id=224,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=199
+__rec=ctx,ref=224=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000014=0.000014=0.000014=0.000014=1=0.000014
+__rec=node,id=352,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=327
+__rec=ctx,ref=352=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000041=0.000041=0.000041=0.000041=1=0.000041
+__rec=node,id=480,attr=32,data=Lcals_FIRST_MIN:Base_Seq
+__rec=ctx,ref=480=1722,attr=1708=1711=1714=1718=1716=1721,data=0.108821=0.108821=0.108821=0.108821=1=0.108821
+__rec=node,id=608,attr=32,data=Apps_ENERGY:RAJA_Seq
+__rec=ctx,ref=608=1722,attr=1708=1711=1714=1718=1716=1721,data=1.508037=1.508037=1.508037=1.508037=1=1.508037
+__rec=node,id=736,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=681
+__rec=ctx,ref=736=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000039=0.000039=0.000039=0.000039=1=0.000039
+__rec=node,id=992,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=966
+__rec=ctx,ref=992=1722,attr=1708=1711=1714=1718=1716=1721,data=0.006834=0.006834=0.006834=0.006834=1=0.006834
+__rec=node,id=1376,attr=32,data=Basic_PI_ATOMIC:Base_Seq
+__rec=ctx,ref=1376=1722,attr=1708=1711=1714=1718=1716=1721,data=0.058711=0.058711=0.058711=0.058711=1=0.058711
+__rec=node,id=1632,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=1520
+__rec=ctx,ref=1632=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000161=0.000161=0.000161=0.000161=1=0.000161
+__rec=ctx,ref=1121=1722,attr=1708=1711=1714=1718=1716=1721,data=0.078809=0.078809=0.078809=0.078809=1=0.078809
+__rec=node,id=1249,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1225
+__rec=ctx,ref=1249=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000052=0.000052=0.000052=0.000052=1=0.000052
+__rec=node,id=1505,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1483
+__rec=ctx,ref=1505=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000012=0.000012=0.000012=0.000012=1=0.000012
+__rec=node,id=226,attr=32,data=Lcals_FIRST_DIFF:RAJA_CUDA
+__rec=ctx,ref=226=1722,attr=1708=1711=1714=1718=1716=1721,data=0.049824=0.049824=0.049824=0.049824=1=0.049824
+__rec=node,id=354,attr=32,data=Basic_IF_QUAD:Lambda_Seq
+__rec=ctx,ref=354=1722,attr=1708=1711=1714=1718=1716=1721,data=1.320891=1.320891=1.320891=1.320891=1=1.320891
+__rec=node,id=482,attr=32,data=HYDRO_1D_Kokkos Kokkos_Lambda,parent=307
+__rec=ctx,ref=482=1722,attr=1708=1711=1714=1718=1716=1721,data=0.046623=0.046623=0.046623=0.046623=1=0.046623
+__rec=node,id=610,attr=32,data=Kokkos::View::initialization [StringName] via memset,parent=557
+__rec=ctx,ref=610=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000184=0.000184=0.000184=0.000184=1=0.000184
+__rec=node,id=866,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=838
+__rec=ctx,ref=866=1722,attr=1708=1711=1714=1718=1716=1721,data=0.017805=0.017805=0.017805=0.017805=1=0.017805
+__rec=node,id=994,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=860
+__rec=ctx,ref=994=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000146=0.000146=0.000146=0.000146=1=0.000146
+__rec=node,id=1378,attr=32,data=Lcals_EOS:Lambda_Seq
+__rec=ctx,ref=1378=1722,attr=1708=1711=1714=1718=1716=1721,data=0.725017=0.725017=0.725017=0.725017=1=0.725017
+__rec=node,id=1634,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=1509
+__rec=ctx,ref=1634=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000373=0.000373=0.000373=0.000373=1=0.000373
+__rec=node,id=739,attr=32,data=Stream_ADD:Base_CUDA
+__rec=ctx,ref=739=1722,attr=1708=1711=1714=1718=1716=1721,data=0.037299=0.037299=0.037299=0.037299=1=0.037299
+__rec=node,id=1507,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1485
+__rec=ctx,ref=1507=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000029=0.000029=0.000029=0.000029=1=0.000029
+__rec=node,id=228,attr=32,data=Lcals_HYDRO_1D:Base_CUDA
+__rec=ctx,ref=228=1722,attr=1708=1711=1714=1718=1716=1721,data=0.038499=0.038499=0.038499=0.038499=1=0.038499
+__rec=node,id=356,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=209
+__rec=ctx,ref=356=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000091=0.000091=0.000091=0.000091=1=0.000091
+__rec=node,id=484,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=457
+__rec=ctx,ref=484=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000057=0.000057=0.000057=0.000057=1=0.000057
+__rec=node,id=612,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=584
+__rec=ctx,ref=612=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000027=0.000027=0.000027=0.000027=1=0.000027
+__rec=node,id=1124,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1097
+__rec=ctx,ref=1124=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=1252,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1229
+__rec=ctx,ref=1252=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000024=0.000024=0.000024=0.000024=1=0.000024
+__rec=node,id=741,attr=32,data=Stream_TRIAD:Base_Seq
+__rec=ctx,ref=741=1722,attr=1708=1711=1714=1718=1716=1721,data=1.026725=1.026725=1.026725=1.026725=1=1.026725
+__rec=ctx,ref=869=1722,attr=1708=1711=1714=1718=1716=1721,data=0.007510=0.007510=0.007510=0.007510=1=0.007510
+__rec=node,id=997,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=971
+__rec=ctx,ref=997=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000025=0.000025=0.000025=0.000025=1=0.000025
+__rec=node,id=1381,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1358
+__rec=ctx,ref=1381=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000072=0.000072=0.000072=0.000072=1=0.000072
+__rec=ctx,ref=1509=1722,attr=1708=1711=1714=1718=1716=1721,data=0.114774=0.114774=0.114774=0.114774=1=0.114774
+__rec=node,id=230,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=203
+__rec=ctx,ref=230=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000044=0.000044=0.000044=0.000044=1=0.000044
+__rec=ctx,ref=358=1722,attr=1708=1711=1714=1718=1716=1721,data=0.008945=0.008945=0.008945=0.008945=1=0.008945
+__rec=ctx,ref=486=1722,attr=1708=1711=1714=1718=1716=1721,data=0.044931=0.044931=0.044931=0.044931=1=0.044931
+__rec=node,id=614,attr=32,data=Basic_TRAP_INT:Base_Seq
+__rec=ctx,ref=614=1722,attr=1708=1711=1714=1718=1716=1721,data=0.285417=0.285417=0.285417=0.285417=1=0.285417
+__rec=ctx,ref=1126=1722,attr=1708=1711=1714=1718=1716=1721,data=2.195944=2.195944=2.195944=2.195944=1=2.195944
+__rec=node,id=1638,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1617
+__rec=ctx,ref=1638=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000023=0.000023=0.000023=0.000023=1=0.000023
+__rec=ctx,ref=871=1722,attr=1708=1711=1714=1718=1716=1721,data=0.052337=0.052337=0.052337=0.052337=1=0.052337
+__rec=node,id=999,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=973
+__rec=ctx,ref=999=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000024=0.000024=0.000024=0.000024=1=0.000024
+__rec=ctx,ref=1255=1722,attr=1708=1711=1714=1718=1716=1721,data=1.632966=1.632966=1.632966=1.632966=1=1.632966
+__rec=node,id=1383,attr=32,data=Kokkos::View::initialization [StringName_mirror] via memset,parent=1302
+__rec=ctx,ref=1383=1722,attr=1708=1711=1714=1718=1716=1721,data=0.003103=0.003103=0.003103=0.003103=1=0.003103
+__rec=ctx,ref=360=1722,attr=1708=1711=1714=1718=1716=1721,data=0.002620=0.002620=0.002620=0.002620=1=0.002620
+__rec=ctx,ref=488=1722,attr=1708=1711=1714=1718=1716=1721,data=0.024335=0.024335=0.024335=0.024335=1=0.024335
+__rec=node,id=1512,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1490
+__rec=ctx,ref=1512=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000029=0.000029=0.000029=0.000029=1=0.000029
+__rec=node,id=233,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=71
+__rec=ctx,ref=233=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000040=0.000040=0.000040=0.000040=1=0.000040
+__rec=node,id=745,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=718
+__rec=ctx,ref=745=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000064=0.000064=0.000064=0.000064=1=0.000064
+__rec=ctx,ref=1001=1722,attr=1708=1711=1714=1718=1716=1721,data=0.020889=0.020889=0.020889=0.020889=1=0.020889
+__rec=node,id=1129,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=983
+__rec=ctx,ref=1129=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000299=0.000299=0.000299=0.000299=1=0.000299
+__rec=ctx,ref=1257=1722,attr=1708=1711=1714=1718=1716=1721,data=0.004416=0.004416=0.004416=0.004416=1=0.004416
+__rec=ctx,ref=1385=1722,attr=1708=1711=1714=1718=1716=1721,data=0.974281=0.974281=0.974281=0.974281=1=0.974281
+__rec=node,id=1641,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=1520
+__rec=ctx,ref=1641=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000364=0.000364=0.000364=0.000364=1=0.000364
+__rec=ctx,ref=362=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000115=0.000115=0.000115=0.000115=1=0.000115
+__rec=ctx,ref=618=1722,attr=1708=1711=1714=1718=1716=1721,data=1.035579=1.035579=1.035579=1.035579=1=1.035579
+__rec=node,id=1514,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1492
+__rec=ctx,ref=1514=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000023=0.000023=0.000023=0.000023=1=0.000023
+__rec=ctx,ref=235=1722,attr=1708=1711=1714=1718=1716=1721,data=0.016430=0.016430=0.016430=0.016430=1=0.016430
+__rec=node,id=491,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=463
+__rec=ctx,ref=491=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000051=0.000051=0.000051=0.000051=1=0.000051
+__rec=node,id=875,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=850
+__rec=ctx,ref=875=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000023=0.000023=0.000023=0.000023=1=0.000023
+__rec=ctx,ref=1131=1722,attr=1708=1711=1714=1718=1716=1721,data=0.974231=0.974231=0.974231=0.974231=1=0.974231
+__rec=node,id=1259,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1236
+__rec=ctx,ref=1259=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000154=0.000154=0.000154=0.000154=1=0.000154
+__rec=node,id=1387,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1362
+__rec=ctx,ref=1387=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000020=0.000020=0.000020=0.000020=1=0.000020
+__rec=node,id=1643,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=1509
+__rec=ctx,ref=1643=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=ctx,ref=364=1722,attr=1708=1711=1714=1718=1716=1721,data=0.049257=0.049257=0.049257=0.049257=1=0.049257
+__rec=ctx,ref=620=1722,attr=1708=1711=1714=1718=1716=1721,data=0.003211=0.003211=0.003211=0.003211=1=0.003211
+__rec=node,id=1004,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=978
+__rec=ctx,ref=1004=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000017=0.000017=0.000017=0.000017=1=0.000017
+__rec=ctx,ref=1516=1722,attr=1708=1711=1714=1718=1716=1721,data=0.001587=0.001587=0.001587=0.001587=1=0.001587
+__rec=node,id=237,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=209
+__rec=ctx,ref=237=1722,attr=1708=1711=1714=1718=1716=1721,data=0.023081=0.023081=0.023081=0.023081=1=0.023081
+__rec=node,id=493,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=358
+__rec=ctx,ref=493=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000039=0.000039=0.000039=0.000039=1=0.000039
+__rec=node,id=749,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=723
+__rec=ctx,ref=749=1722,attr=1708=1711=1714=1718=1716=1721,data=0.003463=0.003463=0.003463=0.003463=1=0.003463
+__rec=node,id=877,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=852
+__rec=ctx,ref=877=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000047=0.000047=0.000047=0.000047=1=0.000047
+__rec=node,id=1133,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1105
+__rec=ctx,ref=1133=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000133=0.000133=0.000133=0.000133=1=0.000133
+__rec=node,id=1261,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=1138
+__rec=ctx,ref=1261=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000074=0.000074=0.000074=0.000074=1=0.000074
+__rec=node,id=1645,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1625
+__rec=ctx,ref=1645=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000023=0.000023=0.000023=0.000023=1=0.000023
+__rec=ctx,ref=366=1722,attr=1708=1711=1714=1718=1716=1721,data=1.092543=1.092543=1.092543=1.092543=1=1.092543
+__rec=ctx,ref=1006=1722,attr=1708=1711=1714=1718=1716=1721,data=0.010083=0.010083=0.010083=0.010083=1=0.010083
+__rec=ctx,ref=1518=1722,attr=1708=1711=1714=1718=1716=1721,data=0.115013=0.115013=0.115013=0.115013=1=0.115013
+__rec=ctx,ref=239=1722,attr=1708=1711=1714=1718=1716=1721,data=0.045000=0.045000=0.045000=0.045000=1=0.045000
+__rec=ctx,ref=879=1722,attr=1708=1711=1714=1718=1716=1721,data=0.667015=0.667015=0.667015=0.667015=1=0.667015
+__rec=node,id=1263,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1239
+__rec=ctx,ref=1263=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000037=0.000037=0.000037=0.000037=1=0.000037
+__rec=node,id=1391,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1368
+__rec=ctx,ref=1391=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000048=0.000048=0.000048=0.000048=1=0.000048
+__rec=node,id=1647,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1627
+__rec=ctx,ref=1647=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000107=0.000107=0.000107=0.000107=1=0.000107
+__rec=ctx,ref=368=1722,attr=1708=1711=1714=1718=1716=1721,data=0.842924=0.842924=0.842924=0.842924=1=0.842924
+__rec=ctx,ref=624=1722,attr=1708=1711=1714=1718=1716=1721,data=0.034914=0.034914=0.034914=0.034914=1=0.034914
+__rec=node,id=1008,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=860
+__rec=ctx,ref=1008=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000302=0.000302=0.000302=0.000302=1=0.000302
+__rec=node,id=1136,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1109
+__rec=ctx,ref=1136=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000041=0.000041=0.000041=0.000041=1=0.000041
+__rec=ctx,ref=1520=1722,attr=1708=1711=1714=1718=1716=1721,data=0.073407=0.073407=0.073407=0.073407=1=0.073407
+__rec=ctx,ref=497=1722,attr=1708=1711=1714=1718=1716=1721,data=0.007750=0.007750=0.007750=0.007750=1=0.007750
+__rec=node,id=753,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=729
+__rec=ctx,ref=753=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000084=0.000084=0.000084=0.000084=1=0.000084
+__rec=ctx,ref=881=1722,attr=1708=1711=1714=1718=1716=1721,data=0.002531=0.002531=0.002531=0.002531=1=0.002531
+__rec=ctx,ref=1265=1722,attr=1708=1711=1714=1718=1716=1721,data=0.044681=0.044681=0.044681=0.044681=1=0.044681
+__rec=node,id=1393,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=1275
+__rec=ctx,ref=1393=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000039=0.000039=0.000039=0.000039=1=0.000039
+__rec=ctx,ref=1649=1722,attr=1708=1711=1714=1718=1716=1721,data=1.387612=1.387612=1.387612=1.387612=1=1.387612
+__rec=node,id=1010,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=983
+__rec=ctx,ref=1010=1722,attr=1708=1711=1714=1718=1716=1721,data=0.011987=0.011987=0.011987=0.011987=1=0.011987
+__rec=ctx,ref=1138=1722,attr=1708=1711=1714=1718=1716=1721,data=0.141148=0.141148=0.141148=0.141148=1=0.141148
+__rec=ctx,ref=243=1722,attr=1708=1711=1714=1718=1716=1721,data=1.386820=1.386820=1.386820=1.386820=1=1.386820
+__rec=node,id=371,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=209
+__rec=ctx,ref=371=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000019=0.000019=0.000019=0.000019=1=0.000019
+__rec=node,id=627,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=600
+__rec=ctx,ref=627=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000022=0.000022=0.000022=0.000022=1=0.000022
+__rec=node,id=755,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=731
+__rec=ctx,ref=755=1722,attr=1708=1711=1714=1718=1716=1721,data=0.010423=0.010423=0.010423=0.010423=1=0.010423
+__rec=node,id=1267,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1242
+__rec=ctx,ref=1267=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000021=0.000021=0.000021=0.000021=1=0.000021
+__rec=node,id=1523,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1499
+__rec=ctx,ref=1523=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000107=0.000107=0.000107=0.000107=1=0.000107
+__rec=node,id=1651,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1630
+__rec=ctx,ref=1651=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000506=0.000506=0.000506=0.000506=1=0.000506
+__rec=ctx,ref=1012=1722,attr=1708=1711=1714=1718=1716=1721,data=0.031192=0.031192=0.031192=0.031192=1=0.031192
+__rec=node,id=245,attr=32,data=Kokkos::Impl::ParallelReduce<Cuda\, RangePolicy>::execute: Result Not Device Accessible,parent=217
+__rec=ctx,ref=245=1722,attr=1708=1711=1714=1718=1716=1721,data=0.070944=0.070944=0.070944=0.070944=1=0.070944
+__rec=node,id=501,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=475
+__rec=ctx,ref=501=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000029=0.000029=0.000029=0.000029=1=0.000029
+__rec=node,id=629,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=602
+__rec=ctx,ref=629=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000051=0.000051=0.000051=0.000051=1=0.000051
+__rec=ctx,ref=757=1722,attr=1708=1711=1714=1718=1716=1721,data=0.007437=0.007437=0.007437=0.007437=1=0.007437
+__rec=node,id=885,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=860
+__rec=ctx,ref=885=1722,attr=1708=1711=1714=1718=1716=1721,data=0.012160=0.012160=0.012160=0.012160=1=0.012160
+__rec=node,id=1141,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1114
+__rec=ctx,ref=1141=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000036=0.000036=0.000036=0.000036=1=0.000036
+__rec=ctx,ref=1397=1722,attr=1708=1711=1714=1718=1716=1721,data=0.030178=0.030178=0.030178=0.030178=1=0.030178
+__rec=ctx,ref=1525=1722,attr=1708=1711=1714=1718=1716=1721,data=2.189220=2.189220=2.189220=2.189220=1=2.189220
+__rec=node,id=1653,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=1520
+__rec=ctx,ref=1653=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000028=0.000028=0.000028=0.000028=1=0.000028
+__rec=ctx,ref=1014=1722,attr=1708=1711=1714=1718=1716=1721,data=0.086726=0.086726=0.086726=0.086726=1=0.086726
+__rec=ctx,ref=247=1722,attr=1708=1711=1714=1718=1716=1721,data=0.046464=0.046464=0.046464=0.046464=1=0.046464
+__rec=ctx,ref=503=1722,attr=1708=1711=1714=1718=1716=1721,data=0.725491=0.725491=0.725491=0.725491=1=0.725491
+__rec=node,id=759,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=734
+__rec=ctx,ref=759=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000011=0.000011=0.000011=0.000011=1=0.000011
+__rec=node,id=887,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=862
+__rec=ctx,ref=887=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000034=0.000034=0.000034=0.000034=1=0.000034
+__rec=node,id=1143,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=983
+__rec=ctx,ref=1143=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000026=0.000026=0.000026=0.000026=1=0.000026
+__rec=node,id=1271,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=1150
+__rec=ctx,ref=1271=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000080=0.000080=0.000080=0.000080=1=0.000080
+__rec=node,id=1399,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1376
+__rec=ctx,ref=1399=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000012=0.000012=0.000012=0.000012=1=0.000012
+__rec=ctx,ref=1527=1722,attr=1708=1711=1714=1718=1716=1721,data=0.024426=0.024426=0.024426=0.024426=1=0.024426
+__rec=ctx,ref=1655=1722,attr=1708=1711=1714=1718=1716=1721,data=0.029664=0.029664=0.029664=0.029664=1=0.029664
+__rec=node,id=505,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=358
+__rec=ctx,ref=505=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000106=0.000106=0.000106=0.000106=1=0.000106
+__rec=node,id=633,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=608
+__rec=ctx,ref=633=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000044=0.000044=0.000044=0.000044=1=0.000044
+__rec=node,id=761,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=736
+__rec=ctx,ref=761=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000011=0.000011=0.000011=0.000011=1=0.000011
+__rec=ctx,ref=889=1722,attr=1708=1711=1714=1718=1716=1721,data=0.009115=0.009115=0.009115=0.009115=1=0.009115
+__rec=node,id=1017,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=989
+__rec=ctx,ref=1017=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000032=0.000032=0.000032=0.000032=1=0.000032
+__rec=node,id=1273,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=1138
+__rec=ctx,ref=1273=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000179=0.000179=0.000179=0.000179=1=0.000179
+__rec=node,id=1401,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1378
+__rec=ctx,ref=1401=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000045=0.000045=0.000045=0.000045=1=0.000045
+__rec=node,id=1657,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=97
+__rec=ctx,ref=1657=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000655=0.000655=0.000655=0.000655=1=0.000655
+__rec=node,id=1146,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, pre view equality check,parent=1014
+__rec=ctx,ref=1146=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000190=0.000190=0.000190=0.000190=1=0.000190
+__rec=node,id=379,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=354
+__rec=ctx,ref=379=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000060=0.000060=0.000060=0.000060=1=0.000060
+__rec=node,id=507,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=480
+__rec=ctx,ref=507=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000017=0.000017=0.000017=0.000017=1=0.000017
+__rec=node,id=635,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=610
+__rec=ctx,ref=635=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000057=0.000057=0.000057=0.000057=1=0.000057
+__rec=ctx,ref=891=1722,attr=1708=1711=1714=1718=1716=1721,data=0.039515=0.039515=0.039515=0.039515=1=0.039515
+__rec=ctx,ref=1019=1722,attr=1708=1711=1714=1718=1716=1721,data=1.195521=1.195521=1.195521=1.195521=1=1.195521
+__rec=ctx,ref=1275=1722,attr=1708=1711=1714=1718=1716=1721,data=0.193835=0.193835=0.193835=0.193835=1=0.193835
+__rec=ctx,ref=1403=1722,attr=1708=1711=1714=1718=1716=1721,data=1.447200=1.447200=1.447200=1.447200=1=1.447200
+__rec=ctx,ref=1659=1722,attr=1708=1711=1714=1718=1716=1721,data=0.055694=0.055694=0.055694=0.055694=1=0.055694
+__rec=node,id=252,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=226
+__rec=ctx,ref=252=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000024=0.000024=0.000024=0.000024=1=0.000024
+__rec=node,id=764,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=739
+__rec=ctx,ref=764=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000036=0.000036=0.000036=0.000036=1=0.000036
+__rec=node,id=1148,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1121
+__rec=ctx,ref=1148=1722,attr=1708=1711=1714=1718=1716=1721,data=0.009447=0.009447=0.009447=0.009447=1=0.009447
+__rec=node,id=1532,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1509
+__rec=ctx,ref=1532=1722,attr=1708=1711=1714=1718=1716=1721,data=0.009423=0.009423=0.009423=0.009423=1=0.009423
+__rec=ctx,ref=381=1722,attr=1708=1711=1714=1718=1716=1721,data=0.073381=0.073381=0.073381=0.073381=1=0.073381
+__rec=node,id=509,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=482
+__rec=ctx,ref=509=1722,attr=1708=1711=1714=1718=1716=1721,data=0.028653=0.028653=0.028653=0.028653=1=0.028653
+__rec=node,id=1405,attr=32,data=Kokkos::deep_copy: copy between contiguous views\, post deep copy fence,parent=1275
+__rec=ctx,ref=1405=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000110=0.000110=0.000110=0.000110=1=0.000110
+__rec=node,id=254,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=228
+__rec=ctx,ref=254=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000031=0.000031=0.000031=0.000031=1=0.000031
+__rec=node,id=638,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=614
+__rec=ctx,ref=638=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000012=0.000012=0.000012=0.000012=1=0.000012
+__rec=node,id=766,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=741
+__rec=ctx,ref=766=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000048=0.000048=0.000048=0.000048=1=0.000048
+__rec=node,id=1022,attr=32,data=Kokkos::fence: Unnamed Global Fence,parent=860
+__rec=ctx,ref=1022=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000027=0.000027=0.000027=0.000027=1=0.000027
+__rec=ctx,ref=1150=1722,attr=1708=1711=1714=1718=1716=1721,data=0.361346=0.361346=0.361346=0.361346=1=0.361346
+__rec=ctx,ref=1278=1722,attr=1708=1711=1714=1718=1716=1721,data=0.024007=0.024007=0.024007=0.024007=1=0.024007
+__rec=ctx,ref=1534=1722,attr=1708=1711=1714=1718=1716=1721,data=0.785987=0.785987=0.785987=0.785987=1=0.785987
+__rec=ctx,ref=1662=1722,attr=1708=1711=1714=1718=1716=1721,data=0.002340=0.002340=0.002340=0.002340=1=0.002340
+__rec=node,id=383,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=358
+__rec=ctx,ref=383=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000513=0.000513=0.000513=0.000513=1=0.000513
+__rec=node,id=895,attr=32,data=Kokkos::Impl::ParallelReduce<Cuda\, RangePolicy>::execute: Result Not Device Accessible,parent=869
+__rec=ctx,ref=895=1722,attr=1708=1711=1714=1718=1716=1721,data=0.004179=0.004179=0.004179=0.004179=1=0.004179
+__rec=node,id=1407,attr=32,data=Kokkos::Tools::invoke_kokkosp_callback: Kokkos Profile Tool Fence,parent=1383
+__rec=ctx,ref=1407=1722,attr=1708=1711=1714=1718=1716=1721,data=0.000077=0.000077=0.000077=0.000077=1=0.000077
+__rec=node,id=1827,attr=10,data=512,parent=3
+__rec=node,id=1832,attr=8,data=spot.options,parent=1827
+__rec=node,id=1830,attr=10,data=512,parent=1
+__rec=node,id=1831,attr=8,data=spot.format.version,parent=1830
+__rec=node,id=1829,attr=8,data=spot.timeseries.metrics,parent=1827
+__rec=node,id=1828,attr=8,data=spot.metrics,parent=1827
+__rec=node,id=16,attr=10,data=1612,parent=3
+__rec=node,id=17,attr=8,data=cali.caliper.version,parent=16
+__rec=node,id=18,attr=17,data=2.6.0-dev
+__rec=node,id=1833,attr=1828,data=min#inclusive#sum#time.duration\,max#inclusive#sum#time.duration\,avg#inclusive#sum#time.duration\,sum#inclusive#sum#time.duration,parent=18
+__rec=node,id=1834,attr=1829,data=,parent=1833
+__rec=node,id=1835,attr=1831,data=2,parent=1834
+__rec=node,id=1836,attr=1832,data=profile.kokkos,parent=1835
+__rec=node,id=19,attr=10,data=84,parent=3
+__rec=node,id=1723,attr=8,data=adiak.subcategory,parent=19
+__rec=node,id=1724,attr=10,data=84,parent=1
+__rec=node,id=1725,attr=8,data=adiak.category,parent=1724
+__rec=node,id=1726,attr=8,data=adiak.type,parent=19
+__rec=node,id=1727,attr=1726,data=double,parent=5
+__rec=node,id=1728,attr=1725,data=2,parent=1727
+__rec=node,id=1729,attr=1723,data=none,parent=1728
+__rec=node,id=1730,attr=10,data=1612,parent=1729
+__rec=node,id=1731,attr=8,data=Kokkos Version,parent=1730
+__rec=node,id=1732,attr=1726,data=string,parent=3
+__rec=node,id=1733,attr=1725,data=2,parent=1732
+__rec=node,id=1734,attr=1723,data=none,parent=1733
+__rec=node,id=1735,attr=10,data=1612,parent=1734
+__rec=node,id=1736,attr=8,data=KOKKOS_ENABLE_PRAGMA_VECTOR,parent=1735
+__rec=node,id=1737,attr=8,data=KOKKOS_ENABLE_PRAGMA_UNROLL,parent=1735
+__rec=node,id=1738,attr=8,data=KOKKOS_ENABLE_PRAGMA_SIMD,parent=1735
+__rec=node,id=1739,attr=8,data=KOKKOS_ENABLE_PRAGMA_LOOPCOUNT,parent=1735
+__rec=node,id=1740,attr=8,data=KOKKOS_ENABLE_PRAGMA_IVDEP,parent=1735
+__rec=node,id=1741,attr=8,data=compiler_family,parent=1735
+__rec=node,id=1742,attr=8,data=KOKKOS_ENABLE_LIBRT,parent=1735
+__rec=node,id=1743,attr=8,data=KOKKOS_ENABLE_HWLOC,parent=1735
+__rec=node,id=1744,attr=8,data=KOKKOS_ENABLE_DEBUG_BOUNDS_CHECK,parent=1735
+__rec=node,id=1745,attr=8,data=KOKKOS_ENABLE_CXX20,parent=1735
+__rec=node,id=1746,attr=8,data=KOKKOS_ENABLE_CXX17,parent=1735
+__rec=node,id=1747,attr=8,data=KOKKOS_ENABLE_CXX14,parent=1735
+__rec=node,id=1748,attr=8,data=KOKKOS_ENABLE_ASM,parent=1735
+__rec=node,id=1749,attr=8,data=KOKKOS_ENABLE_POSIX_MEMALIGN,parent=1735
+__rec=node,id=1750,attr=8,data=KOKKOS_ENABLE_INTEL_MM_ALLOC,parent=1735
+__rec=node,id=1751,attr=8,data=KOKKOS_ENABLE_HBWSPACE,parent=1735
+__rec=node,id=1752,attr=8,data=KOKKOS_COMPILER_NVCC,parent=1730
+__rec=node,id=1753,attr=8,data=KOKKOS_COMPILER_GNU,parent=1730
+__rec=node,id=1754,attr=8,data=KOKKOS_ENABLE_WINDOWS_ATOMICS,parent=1735
+__rec=node,id=1755,attr=8,data=KOKKOS_ENABLE_INTEL_ATOMICS,parent=1735
+__rec=node,id=1756,attr=8,data=KOKKOS_ENABLE_GNU_ATOMICS,parent=1735
+__rec=node,id=1757,attr=8,data=KOKKOS_ENABLE_ISA_X86_64,parent=1735
+__rec=node,id=1758,attr=8,data=KOKKOS_ENABLE_ISA_POWERPCLE,parent=1735
+__rec=node,id=1759,attr=8,data=KOKKOS_ENABLE_ISA_KNC,parent=1735
+__rec=node,id=1760,attr=8,data=Default Device,parent=1735
+__rec=node,id=1761,attr=1726,data=unsigned int,parent=2
+__rec=node,id=1762,attr=1725,data=2,parent=1761
+__rec=node,id=1763,attr=1723,data=mpi,parent=1762
+__rec=node,id=1764,attr=10,data=1612,parent=1763
+__rec=node,id=1765,attr=8,data=jobsize,parent=1764
+__rec=node,id=1766,attr=1723,data=host,parent=1733
+__rec=node,id=1767,attr=10,data=1612,parent=1766
+__rec=node,id=1768,attr=8,data=cluster,parent=1767
+__rec=node,id=1769,attr=1726,data=set of string,parent=3
+__rec=node,id=1770,attr=1725,data=2,parent=1769
+__rec=node,id=1771,attr=1723,data=runinfo,parent=1770
+__rec=node,id=1772,attr=10,data=1612,parent=1771
+__rec=node,id=1773,attr=8,data=cmdline,parent=1772
+__rec=node,id=1774,attr=1726,data=set of path,parent=3
+__rec=node,id=1775,attr=1725,data=2,parent=1774
+__rec=node,id=1776,attr=1723,data=binary,parent=1775
+__rec=node,id=1777,attr=10,data=1612,parent=1776
+__rec=node,id=1778,attr=8,data=libraries,parent=1777
+__rec=node,id=1779,attr=1726,data=path,parent=3
+__rec=node,id=1780,attr=1725,data=2,parent=1779
+__rec=node,id=1781,attr=1723,data=binary,parent=1780
+__rec=node,id=1782,attr=10,data=1612,parent=1781
+__rec=node,id=1783,attr=8,data=executablepath,parent=1782
+__rec=node,id=1784,attr=1726,data=date,parent=2
+__rec=node,id=1785,attr=1725,data=2,parent=1784
+__rec=node,id=1786,attr=1723,data=runinfo,parent=1785
+__rec=node,id=1787,attr=10,data=1612,parent=1786
+__rec=node,id=1788,attr=8,data=launchdate,parent=1787
+__rec=node,id=1789,attr=1723,data=runinfo,parent=1733
+__rec=node,id=1790,attr=10,data=1612,parent=1789
+__rec=node,id=1791,attr=8,data=user,parent=1790
+__rec=node,id=1792,attr=8,data=cali.channel,parent=16
+__rec=node,id=1793,attr=1792,data=spot
+__rec=node,id=1794,attr=1791,data=jenkins,parent=1793
+__rec=node,id=1795,attr=1788,data=1630142747,parent=1794
+__rec=node,id=1796,attr=1783,data=/home/jenkins/jenkins-new/workspace/Kokkos_develop_kokkos_dev_2_cuda_raja_perfsuite/RAJAPerf/build/bin/raja-perf.exe,parent=1795
+__rec=node,id=1797,attr=1778,data=[/lib64/librt.so.1\,/lib64/libcuda.so.1\,/usr/local/cuda-11.0/lib64/libcudart.so.11.0\,/lib64/libdl.so.2\,/lib64/libpthread.so.0\,/projects/sems/install/rhel7-x86_64/sems/compiler/gcc/7.3.0/base/lib64/libstdc++.so.6\,/lib64/libm.so.6\,/projects/sems/install/rhel7-x86_64/sems/compiler/gcc/7.3.0/base/lib64/libgcc_s.so.1\,/lib64/libc.so.6\,/lib64/ld-linux-x86-64.so.2\,/home/jenkins/jenkins-new/workspace/Kokkos_develop_kokkos_dev_2_cuda_raja_perfsuite/spot_kokkos_bundle/spot_tools_build_dir/libspot-bundle.so\,/home/jenkins/jenkins-new/workspace/Kokkos_develop_kokkos_dev_2_cuda_raja_perfsuite/spot_kokkos_bundle/spot_tools_build_dir/tpl/caliper/src/libcaliper.so.2\,/projects/sems/install/rhel7-x86_64/sems/compiler/gcc/7.3.0/openmpi/4.0.2/lib/libmpi.so.40\,/projects/sems/install/rhel7-x86_64/sems/compiler/gcc/7.3.0/openmpi/4.0.2/lib/libopen-rte.so.40\,/projects/sems/install/rhel7-x86_64/sems/compiler/gcc/7.3.0/openmpi/4.0.2/lib/libopen-pal.so.40\,/lib64/libutil.so.1\,/lib64/libz.so.1],parent=1796
+__rec=node,id=1798,attr=1773,data=[./bin/raja-perf.exe],parent=1797
+__rec=node,id=1799,attr=1768,data=kokkos-dev-,parent=1798
+__rec=node,id=1800,attr=1765,data=1,parent=1799
+__rec=node,id=1801,attr=1760,data=N6Kokkos4CudaE,parent=1800
+__rec=node,id=1802,attr=1759,data=no,parent=1801
+__rec=node,id=1803,attr=1758,data=no,parent=1802
+__rec=node,id=1804,attr=1757,data=no,parent=1803
+__rec=node,id=1805,attr=1756,data=no,parent=1804
+__rec=node,id=1806,attr=1755,data=no,parent=1805
+__rec=node,id=1807,attr=1754,data=no,parent=1806
+__rec=node,id=1808,attr=1753,data=730.000000,parent=1807
+__rec=node,id=1809,attr=1752,data=1.000000,parent=1808
+__rec=node,id=1810,attr=1751,data=no,parent=1809
+__rec=node,id=1811,attr=1750,data=no,parent=1810
+__rec=node,id=1812,attr=1749,data=no,parent=1811
+__rec=node,id=1813,attr=1748,data=yes,parent=1812
+__rec=node,id=1814,attr=1747,data=yes,parent=1813
+__rec=node,id=1815,attr=1746,data=no,parent=1814
+__rec=node,id=1816,attr=1745,data=no,parent=1815
+__rec=node,id=1817,attr=1744,data=no,parent=1816
+__rec=node,id=1818,attr=1743,data=no,parent=1817
+__rec=node,id=1819,attr=1742,data=no,parent=1818
+__rec=node,id=1820,attr=1741,data=nvcc,parent=1819
+__rec=node,id=1821,attr=1740,data=no,parent=1820
+__rec=node,id=1822,attr=1739,data=no,parent=1821
+__rec=node,id=1823,attr=1738,data=no,parent=1822
+__rec=node,id=1824,attr=1737,data=no,parent=1823
+__rec=node,id=1825,attr=1736,data=no,parent=1824
+__rec=node,id=1826,attr=1731,data=3.400000,parent=1825
+__rec=globals,ref=1836=1826

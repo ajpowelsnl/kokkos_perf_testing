@@ -1,0 +1,18 @@
+FOM Report : signed speedup(-)/slowdown(+) for each PM (base vs. RAJA) -> (T_RAJA - T_base) / T_base ) ,  ,  ,  ,  ,  , 
+'OVER_TOL' in column to right if RAJA speedup is over tolerance ,  ,  ,  ,  ,  , 
+Kernel                    , Lambda_Seq      ,         , RAJA_Seq        ,         , RAJA_CUDA       ,        
+Basic_ATOMIC_PI           , 0.008           ,         , 1.1             ,OVER_TOL , -0.0032         ,        
+Basic_DAXPY               , -0.01           ,         , 0.015           ,         , 0.018           ,        
+Basic_IF_QUAD             , 0.02            ,         , 0.032           ,         , 0.1             ,        
+Basic_INIT3               , -0.00011        ,         , 0.0025          ,         , -0.004          ,        
+Basic_INIT_VIEW1D         , 0.036           ,         , 0.14            ,OVER_TOL , -0.0011         ,        
+Basic_INIT_VIEW1D_OFFSET  , -0.0036         ,         , 2.9             ,OVER_TOL , -0.057          ,        
+Basic_MULADDSUB           , -0.029          ,         , -0.03           ,         , 0.11            ,OVER_TOL
+Basic_NESTED_INIT         , -0.0039         ,         , -0.0045         ,         , 0.0019          ,        
+Basic_REDUCE3_INT         , -0.062          ,         , -0.06           ,         , 2               ,OVER_TOL
+Basic_TRAP_INT            , -0.00059        ,         , -0.0007         ,         , -0.48           ,        
+                          ,                 ,         ,                 ,         ,                 ,        
+Col Min                   , -0.062          ,         , -0.06           ,         , -0.48           ,        
+Col Max                   , 0.036           ,         , 2.9             ,         , 2               ,        
+Col Avg                   , -0.0046         ,         , 0.41            ,         , 0.17            ,        
+Col Std Dev               , 0.00063         ,         , 0.78            ,         , 0.39            ,        
