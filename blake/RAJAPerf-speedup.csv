@@ -1,12 +1,38 @@
-Speedup Report (T_ref/T_var): ref var = Base_Seq  ,  ,  ,  ,  ,  ,  ,  , 
-Kernel                    , Base_Seq , Lambda_Seq , RAJA_Seq , Base_OpenMP , Lambda_OpenMP , RAJA_OpenMP , Kokkos_Lambda , Kokkos_Functor
-Basic_ATOMIC_PI           ,    1.000 ,      0.999 ,    0.216 ,       0.003 ,         0.004 ,       0.002 ,         0.005 ,        Not run
-Basic_DAXPY               ,    1.000 ,      1.028 ,    1.028 ,       8.774 ,         7.931 ,       5.265 ,         7.435 ,        Not run
-Basic_IF_QUAD             ,    1.000 ,      1.030 ,    1.004 ,      40.430 ,        39.698 ,      44.630 ,        39.037 ,        Not run
-Basic_INIT3               ,    1.000 ,      1.025 ,    1.258 ,      18.015 ,        17.272 ,      13.485 ,        17.594 ,        Not run
-Basic_INIT_VIEW1D         ,    1.000 ,      0.987 ,    0.804 ,      21.823 ,        21.516 ,       9.806 ,        20.765 ,        Not run
-Basic_INIT_VIEW1D_OFFSET  ,    1.000 ,      1.024 ,    0.819 ,      20.730 ,        21.937 ,       8.855 ,        21.806 ,        Not run
-Basic_MULADDSUB           ,    1.000 ,      1.039 ,    1.189 ,      17.762 ,        17.008 ,      12.905 ,        17.060 ,        Not run
-Basic_NESTED_INIT         ,    1.000 ,      1.017 ,    1.013 ,      19.181 ,        21.359 ,       6.697 ,        33.128 ,        Not run
-Basic_REDUCE3_INT         ,    1.000 ,      1.014 ,    0.197 ,      13.756 ,        12.487 ,       0.834 ,         4.104 ,        Not run
-Basic_TRAP_INT            ,    1.000 ,      0.960 ,    0.958 ,      13.362 ,        13.608 ,       2.457 ,        12.984 ,        Not run
+Speedup Report (T_ref/T_var): ref var = Kokkos_Lambda  , 
+Kernel                    , Kokkos_Lambda
+Algorithm_SORT            ,         1.000
+Algorithm_SORTPAIRS       ,          -nan
+Apps_DEL_DOT_VEC_2D       ,         1.000
+Apps_ENERGY               ,         1.000
+Apps_FIR                  ,         1.000
+Apps_HALOEXCHANGE         ,         1.000
+Apps_LTIMES               ,         1.000
+Apps_LTIMES_NOVIEW        ,       Not run
+Apps_PRESSURE             ,         1.000
+Apps_VOL3D                ,         1.000
+Basic_DAXPY               ,         1.000
+Basic_IF_QUAD             ,         1.000
+Basic_INIT3               ,         1.000
+Basic_INIT_VIEW1D         ,         1.000
+Basic_INIT_VIEW1D_OFFSET  ,         1.000
+Basic_MULADDSUB           ,         1.000
+Basic_NESTED_INIT         ,         1.000
+Basic_PI_ATOMIC           ,         1.000
+Basic_REDUCE3_INT         ,         1.000
+Basic_TRAP_INT            ,         1.000
+Lcals_DIFF_PREDICT        ,         1.000
+Lcals_EOS                 ,         1.000
+Lcals_FIRST_DIFF          ,         1.000
+Lcals_FIRST_MIN           ,         1.000
+Lcals_FIRST_SUM           ,         1.000
+Lcals_GEN_LIN_RECUR       ,         1.000
+Lcals_HYDRO_1D            ,         1.000
+Lcals_HYDRO_2D            ,         1.000
+Lcals_INT_PREDICT         ,         1.000
+Lcals_PLANCKIAN           ,         1.000
+Lcals_TRIDIAG_ELIM        ,         1.000
+Stream_ADD                ,         1.000
+Stream_COPY               ,         1.000
+Stream_DOT                ,         1.000
+Stream_MUL                ,         1.000
+Stream_TRIAD              ,         1.000
