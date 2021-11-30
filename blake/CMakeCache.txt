@@ -22,9 +22,6 @@ BLT_BUILD_DIR:PATH=/home/jenkins/blake-new/workspace/Kokkos_develop_blake_openmp
 //Compute architecture to use when generating CUDA code with Clang
 BLT_CLANG_CUDA_ARCH:STRING=sm_30
 
-//AMDGPU ISA target to use when generating HIP code with Clang
-BLT_CLANG_HIP_ARCH:STRING=gfx906
-
 //List of known file extensions used for CMake sources
 BLT_CMAKE_FILE_EXTS:STRING=.cmake
 
@@ -38,7 +35,7 @@ BLT_CODE_STYLE_TARGET_NAME:STRING=style
 BLT_CXX_STD:STRING=
 
 //List of known file extensions used for C/CXX sources
-BLT_C_FILE_EXTS:STRING=.cpp;.hpp;.cxx;.hxx;.c;.h;.cc;.hh;.inl;.cu
+BLT_C_FILE_EXTS:STRING=.cpp;.hpp;.cxx;.hxx;.c;.h;.cc;.hh;.inl;.cu;.cuh
 
 //Name of the master documentation generation target
 BLT_DOCS_TARGET_NAME:STRING=docs
@@ -57,9 +54,6 @@ BLT_OPENMP_FLAGS_DIFFER:BOOL=FALSE
 
 //List of known file extensions used for Python sources
 BLT_Python_FILE_EXTS:STRING=.py
-
-//gfx architecture to use when generating ROCm code
-BLT_ROCM_ARCH:STRING=gfx900
 
 BLT_ROOT_DIR:PATH=/home/jenkins/blake-new/workspace/Kokkos_develop_blake_openmp_raja_perfsuite/RAJAPerf/blt
 
@@ -164,6 +158,9 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
 //Directory where all Fortran modules will go in the build tree
 CMAKE_Fortran_MODULE_DIRECTORY:PATH=/home/jenkins/blake-new/workspace/Kokkos_develop_blake_openmp_raja_perfsuite/RAJAPerf/build/lib/fortran
+
+//gfx architecture to use when generating HIP/ROCm code
+CMAKE_HIP_ARCHITECTURES:STRING=gfx900
 
 //User executables (bin)
 CMAKE_INSTALL_BINDIR:PATH=bin
@@ -1015,8 +1012,6 @@ stream_LIB_DEPENDS:STATIC=general;common;general;RAJA;
 
 //ADVANCED property for variable: BLT_CLANG_CUDA_ARCH
 BLT_CLANG_CUDA_ARCH-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: BLT_CLANG_HIP_ARCH
-BLT_CLANG_HIP_ARCH-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BLT_CODE_CHECK_TARGET_NAME
 BLT_CODE_CHECK_TARGET_NAME-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: BLT_CODE_STYLE_TARGET_NAME
